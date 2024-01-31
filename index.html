@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/images/logo.png" class="logo" alt="logo" />
+          <img src="/images/logo-mobile.png" class="logo-mobile" alt="logo" />
+        </a>
+
+        <form class="d-flex mobile-search" role="search">
+          <input
+            id="searchInputMobile"
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            style="display: none"
+          />
+          <button
+            class="btn btn-outline-success"
+            type="button"
+            onclick="toggleSearchMobile()"
+          >
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item dropdown mega-menu hover-dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false  "
+              >
+                OUR SERVICES
+              </a>
+              <div class="dropdown-menu mega-area">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3 dropdown-list">
+                    <a class="dropdown-item" href="#">Carpet Cleaning</a>
+                    <a class="dropdown-item" href="#">Upholstery Cleaning</a>
+                    <a class="dropdown-item" href="#">Tile & Grout Cleaning</a>
+                    <a class="dropdown-item" href="#"
+                      >Hardwood Floor refinishing</a
+                    >
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <a class="dropdown-item" href="#">Commercial Cleaning</a>
+                    <a class="dropdown-item" href="#">Area Rug Cleaning</a>
+                    <a class="dropdown-item" href="#"
+                      >Car, Boat & RV Cleaning</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown mega-menu hover-dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false  "
+              >
+                ABOUT US
+              </a>
+              <div class="dropdown-menu mega-area">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3 dropdown-list">
+                    <a class="dropdown-item" href="#">Something..</a>
+                    <a class="dropdown-item" href="#">Something..</a>
+                    <a class="dropdown-item" href="#">Something..</a>
+                    <a class="dropdown-item" href="#">Something..</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <a class="nav-link active" aria-current="page" href="#"
+              >CONTACT US
+            </a>
+
+            <a class="nav-link active" href="#"> FAQ'S</a>
+          </ul>
+        </div>
+
+        <form class="d-flex" role="search">
+          <input
+            id="searchInput"
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            style="display: none"
+          />
+          <button
+            class="btn btn-outline-success"
+            type="button"
+            onclick="toggleSearch()"
+          >
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+
+        <div class="last-div">
+          <div class="child-divider">
+            <div class="child-1">
+              <a class="nav-link active" aria-current="page" href="#"
+                >RESIDENTIAL</a
+              >
+            </div>
+            <div class="child-2">
+              <a class="nav-link active" aria-current="page" href="#"
+                >COMMERCIAL</a
+              >
+            </div>
+          </div>
+
+          <div class="child-3">
+            <a class="nav-link active" aria-current="page" href="#"
+              >QUOTE & SCHEDULE</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ABOVE IS THE CODE FOR HEADER ONLY -->
+
+    <!-- FIRST DIV -->
+
+    <div class="hero-1">
+
+      <div class="hero-headings">
+        <h1>RESIDENTIAL &</h1>
+        <h1>COMMERCIAL</h1>
+        <h1>CLEANING</h1>
+      </div>
+
+      <div class="hero-button">
+        <button type="button" class="btn btn-primary btn-lg">RESIDENTIAL QUOTE & SCHEDULE
+        </button>
+      </div>
+
+    </div>
+
+    <!-- SECOND DIV -->
+
+    <div class="row flex-lg-row align-items-center g-5 py-5 second-div">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="/images/div-2.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="600" height="400" loading="lazy">
+      </div>
+      <div class="col-lg-4">
+        <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 second-div-h2">REFRESH YOUR HOME, RENEW YOUR LIFE</h2>
+        <p class="lead second-div-p">Give your home a clean slate with professional cleaning services and enjoy the daily delight of a sparkling space</p>
+        <p class="lead second-div-p">Capital Carpet Solutions' expert cleaning team easily gets rid of dirt and grime from your carpets, furniture, tiles, and
+          hardwood floors so you can enjoy all the joy of a clean home without lifting a finger.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">SCHEDULE NOW</button> 
+        </div>
+      </div>
+    </div>
+
+    <!-- THIRD DIV BELOW -->
+
+    <!-- THIS IS DESKTOP VIEW -->
+    <div class="container px-4 py-5 div-3-desktop" id="featured-3">
+      <h2 class="pb-2 border-bottom">OUR SPECIALTIES</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img src="/images/div-3 (1).png" style="width: 400px;" alt="">
+          </div>
+          <h3 class="fs-2 text-body-emphasis">CARPET CLEANING</h3>
+          <p>Imagine your carpets whispering "thank you" as we bring their hidden colors back to life! Our deep cleaning will
+            leave them looking and feeling fantastic, like stepping onto a fresh start every time. You’ll be amazed by how much deep
+            dirt we pull out!
+            </p>
+          <a href="#" class="icon-link">
+            LEARN MORE ABOUT CARPET CLEANING
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img src="/images/div-3 (2).png" style="width: 400px;" alt="">
+          </div>
+          <h3 class="fs-2 text-body-emphasis">TILE & GROUT CLEANING</h3>
+          <p>Imagine transforming your tiles and grout back to their day-one dazzle! Our skilled teams, equipped with exceptional
+            training and equipment work wonders in reviving your tile & grout. We guarantee you a remarkable transformation as we
+            bring back the shine and brilliance that your tiles had when first installed. And the best part? This stunning makeover is
+            completed very quickly, often in just a few hours, seamlessly fitting into your busy life without disruption.</p>
+          <a href="#" class="icon-link">
+            LEARN MORE ABOUT TILE & GROUT CLEANING
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <img src="/images/div-3 (3).png" style="width: 400px;" alt="">
+          </div>
+          <h3 class="fs-2 text-body-emphasis">HARDWOOD FLOOR REFINISHING</h3>
+          <p>Bring new life to your hardwood floors with our services! We do everything from a basic clean and buff to getting rid of
+            old wax, and even recoating your floor. Our deep cleaning gets rid of scratches and stains, making your floors look bright
+            and new again. We take away years of dullness, revealing the floor's innate glow, and then seal its beauty with a finish that
+            guards against future wear and tear.</p>
+          <a href="#" class="icon-link">
+            LEARN MORE ABOUT HARDWOOD FLOOR REFINISHING
+            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="all-our-services">
+        <p class="d-inline-flex gap-1">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            ALL OUR SERVICES
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+  <img src="/images/upholstery-cleaning.png" alt="upholstery-cleaning" style="width: 80px;">
+                </div>
+                <div>
+                  <h3 class="fs-2 text-body-emphasis">UPHOLSTERY CLEANING</h3>
+                  <p>When only the best will do for your furniture, choose Capital Carpet Solutions. Our expert
+                    cleaning tackles even the toughest dirt, all with a feather-light touch.</p>
+                    <a href="#" class="icon-link">
+                      LEARN MORE ABOUT UPHOLSTERY CLEANING
+                      <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                    </a>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                  <img src="/images/rug-cleaning.png" alt="upholstery-cleaning" style="width: 80px;">
+                </div>
+                <div>
+                  <h3 class="fs-2 text-body-emphasis">AREA RUG CLEANING</h3>
+                  <p>Imagine your rugs, reborn. Our expert rug cleaning uses advanced methods to eliminate even the toughest grime and
+                    allergens, leaving your rugs refreshed and spotless.
+                    </p>
+                    <a href="#" class="icon-link">
+                      LEARN MORE ABOUT AREA RUG CLEANING
+                      <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                    </a>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                  <img src="/images/car-cleaning.png" alt="upholstery-cleaning" style="width: 80px;">
+                </div>
+                <div>
+                  <h3 class="fs-2 text-body-emphasis">CAR, RV & BOAT CLEANING</h3>
+                  <p>The same skill that made us carpet cleaning legends now shines in cars, boats, and RVs! We haven't just added services,
+                    we've expanded our passion for sparkling interiors to embrace your entire fleet.
+                    </p>
+                    <a href="#" class="icon-link">
+                      LEARN MORE ABOUT CAR, RV & BOAT CLEANING
+                      <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+     
+    </div>
+
+    <!-- THIS IS FOR MOBILE -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/images/div-3 (1).png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 style="color: black;">First slide label</h2>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/images/div-3 (2).png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/images/div-3 (3).png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/images/upholstery-cleaning.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/images/rug-cleaning.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/images/car-cleaning.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
