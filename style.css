@@ -33,7 +33,7 @@ body {
   font-size: 14px;
   color: #000;
 }
-.logo-mobile{
+.logo-mobile {
   display: none;
 }
 
@@ -136,19 +136,124 @@ body {
   font-family: mSemi-Bold;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+.hero-button button:hover {
+  background-color: #80fbff;
+  color: #000;
+}
 /* CODE FOR SECOND DIV BELOW */
-.second-div-h2{
+.second-div-h2 {
   font-family: mSemi-bold;
 }
-.second-div-p{
+.second-div-p {
   font-family: regular;
   font-size: 18px;
 }
-.mobile-view-carousel{
+.mobile-view-carousel {
   height: 100vh;
 }
+.schedule-now-btn {
+  background-color: #5ce1e6;
+  color: #000;
+  border: none;
+}
+.schedule-now-btn:hover {
+  background-color: #80fbff;
+  color: #000;
+}
+.btn-primary {
+  font-family: mSemi-Bold;
+  background-color: #5ce1e6;
+  color: #000;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #80fbff;
+  color: #000;
+}
 
-/* CODE FOR DIV 3 */
+.carousel {
+  display: none;
+}
+
+/* CODE FOR DISCOUNT DIV */
+.discount-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  height: 50vh;
+  background-image: url(/images/ccs-van.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+.email-button {
+  background-color: #5ce1e6;
+  border: none;
+  color: #000;
+}
+.email-button:hover {
+  background-color: #80fbff;
+  color: #000;
+}
+.discount-div-email {
+  width: 30%;
+}
+
+/* WHY US */
+.why-us-main-header{
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+.why-us-border{
+  border-bottom: 5px solid #5ce1e6;
+  margin-left: 45%;
+  margin-right: 45%;
+margin-top: 0;
+}
+
+.why-us h1 {
+  font-family: mBlack;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+
+}
+.why-us-text-1 {
+  text-align: end;
+}
+.why-us-text-1 h1 {
+  font-family: mBold;
+  font-size: 30px;
+}
+.why-us-text-1 p {
+  font-family: regular;
+  font-size: 15px;
+}
+
+.why-us-text-2 {
+  text-align: start;
+}
+.why-us-text-2 h1 {
+  font-family: mBold;
+  font-size: 30px;
+}
+.why-us-text-2 p {
+  font-family: regular;
+  font-size: 15px;
+}
+
+/* Why us Mobile */
+.carousel-inner p{
+margin-right: 1rem;
+margin-left: 1rem;
+}
+
 
 
 
@@ -157,10 +262,10 @@ body {
     width: 100%;
   }
   /* HEADER FOR MOBILE */
-  .logo{
+  .logo {
     display: none;
   }
-  .logo-mobile{
+  .logo-mobile {
     width: 200px;
     display: block;
   }
@@ -201,19 +306,19 @@ body {
   }
   .hero-button {
     margin: 0;
-   
+
     padding: 0;
   }
 
   /* SECOND DIV */
-  .second-div{
+  .second-div {
     width: 100%;
-
   }
-  .g-5, .gx-5 {
+  .g-5,
+  .gx-5 {
     --bs-gutter-x: 0rem;
-}
-  .col-10{
+  }
+  .col-10 {
     width: 100%;
   }
   .second-div-h2 {
@@ -222,11 +327,39 @@ body {
   .second-div-p {
     text-align: center;
   }
-  .second-div button{
-  margin-left: 25%;
+  .second-div button {
+    background-color: #5ce1e6;
+    border: none;
+    color: #000;
+    margin-left: 25%;
     width: 50%;
   }
-.div-3-desktop{
-  display: none;
-}
+  .div-3-desktop {
+    display: none;
+  }
+  .carousel {
+    display: block;
+  }
+  .carousel-caption {
+    position: static;
+    color: black;
+    text-align: center;
+  }
+  .carousel-control-next-icon {
+    background-image: url(/images/next-icon.png);
+  }
+  .carousel-control-prev-icon {
+    background-image: url(images/prev-icon.png);
+  }
+  /* CODE FOR DISCOUNT DIV */
+  .discount-div {
+    padding: 10px;
+  }
+  .discount-div-email {
+    width: 80%;
+  }
+  /* WHY US DIV */
+  .why-us-desktop{
+    display: none;
+  }
 }
