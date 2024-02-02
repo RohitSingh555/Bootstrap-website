@@ -20,7 +20,7 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 /* HEADER  */
@@ -228,6 +228,7 @@ margin-top: 0;
   text-align: end;
 }
 .why-us-text-1 h1 {
+  text-align: end;
   font-family: mBold;
   font-size: 30px;
 }
@@ -240,6 +241,7 @@ margin-top: 0;
   text-align: start;
 }
 .why-us-text-2 h1 {
+  text-align: start;
   font-family: mBold;
   font-size: 30px;
 }
@@ -260,6 +262,7 @@ margin-left: 1rem;
 @media screen and (max-width: 567px) {
   body {
     width: 100%;
+    overflow-x: hidden;
   }
   /* HEADER FOR MOBILE */
   .logo {

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area-Rug Cleaning</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/arearugCleaning.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" class="logo" alt="logo" />
+                <img src="images/logo-mobile.png" class="logo-mobile" alt="logo" />
+            </a>
+
+            <form class="d-flex mobile-search" role="search">
+                <input id="searchInputMobile" class="form-control me-2" type="search" placeholder="Search"
+                    aria-label="Search" style="display: none" />
+                <button class="btn btn-outline-success" type="button" onclick="toggleSearchMobile()">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown mega-menu hover-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            OUR SERVICES
+                        </a>
+                        <div class="dropdown-menu mega-area">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3 dropdown-list">
+                                    <a class="dropdown-item" href="#">Carpet Cleaning</a>
+                                    <a class="dropdown-item" href="#">Upholstery Cleaning</a>
+                                    <a class="dropdown-item" href="#">Tile & Grout Cleaning</a>
+                                    <a class="dropdown-item" href="#">Hardwood Floor refinishing</a>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <a class="dropdown-item" href="#">Commercial Cleaning</a>
+                                    <a class="dropdown-item" href="#">Area Rug Cleaning</a>
+                                    <a class="dropdown-item" href="#">Car, Boat & RV Cleaning</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown mega-menu hover-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ABOUT US
+                        </a>
+                        <div class="dropdown-menu mega-area">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3 dropdown-list">
+                                    <a class="dropdown-item" href="#">Something..</a>
+                                    <a class="dropdown-item" href="#">Something..</a>
+                                    <a class="dropdown-item" href="#">Something..</a>
+                                    <a class="dropdown-item" href="#">Something..</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">CONTACT US</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">FAQ'S</a>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="d-flex" role="search">
+                <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                    style="display: none" />
+                <button class="btn btn-outline-success" type="button" onclick="toggleSearch()">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+
+            <div class="last-div">
+                <div class="child-divider">
+                    <div class="child-1">
+                        <a class="nav-link active" aria-current="page" href="#">RESIDENTIAL</a>
+                    </div>
+                    <div class="child-2">
+                        <a class="nav-link active" aria-current="page" href="#">COMMERCIAL</a>
+                    </div>
+                </div>
+
+                <div class="child-3">
+                    <a class="nav-link active" aria-current="page" href="#">QUOTE & SCHEDULE</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main style="background-color: #F3F1F6;">
+        <div class="hero-1">
+
+
+
+        </div>
+        <div class="container mt-5">
+            <h3 class="card-title fw-bold pb-5">AREA RUG CLEANNG</h3>
+            <div class="row mb-5">
+                <div class="col-md-7">
+                    <div class="h--accent"></div>
+                    <p>Relying solely on vacuuming won't ensure that your area rugs stay free from dirt, dust, and allergens. For a thorough cleaning and to maintain an allergen-free environment, we recommend seeking the expertise of professional rug cleaners</p>
+                    <p>At Capital Carpet Solutions, we employ our patented hot water extraction carpet cleaning method for our area rug cleaning service. The hot water extraction method enables us to effectively remove dirt and stains, resulting in a clean area rug without any residue</p>
+                    <a href="">STEP TOWARDS SPOTLESS UPHOLSTERY, Instant quote & Online Scheduling</a>
+                </div>
+                <div class="col-md-5 mt-4 mt-md-0">
+                    <div class="card p-3 w-5 floatingcard d-none d-md-block"
+                        style="position: absolute;top:50%;width:300px;right:4%;    text-align: center;">
+                        <h5>BOOK YOUR AREA RUG CLEANING</h5>
+                        <p>We offer instant quotes and online booking</p>
+                        <button style="background-color: rgb(75, 26, 139);color:white" type="button"
+                            class="btn btn-primary mx-0 fw-bold ">GET QUOTE</button>
+                    </div>
+
+                    <div class="image">
+                        <img src="images/area-rug-boy.png" class="img-fluid" alt="Carpet Cleaning Image" width="350px" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container mt-5">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                        type="button" role="tab" aria-controls="home" aria-selected="true">Cleaning</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                        type="button" role="tab" aria-controls="profile" aria-selected="false">Protection</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                        type="button" role="tab" aria-controls="contact" aria-selected="false">Deodorize</button>
+                </li>
+            </ul>
+            <div class="tab-content mb-5 pb-5" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="container mt-5">
+                        <div class="row mb-5">
+                            <div class="col-md-5 mt-4 mt-md-0">
+                                <div class="image">
+                                    <img src="images/upholstery-cleaning.png" class="img-fluid"
+                                        alt="Carpet Cleaning Image" />
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <h5 class="mb-4">OUR AREA RUG CLEANING EQUIPMENT</h5>
+                                <p class="mb-4"> Weutilize our exclusive hot-water extraction process to remove dirt, stains, and allergens from your area rug. Alongside this, we use an
+                                    eco-friendly cleaning solution that ensures no residue is left behind</p>
+                                <h5 class="mb-4">REMOVE EMBEDDED DIRT,ALLERGENS, & MORE</h5>
+                                <p class="mb-4"> Weeliminate dirt, soiling, and allergens using eco-friendly solutions. This ensures that we don’t leave any harmful residue, making it safer for
+                                    both your family and pets. Additionally, our data-backed approach shows that we can effectively remove an average of 94% of common
+                                    household allergens from area rugs.</p>
+                                <h5 class="mb-4">CAREFUL INSPECTION
+                                </h5>
+                                <p class="mb-4">Our technicians conduct thorough inspections of area rugs, checking for pulls, rips, and tears to ensure that our cleaning process won’t cause any additional damage..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="container mt-5">
+                        <div class="row mb-5">
+                            <div class="col-md-5 mt-4 mt-md-0">
+                                <div class="image">
+                                    <img src="images/upholstery-protection-spray.png" class="img-fluid"
+                                        alt="Carpet Cleaning Image" />
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <h5 class="mb-4">Prolong the effectiveness of your area rug cleaning.</h5>
+                                <p class="mb-4">To maintain the cleanliness of your area rug for an extended period, we can apply a protector that helps prevent damage from harmful dirt and spills. It also reduces static electricity.</p>
+                                <h5 class="mb-4"> EXPERIENCE ENHANCED DURABILITY</h5>
+                                <p class="mb-4">Our protector not only guards against dirt and spills but also provides defense against everyday wear and tear, including foot traffic and vacuuming</p>
+                                <h5 class="mb-4">ESSENTIAL FOR FAMILIES WITH KIDS AND PETS</h5>
+                                <p class="mb-4">Area rug protection is highly recommended for maintaining the results of every cleaning, particularly for households with kids and pets.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="container mt-5">
+                        <div class="row mb-5">
+                            <div class="col-md-5 mt-4 mt-md-0">
+                                <div class="image">
+                                    <img src="images/upholstery-deoderize.png" class="img-fluid" alt="Carpet Cleaning Image" />
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                              
+                                <p class="mb-4">Whether it’s food, kids, or pets, your home accumulates various odors that can linger in your rug fibers. That’s why we suggest using our rug deodorizer to freshen up your space.</p>
+                                <h5 class="mb-4"> ELIMINATE CARPET ODORS INSTEAD OF MASKING THEM.</h5>
+                                <p class="mb-4">Our rug deodorizer works by eliminating odors, promptly neutralizing rug smells at their source, rather than just masking the scent.</p>
+                                <h5 class="mb-4">BRING A RENEWED FRESHNESS TO YOUR HOME</h5>
+                                <p class="mb-4">Using our rug deodorizer leaves your carpet with a fresh and clean scent, bringing a renewed feeling to your entire home.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid banner mb-5">
+            <h2 class="display-4">MASSIVE DISCOUNTS & OFFERS</h2>
+            <p class="lead">Unlock exclusive deals and surprises! Enter your email to join our VIP list and be the first
+                to know about special offers and promotions.</p>
+            <form class="d-flex justify-content-center mt-4 w-25 mx-auto">
+                <input type="email" class="form-control me-2 w-10 " placeholder="Your Email">
+                <button type="submit" class="btn btn-warning">Subscribe</button>
+            </form>
+
+        </div>
+    </main>
+    <div class="container-fluid mt-5 pt-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-7 p-4 pt-0">
+                    <h3 class="fw-bold pb-5">OUR AREA RUG CLEANING PROCESS</h3>
+                    <h5 class="mb-4">Step 1: Inspection -</h5>
+                    <p class="mb-4">Our cleaning expert will go around your home with you to look closely at the rug. They'll identify any tough stains and tell you what results to expect.</p>
+                    <h5 class="mb-4">Step 2: Vacuum -</h5>
+                    <p class="mb-4">We start by using a good vacuum to get rid of dry dirt. Taking away dry dirt is a really important part of the cleaning process</p>
+                    <h5 class="mb-4">Step 3: Pre-Spray -</h5>
+                    <p class="mb-4">We use a special enzyme spray to break down dirt in high-traffic areas and common spots, ensuring a more thorough cleaning.</p>
+                    <h5 class="mb-4">Step 4: Pre-Spot - </h5>
+                    <p class="mb-4">We use special solutions on tough spots before cleaning to improve the chances of getting rid of them..</p>
+                        <h5 class="mb-4">Step 5: Extraction and Rinse -</h5>
+                        <p class="mb-4">Next, we make sure to thoroughly rinse the area rug using an extremely powerful hot water extraction cleaning system. We take care not to overly wet the carpet or leave any sticky residue behind.</p>
+                        <h5 class="mb-4">Step 7: Post Cleaning Inspection -</h5>
+                        <p class="mb-4">Our technician will go around your home with you to show you the cleaning results and make sure you are completely satisfied with the job.</p>
+                           
+                </div>
+                <div class="col-md-5 mt-4 mt-md-0">
+                    <div class="image">
+                        <img src="images/rug-cleaning.png" class="img-fluid" alt="Carpet Cleaning Image" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5" style="background-color: #f3f1f6a6;">
+        <div class="container">
+            <h2 class="text-center md-5 ">FREQUENTLY ASKED QUESTIONS</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            HOW MUCH DOES AREA RUG CLEANING COST?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">The cost of cleaning your area rug depends on its size and material. You can request a quote for area rug cleaning through our website or by calling us at (819)-593-7109.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            HOW LONG WILL IT TAKE TO CLEAN MY AREA RUG?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Typically, each area rug requires around 30-40 minutes for the area rug cleaning process. However, the duration may vary based on the level of soiling and the need for spot removal treatments.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            HOW LONG DOES IT TAKE FOR MY AREA RUG TO DRY AFTER IT'S BEEN CLEANED?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">The time it takes for your area rug to fully dry is influenced by humidity, temperature, and air circulation in the area. Drying can range from 4-12 hours, depending on these factors. To speed up the process, you can use fans in the cleaned rooms and adjust your air conditioning or heating system, depending on the season. You can walk on your area rug right after cleaning, but it's advisable to avoid wearing outdoor shoes, as they might soil the area rug. We recommend wearing clean rubber-soled shoes and being cautious when moving.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            HOW DO YOU CLEAN CARPETS?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">We utilize a hot water extraction method for carpet cleaning. This involves injecting hot water into the carpet to dislodge deep-seated dirt within the fibers, followed by extracting the water along with the dirt. This method is effective in providing a thorough and deep clean for carpets.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-center mt-5 fw-bolder ">WITH YOUR UPHOLSTERY NOW CLEANERTHAN EVER BEFORE</h1>
+    <div class="container mt-5 p-5">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-6">
+                <div class="card border-0">
+                    <img src="images/div-3 (2).png" class="card-img-top rounded" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold ">Bring Back THE SPARKLE TO YOUR TILES AND GROUT</h5>
+                        <p class="card-text pb-3 pl-5 pr-5">Imagine transforming your tiles and grout back to their
+                            day-one dazzle! Our skilled teams,
+                            equipped with exceptional training and equipment work wonders in reviving your tile & grout.
+                            We guarantee you a remarkable transformation as we bring back the shine and brilliance that
+                            your
+                            tiles had when ﬁrst installed. And the best part? This stunning makeover is completed very
+                            quickly, often in just a few hours, seamlessly ﬁtting into your busy life without
+                            disruption.</p>
+                        <div class="card__footer d-flex align-items-center">
+                            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href="/our-services/area-rug-cleaning" style="font-size: 13px;">
+                                <span class="me-2">LEARN MORE ABOUT TILE & GROUT CLEANING</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <span class="card__cta-note"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 mt-4 mt-md-0">
+                <div class="card border-0">
+                    <img src="images/div-3 (3).png" class="card-img-top rounded" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold ">RESTORE THE BEAUTY OF YOUR WOOD FLOORS</h5>
+                        <p class="card-text pb-3 pl-5 pr-5">"Bring new life to your hardwood ﬂoors with our services! We
+                            do everything from a basic clean and buff to getting rid of old wax, and even recoating your
+                            ﬂoor. Our deep cleaning gets rid of
+                            scratches and stains, making your ﬂoors look bright and new again. We take away years of
+                            dullness, revealing the ﬂoor's innate glow, and then seal its beauty with a ﬁnish that
+                            guards
+                            against future wear and tear.</p>
+                        <div class="card__footer d-flex align-items-center">
+
+                            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href="/our-services/area-rug-cleaning">
+                                <span class="me-2 fw-medium " style="font-size: 12px;">LEARN MORE ABOUT HARDWOOD FLOOR REFINISHING</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <span class="card__cta-note"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+
+        document.querySelectorAll('.nav-link').forEach(function (tab) {
+            tab.addEventListener('click', function (event) {
+                event.preventDefault();
+                var targetTabId = this.getAttribute('data-bs-target');
+                document.querySelectorAll('.tab-pane').forEach(function (tabPane) {
+                    tabPane.classList.remove('show', 'active');
+                });
+                document.querySelector(targetTabId).classList.add('show', 'active');
+                document.querySelectorAll('.nav-link').forEach(function (tabLink) {
+                    tabLink.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

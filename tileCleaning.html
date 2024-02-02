@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tile & Grout Cleaning</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/tileCleaning.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" class="logo" alt="logo" />
+          <img src="images/logo-mobile.png" class="logo-mobile" alt="logo" />
+        </a>
+
+        <form class="d-flex mobile-search" role="search">
+          <input
+            id="searchInputMobile"
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            style="display: none"
+          />
+          <button
+            class="btn btn-outline-success"
+            type="button"
+            onclick="toggleSearchMobile()"
+          >
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item dropdown mega-menu hover-dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                OUR SERVICES
+              </a>
+              <div class="dropdown-menu mega-area">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3 dropdown-list">
+                    <a class="dropdown-item" href="#">Carpet Cleaning</a>
+                    <a class="dropdown-item" href="#">Upholstery Cleaning</a>
+                    <a class="dropdown-item" href="#">Tile & Grout Cleaning</a>
+                    <a class="dropdown-item" href="#"
+                      >Hardwood Floor refinishing</a
+                    >
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <a class="dropdown-item" href="#">Commercial Cleaning</a>
+                    <a class="dropdown-item" href="#">Area Rug Cleaning</a>
+                    <a class="dropdown-item" href="#"
+                      >Car, Boat & RV Cleaning</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown mega-menu hover-dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ABOUT US
+              </a>
+              <div class="dropdown-menu mega-area">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3 dropdown-list">
+                    <a class="dropdown-item" href="#">Something..</a>
+                    <a class="dropdown-item" href="#">Something..</a>
+                    <a class="dropdown-item" href="#">Something..</a>
+                    <a class="dropdown-item" href="#">Something..</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >CONTACT US</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="#">FAQ'S</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="d-flex" role="search">
+          <input
+            id="searchInput"
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            style="display: none"
+          />
+          <button
+            class="btn btn-outline-success"
+            type="button"
+            onclick="toggleSearch()"
+          >
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+
+        <div class="last-div">
+          <div class="child-divider">
+            <div class="child-1">
+              <a class="nav-link active" aria-current="page" href="#"
+                >RESIDENTIAL</a
+              >
+            </div>
+            <div class="child-2">
+              <a class="nav-link active" aria-current="page" href="#"
+                >COMMERCIAL</a
+              >
+            </div>
+          </div>
+
+          <div class="child-3">
+            <a class="nav-link active" aria-current="page" href="#"
+              >QUOTE & SCHEDULE</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main style="background-color: #f3f1f6">
+      <div class="hero-1"></div>
+      <div class="container mt-5">
+        <h3 class="card-title fw-bold pb-5">TILE & GROUT CLEANNG</h3>
+        <div class="row mb-5">
+          <div class="col-md-7">
+            <div class="h--accent"></div>
+            <p>
+              Cleaning tile floors by yourself is tough and often ineffective
+              for deep cleaning. Regular mopping misses the dirt that settles
+              deep in your grout lines. Since grout is porous, it absorbs all
+              the dirt, grime, and spills, causing your tiles to lose their
+              original color
+            </p>
+            <p>
+              Our professional tile and grout cleaning service uses an advanced
+              hot water extraction method. This technique is designed to reach
+              and remove the hidden dirt, restoring the brightness of your f
+              loors. Additionally, our process is proven to remove up to 95% of
+              allergens from grout, contributing to a cleaner and healthier
+              environment in your home
+            </p>
+          </div>
+          <div class="col-md-5 mt-4 mt-md-0">
+            <div
+              class="card p-3 w-5 floatingcard d-none d-md-block"
+              style="
+                position: absolute;
+                top: 50%;
+                width: 300px;
+                right: 4%;
+                text-align: center;
+              "
+            >
+              <h5>BOOK YOUR TILE & GROUT CLEANING</h5>
+              <p>We offer instant quotes and online booking</p>
+              <button
+                style="background-color: rgb(75, 26, 139); color: white"
+                type="button"
+                class="btn btn-primary mx-0 fw-bold"
+              >
+                GET QUOTE
+              </button>
+            </div>
+
+            <div class="image">
+              <img
+                src="images/tile-baby.png"
+                class="img-fluid"
+                alt="Carpet Cleaning Image"
+                width="350px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="tab-content mb-5 pb-5" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <div class="container mt-5">
+              <div class="row mb-5">
+                <div class="col-md-5 mt-4 mt-md-0">
+                  <div class="image">
+                    <img
+                      src="images/tile-grout-cleaning.png"
+                      class="img-fluid"
+                      alt="Carpet Cleaning Image"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <h5 class="mb-4">
+                    ADVANCED TILE AND GROUT CLEANING TECHNOLOGY
+                  </h5>
+                  <p class="mb-4">
+                    Our approach to tile and grout cleaning involves a
+                    sophisticated system that combines high-pressure water and
+                    vacuum technology with a specially formulated cleaning
+                    solution. This method ensures a thorough clean without
+                    leaving behind any residue.
+                  </p>
+                  <h5 class="mb-4">EXPERIENCE OUR METHODFIRST-HAND</h5>
+                  <p class="mb-4">
+                    To showyouthe effectiveness of our process, we provide free
+                    in-home demonstrations of our tile and grout cleaning. This
+                    way, you can witness firsthand the remarkable results before
+                    deciding to book a full cleaning
+                  </p>
+                  <h5 class="mb-4">A HEALTHIER HOME ENVIRONMENT</h5>
+                  <p class="mb-4">
+                    Our cleaning technique is more than just about aesthetics;
+                    it effectively eliminates an average of 95% of common
+                    household allergens from your tile and grout, contributing
+                    to a cleaner and healthier living space.
+                  </p>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-md-5 mt-4 mt-md-0">
+                  <div class="image">
+                    <img
+                      src="images/tile-grout-cleaning.png"
+                      class="img-fluid"
+                      alt="Carpet Cleaning Image"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <h5 class="mb-4">STAIN-DEFYING GROUT SOLUTION</h5>
+                  <p class="mb-4">
+                    To shield your grout lines against mishaps such as minor
+                    spills and marks, Capital Carpet Solutions uses a robust
+                    clear grout sealant. This finish adds a layer of protection,
+                    keeping your grout pristine
+                  </p>
+                  <h5 class="mb-4">BUILDING A DEFENSE AGAINST SPILLS</h5>
+                  <p class="mb-4">
+                    Like carpet, grout is porous and can easily absorb dirt and
+                    spills. Our sealant acts as a barrier, making it simpler to
+                    clean any spills on your grout before they penetrate the
+                    surface
+                  </p>
+                  <h5 class="mb-4">ENHANCE OR CHANGE YOUR GROUT'S COLOR</h5>
+                  <p class="mb-4">
+                    For tackling deep-seated, tough stains, we suggest our color
+                    sealant. It not only restores your grout to a consistent
+                    color but also includes all the protective qualities of our
+                    clear sealant. Plus, you have the option to select a
+                    brand-new color, offering a chance to completely revamp the
+                    look of your space.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid mt-5 pt-5">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-7 p-4 pt-0">
+              <h3 class="fw-bold pb-5">Tips for grout cleaning:</h3>
+              <h5 class="mb-4">
+                MAINTAINING YOUR TILE FLOOR'S LONG-LASTING BEAUTY
+              </h5>
+              <p class="mb-4">
+                To keep your tile floor looking beautiful and to extend the life
+                of the sealants, follow these simple care tips:
+              </p>
+              <p class="mb-4">
+                Vacuum or sweep before mopping: This helps remove as much dry
+                soil as possible, preventing scratches or damage during wet
+                cleaning. Always rinse after mopping: This step ensures that no
+                cleaning residue is left behind, which could otherwise attract
+                more dirt. Stay away from bleach and harsh chemicals: Such
+                cleaners can deteriorate the grout and sealants over time. Opt
+                for gentler cleaning products to keep your f loors safe and
+                intact.
+              </p>
+            </div>
+            <div class="col-md-5 mt-4 mt-md-0">
+              <div class="image">
+                <img
+                  src="images/rug-cleaning.png"
+                  class="img-fluid"
+                  alt="Carpet Cleaning Image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid banner mb-5">
+        <h2 class="display-4">MASSIVE DISCOUNTS & OFFERS</h2>
+        <p class="lead">
+          Unlock exclusive deals and surprises! Enter your email to join our VIP
+          list and be the first to know about special offers and promotions.
+        </p>
+        <form class="d-flex justify-content-center mt-4 w-25 mx-auto">
+          <input
+            type="email"
+            class="form-control me-2 w-10"
+            placeholder="Your Email"
+          />
+          <button type="submit" class="btn btn-warning">Subscribe</button>
+        </form>
+      </div>
+    </main>
+    <div class="container-fluid mt-5 pt-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-7 p-4 pt-0">
+            <p class="mb-4">
+              Our service begins with a thorough inspection of your floor by our
+              technicians. They assess the type of tile and check for any grout
+              damage to determine the best cleaning approach.
+            </p>
+            <h5 class="mb-4">1- Initial Cleaning:</h5>
+            <p class="mb-4">
+              We start by scrubbing the grout with a pH-balanced solution, which
+              loosens the dirt trapped in the grout pores.
+            </p>
+            <h5 class="mb-4">2- Advanced Cleaning Equipment:</h5>
+            <p class="mb-4">
+              Next, we employ our specialized cleaning machines designed for
+              tile and grout. These machines apply hot water forcefully onto
+              your tiles and grout, simultaneously extracting the dirt
+            </p>
+            <h5 class="mb-4">3- Final Inspection:</h5>
+            <p class="mb-4">
+              After cleaning, we conduct a final review with you to ensure your
+              complete satisfaction with the results
+            </p>
+            <h5 class="mb-4">4- Additional Services:</h5>
+            <p class="mb-4">
+              During the appointment, you have the option to request
+              professional cleaning for other types of flooring
+            </p>
+            <h5 class="mb-4">5- Quick Drying Time:</h5>
+            <p class="mb-4">
+              Your tile and grout will be dry and ready to use within hours,
+              minimizing any inconvenience
+            </p>
+            <p class="mb-4">
+              This comprehensive process ensures a deep and effective clean,
+              leaving your tile and grout looking fresh and revitalized."
+            </p>
+          </div>
+          <div class="col-md-5 mt-4 mt-md-0">
+            <div class="image">
+              <img
+                src="images/tile-process.png"
+                class="img-fluid"
+                alt="Carpet Cleaning Image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-5 pt-5" style="background-color: #f6f1f1a6">
+      <div class="container">
+        <div class="row pb-5">
+          <div class="col-md-5 mt-4 mt-md-0">
+            <div class="image">
+              <img
+                src="images/tile.png"
+                class="img-fluid"
+                alt="Carpet Cleaning Image"
+                style="height: 28rem; width: 40rem"
+              />
+            </div>
+          </div>
+          <div class="col-md-7 p-4 pt-0">
+            <h3 class="card-title fw-bold pb-5">
+              COMMERCIAL TILE & GROUT CLEANING
+            </h3>
+
+            <p class="mb-4">
+              Whether it's a small room or a large commercial space, our team is
+              equipped to thoroughly clean the tile and grout in your business,
+              bringing them back to their pristine state.
+            </p>
+
+            <p class="mb-4">
+              Our approach for commercial spaces mirrors our residential
+              service. We begin with a detailed inspection of your tile flooring
+              to select the most effective cleaning method. Using advanced tile
+              cleaning machines, we inject hot water into your tile and grout,
+              effectively removing dirt and allergens while extracting them
+              simultaneously.
+            </p>
+            <p class="mb-4">
+              Our approach for commercial spaces mirrors our residential
+              service. We begin with a detailed inspection of your tile flooring
+              to select the most effective cleaning method. Using advanced tile
+              cleaning machines, we inject hot water into your tile and grout,
+              effectively removing dirt and allergens while extracting them
+              simultaneously.
+            </p>
+            <p class="mb-4">
+              Additionally, you can opt for a color seal treatment for your
+              grout. This not only prolongs the cleanliness of your grout but
+              also serves as a protective barrier, preventing dirt from
+              penetrating. It's an excellent way to maintain the appearance and
+              hygiene of your tiled areas
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid p-5" style="background-color: #f3f1f6a6">
+      <div class="container">
+        <h2 class="text-center md-5">FREQUENTLY ASKED QUESTIONS</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                HOW DO I CLEAN GROUT?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                To effectively clean grout without damaging it, steer clear of
+                harsh chemicals like bleach that can degrade sealants. The
+                safest and most efficient method is to use a natural grout
+                cleaner. <br> <br>
+                Here's a simple recipe we recommend: <br><br>
+                ●  Mix 1/2 cup of baking soda, 1/4 cup of hydrogen peroxide, and 1 teaspoon of
+ dish soap. <br>
+ ●  Combine these ingredients well. <br>
+ ●  Apply the mixture to the grout and let it sit for 10 minutes. <br>
+ ●  Afterward, give it a good scrub and rinse it off. <br> <br>
+ This gentle yet effective approach will help keep your grout clean and preserved.
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+              WHAT’S CAPITAL CARPET SOLUTIONS CLEANING PROCESS?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Whenweclean your tile and grout, we focus on each grout line and tile surface with
+ specialized cleaners designed specifically for tile and grout. Our process involves: <br> <br>
+ Detailed Scrubbing: Each grout line and tile is thoroughly scrubbed to loosen and
+ lift the dirt.<br>
+ High-Pressure Cleaning: We use a high-pressure cleaning system connected to
+ our truck-mounted unit. This powerful setup penetrates deep into the grout lines,
+ effectively dislodging and removing the embedded dirt and grime. <br> <br>
+ This meticulous approach ensures a deep clean that rejuvenates your tile and grout,
+ leaving them looking refreshed and revitalized.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+              REASONS TO PROFESSIONALLY CLEAN YOUR TILE AND GROUT?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Over time, similar to carpets, your tile and grout accumulate dirt, which can diminish the
+ appearance of your tiles and lead to grout discoloration. Here's why a professional
+ cleaning is essential <br> <br>
+ Deep Cleaning: Regular cleaning methods can't reach the deep-down dirt that
+ professional tile and grout cleaning can. <br>
+ Restoration of Appearance: Our service restores the original shine and color of
+ your tiles, making them look as good as new. <br>
+ Longevity of Tiles and Grout: Regular professional cleaning extends the life of
+ your tiles and grout by preventing long-term damage from dirt and grime <br> <br>
+ In essence, professional tile and grout cleaning is not just about cleanliness; it's also
+ about preserving and restoring the beauty and longevity of your tiled areas.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+              FREQUENCY OFTILE FLOOR CLEANING?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                The need for professional tile and grout cleaning varies, much like with carpets. Several
+                factors play a role in determining how often this service is needed: <br> <br>
+                Foot Traffic: The amount of daily foot traffic can significantly impact how quickly
+                your tiles and grout become dirty. <br>
+                Presence of Children and Pets: Homes with children and pets may require more
+ frequent cleanings due to additional spills and debris. <br>
+ Regular Maintenance: How often and how well you maintain your tile floors also
+ affects the frequency of professional cleanings. <br> <br>
+ Considering these factors, a general guideline is to have your tile and grout
+ professionally cleaned once a year. However, in high-traffic areas or homes with pets
+ and children, you might consider more frequent cleanings for optimal maintenance and
+ hygiene.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="text-center mt-5 fw-bolder">
+        WITH YOUR TILE & GROUT NOW CLEANER THAN EVER BEFORE
+    </h1>
+    <div class="container mt-5 p-5">
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-6">
+          <div class="card border-0">
+            <img
+              src="images/upholstery-footer.png"
+              class="card-img-top rounded"
+              alt="Card Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">
+                REVIVE THE DAZZLE OF YOUR UPHOLSTERY
+              </h5>
+              <p class="card-text pb-3 pl-5 pr-5">
+                Rediscover the original charm of your upholstery with our expert cleaning services. Our
+ highly trained teams, armed with state-of-the-art equipment, specialize in rejuvenating
+ your furnishings. Expect a noticeable transformation as we restore the original vibrancy
+ and beauty of your upholstery. The best part? We deliver these incredible results swiftly,
+ often within just a few hours, ensuring minimal disruption to your daily routine.
+ Experience the joy of your upholstery looking as splendid as it did on the first day.
+              </p>
+              <div class="card__footer d-flex align-items-center">
+                <a
+                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                  href="/our-services/area-rug-cleaning"
+                  style="font-size: 13px"
+                >
+                  <span class="me-2"
+                    >LEARN MORE ABOUT UPHOLSTERY CLEANING</span
+                  >
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+                <span class="card__cta-note"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 mt-4 mt-md-0">
+          <div class="card border-0">
+            <img
+              src="images/div-3 (3).png"
+              class="card-img-top rounded"
+              alt="Card Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">
+                RESTORE THE BEAUTY OF YOUR WOOD FLOORS
+              </h5>
+              <p class="card-text pb-3 pl-5 pr-5">
+                "Bring new life to your hardwood ﬂoors with our services! We do
+                everything from a basic clean and buff to getting rid of old
+                wax, and even recoating your ﬂoor. Our deep cleaning gets rid of
+                scratches and stains, making your ﬂoors look bright and new
+                again. We take away years of dullness, revealing the ﬂoor's
+                innate glow, and then seal its beauty with a ﬁnish that guards
+                against future wear and tear.
+              </p>
+              <div class="card__footer d-flex align-items-center">
+                <a
+                  class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                  href="/our-services/area-rug-cleaning"
+                >
+                  <span class="me-2 fw-medium" style="font-size: 12px"
+                    >LEARN MORE ABOUT HARDWOOD FLOOR REFINISHING</span
+                  >
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+                <span class="card__cta-note"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script>
+      document.querySelectorAll(".nav-link").forEach(function (tab) {
+        tab.addEventListener("click", function (event) {
+          event.preventDefault();
+          var targetTabId = this.getAttribute("data-bs-target");
+          document.querySelectorAll(".tab-pane").forEach(function (tabPane) {
+            tabPane.classList.remove("show", "active");
+          });
+          document.querySelector(targetTabId).classList.add("show", "active");
+          document.querySelectorAll(".nav-link").forEach(function (tabLink) {
+            tabLink.classList.remove("active");
+          });
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
