@@ -1,0 +1,194 @@
+@font-face {
+    font-family: regular;
+    src: url(fonts/Montserrat-Regular.ttf);
+  }
+  @font-face {
+    font-family: mBold;
+    src: url(fonts/Montserrat-Bold.ttf);
+  }
+  @font-face {
+    font-family: mSemi-Bold;
+    src: url(fonts/Montserrat-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: mExtra-Bold;
+    src: url(fonts/Montserrat-ExtraBold.ttf);
+  }
+  @font-face {
+    font-family: mBlack;
+    src: url(fonts/Montserrat-Black.ttf);
+  }
+
+  /* NAVBAR CODE */
+  html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden !important;
+}
+/* HEADER  */
+.logo {
+  width: 160px;
+}
+.navbar {
+  padding: 0;
+  font-family: mSemi-Bold;
+  font-size: 14px;
+  color: #000;
+}
+.logo-mobile {
+  display: none;
+}
+
+.last-div {
+  position: static;
+  margin-left: 10px;
+  width: 250px;
+  height: 80px;
+  background-color: #5ce1e6;
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  justify-content: flex-end;
+}
+.child-divider {
+  display: flex;
+  flex-direction: row;
+  background-color: #409b9f;
+}
+.child-1 {
+  padding: 10px;
+  flex: 1;
+  background-color: #5ce1e6;
+  text-align: center;
+}
+.child-2 {
+  text-align: center;
+  flex: 1;
+  padding: 10px;
+}
+
+.child-3 {
+  border-top: 1px solid;
+  border-image: linear-gradient(
+    to right,
+    transparent,
+    rgb(156, 156, 156),
+    transparent
+  );
+  border-image-slice: 1;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.mega-menu {
+  position: static;
+  left: 30px;
+}
+.mega-area {
+  position: absolute;
+  right: 0;
+  left: 0px;
+  width: 100%;
+}
+.mega-area .row {
+  margin-left: 30%;
+}
+.mobile-search .btn-outline-success {
+  display: none;
+}
+.mobile-search {
+  display: none;
+}
+
+/*  NAV BAR ABOVE */
+    .main-container{
+        margin-top: 10rem;
+    }
+body h1 {
+    font-family: mBold;
+}
+body h3 {
+    font-family: mBold;
+}
+body p {
+    font-family: regular;
+}
+body th {
+    font-family: mSemi-Bold;
+}
+body input {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+body h4, h5, span {
+    font-family: mSemi-Bold;
+}
+tr .fold{
+    margin-bottom: 10px;
+}
+    .status {
+/* padding: 1rem; */
+padding: 0.3rem 0;
+background: #5ce1e6;
+color: black;
+margin: 0.5rem;
+/* border-radius: 5%; */
+min-width: 20rem;
+font-size: 0.5rem;
+box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
+cursor: pointer;
+position: relative;
+;
+}
+
+
+.status :hover {
+background: #5ce1e6;
+color: black;
+box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
+transition: all 0.3s ease;
+}
+
+.status h4 {
+font-size: 1.1rem;
+font-weight: 700;
+margin: 0.5rem;
+
+}
+
+.status span {
+background-color: black; 
+color: #5ce1e6;
+padding: 0.2rem 0.5rem;
+margin: 0.5rem 1rem;
+border-radius: 10%;
+display: inline-block;
+width: fit-content;
+}
+#nextButton {
+background-color: #5ce1e6;
+color: black;
+padding: 0.5rem 1rem;
+border-radius: 5%;
+border: none;
+font-size: 1rem;
+font-weight: 700;
+
+cursor: pointer;
+box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.inactive {
+background: #bfbfbf;
+color: rgb(134, 131, 131)
+}
+
+.inactive span {
+background-color: rgb(134, 131, 131); 
+color: #ccc;
+}

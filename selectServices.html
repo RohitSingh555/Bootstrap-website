@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Services</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/selectServices.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" class="logo" alt="logo" />
+                <img src="images/logo-mobile.png" class="logo-mobile" alt="logo" />
+            </a>
+
+            <form class="d-flex mobile-search" role="search">
+                <input id="searchInputMobile" class="form-control me-2" type="search" placeholder="Search"
+                    aria-label="Search" style="display: none" />
+                <button class="btn btn-outline-success" type="button" onclick="toggleSearchMobile()">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown mega-menu hover-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            OUR SERVICES
+                        </a>
+                        <div class="dropdown-menu mega-area">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3 dropdown-list">
+                                    <a class="dropdown-item" href="/carCleaning.html">Carpet Cleaning</a>
+                                    <a class="dropdown-item" href="/upholsteryCleaning.html">Upholstery Cleaning</a>
+                                    <a class="dropdown-item" href="/tileCleaning.html">Tile & Grout Cleaning</a>
+                                    <a class="dropdown-item" href=""
+                                      >Hardwood Floor refinishing</a
+                                    >
+                                  </div>
+                                  <div class="col-sm-6 col-lg-3">
+                                    <a class="dropdown-item" href="/commercialCleaning.html">Commercial Cleaning</a>
+                                    <a class="dropdown-item" href="arearugCleaning.html">Area Rug Cleaning</a>
+                                    <a class="dropdown-item" href="carCleaning.html"
+                                      >Car, Boat & RV Cleaning</a
+                                    >
+                                  </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown mega-menu hover-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ABOUT US
+                        </a>
+                        <div class="dropdown-menu mega-area">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3 dropdown-list">
+                                    <a class="dropdown-item" href="#">Something..</a>
+                                    <a class="dropdown-item" href="#">Something..</a>
+                                    <a class="dropdown-item" href="#">Something..</a>
+                                    <a class="dropdown-item" href="#">Something..</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/contactUs.html">CONTACT US</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">FAQ'S</a>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="d-flex" role="search">
+                <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                    style="display: none" />
+                <button class="btn btn-outline-success" type="button" onclick="toggleSearch()">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+
+            <div class="last-div">
+                <div class="child-divider">
+                    <div class="child-1">
+                        <a class="nav-link active" aria-current="page" href="#">RESIDENTIAL</a>
+                    </div>
+                    <div class="child-2">
+                        <a class="nav-link active" aria-current="page" href="#">COMMERCIAL</a>
+                    </div>
+                </div>
+
+                <div class="child-3">
+                    <a class="nav-link active" aria-current="page" href="#">QUOTE & SCHEDULE</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main style="background-color: white">
+        <div class="container my-4">
+            <div class="d-flex flex-row w-full justify-content-center">
+                <div class="px-2 status">
+                    <h4><span class="" >1</span>Select Services</h4>
+                    <div class="diagonal"></div>
+                </div>
+                <div class="px-2 status inactive">
+                    <h4><span>2</span>Scheduling</h4>
+                    <div class="diagonal"></div>
+                </div>
+                <div class="px-2 status inactive">
+                    <h4><span>3</span>Your Information</h4>
+                    <div class="diagonal"></div>
+                </div>
+                <div class="px-2 status inactive">
+                    <h4><span>4</span>Review</h4>
+                    <!-- <div class="diagonal"></div> -->
+                </div>
+            </div>
+            <h1 class="my-4">WHAT CAN WE CLEAN FOR YOU?</h1>
+            <hr style="width: 40%; margin-left: 0;">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 ">
+                
+                    <table class="fold-table">
+                        <tbody>
+                          <tr class="view">
+                            <td></td>
+                            <td class="arrow"></td>
+                          </tr>
+                          <tr class="fold">
+                            <td colspan="7">
+                              <div class="fold-content">
+                                <h3>CARPET CLEANING</h3>
+                                <p>Every carpet cleaning is proven to remove an average of 94% of common household allergens. We remove the dirt you can see and the allergens you can’t.</p>
+                                <table>
+                                  <thead>
+                                    <tr>
+                                      <th>Price</th><th>Clean</th><th>Protect</th><th>Deodorize</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th>Room</th>
+                                        <td>
+                                            <div class="d-flex flex-row mb-3 product" data-price="70" data-name="room-carpet-clean">
+                                                <button class="btn btn-primary">-</button>
+                                                <input class="w-25 form-control " type="text" min="0" pattern="[0-9]*" value="0">
+                                                 <button class="btn btn-primary">+</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-row mb-3 product" data-price="15" data-name="room-carpet-protect">
+                                                <button class="btn btn-primary">-</button>
+                                                <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                                <button class="btn btn-primary">+</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-row mb-3 product" data-price="10" data-name="room-carpet-deodorize">
+                                                <button class="btn btn-primary">-</button>
+                                                <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                                <button class="btn btn-primary">+</button>
+                                            </div>
+                                        </td>
+                                    
+                                    </tr>
+                                    <tr>
+                                      <th>hallway</th>
+                                      <td>
+                                        <div class="d-flex flex-row mb-3 product" data-price="50" data-name="hallway-carpet-clean">
+                                            <button class="btn btn-primary">-</button>
+                                            <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                             <button class="btn btn-primary">+</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-row mb-3 product" data-price="15" data-name="hallway-carpet-protect">
+                                            <button class="btn btn-primary">-</button>
+                                            <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                            <button class="btn btn-primary">+</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-row mb-3 product" data-price="10" data-name="hallway-carpet-deodorize">
+                                            <button class="btn btn-primary">-</button>
+                                            <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                            <button class="btn btn-primary">+</button>
+                                        </div>
+                                    </td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <th>Staircase</th>
+                                      <td>
+                                        <div class="d-flex flex-row mb-3 product" data-price="70" data-name="staircase-carpet-clean">
+                                            <button class="btn btn-primary">-</button>
+                                            <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                             <button class="btn btn-primary">+</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-row mb-3 product" data-price="15" data-name="staircase-carpet-protect">
+                                            <button class="btn btn-primary">-</button>
+                                            <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                            <button class="btn btn-primary">+</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-row mb-3 product" data-price="10" data-name="staircase-carpet-deodorize">
+                                            <button class="btn btn-primary">-</button>
+                                            <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                            <button class="btn btn-primary">+</button>
+                                        </div>
+                                    </td>
+                                    </tr>
+                                  </tbody>
+                                </table>          
+                              </div>
+                            </td>
+                          </tr>
+    
+    
+    
+    
+    
+                          <tr class="view">
+                            <td></td>
+                            <td class="arrow"></td>
+                          </tr>
+                          <tr class="fold my-5">
+                            <td colspan="7" >
+                              <div class="fold-content">
+                                <h3>UPHOLSTERY CLEANING</h3>
+                                <p>We examine your furniture and select the best process to safely clean and protect any kind of upholstery.</p>
+                                <table>
+                                  <thead>
+                                    <tr>
+                                      <th>Price</th><th>Clean</th><th>Protect</th><th>Deodorize</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th>Sofa</th>
+                                        <td>
+                                            <div class="d-flex flex-row mb-3 product" data-price="150" data-name="sofa-upholstery-clean">
+                                                <button class="btn btn-primary">-</button>
+                                                <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                                 <button class="btn btn-primary">+</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-row mb-3 product" data-price="50" data-name="sofa-upholstery-protect">
+                                                <button class="btn btn-primary">-</button>
+                                                <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                                <button class="btn btn-primary">+</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-row mb-3 product" data-price="25" data-name="sofa-upholstery-deodorize">
+                                                <button class="btn btn-primary">-</button>
+                                                <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                                <button class="btn btn-primary">+</button>
+                                            </div>
+                                        </td>
+                                    
+                                    </tr>
+                                    <tr>
+                                      <th>Sectional</th>
+                                      <td>
+                                        <div class="d-flex flex-row mb-3 product" data-price="250" data-name="sectional-upholstery-clean">
+                                            <button class="btn btn-primary">-</button>
+                                            <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                             <button class="btn btn-primary">+</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-row mb-3 product" data-price="75" data-name="sectional-upholstery-protect">
+                                            <button class="btn btn-primary">-</button>
+                                            <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                            <button class="btn btn-primary">+</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-row mb-3 product" data-price="30" data-name="sectional-upholstery-deodorize">
+                                            <button class="btn btn-primary">-</button>
+                                            <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                            <button class="btn btn-primary">+</button>
+                                        </div>
+                                    </td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <th>Loveseat</th>
+                                      <td>
+                                        <div class="d-flex flex-row mb-3 product" data-price="100" data-name="loveseat-upholstery-clean">
+                                            <button class="btn btn-primary">-</button>
+                                            <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                             <button class="btn btn-primary">+</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-row mb-3 product" data-price="40" data-name="loveseat-upholstery-protect">
+                                            <button class="btn btn-primary">-</button>
+                                            <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                            <button class="btn btn-primary">+</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-row mb-3 product" data-price="20" data-name="loveseat-upholstery-deodorize">
+                                            <button class="btn btn-primary">-</button>
+                                            <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                            <button class="btn btn-primary">+</button>
+                                        </div>
+                                    </td>
+                                    </tr>
+    
+                                    <tr>
+                                        <th>Chair</th>
+                                        <td>
+                                          <div class="d-flex flex-row mb-3 product" data-price="75" data-name="chair-upholstery-clean">
+                                              <button class="btn btn-primary">-</button>
+                                              <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                               <button class="btn btn-primary">+</button>
+                                          </div>
+                                      </td>
+                                      <td>
+                                          <div class="d-flex flex-row mb-3 product" data-price="20" data-name="chair-upholstery-protect">
+                                              <button class="btn btn-primary">-</button>
+                                              <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                              <button class="btn btn-primary">+</button>
+                                          </div>
+                                      </td>
+                                      <td>
+                                          <div class="d-flex flex-row mb-3 product" data-price="10" data-name="chair-upholstery-deodorize">
+                                              <button class="btn btn-primary">-</button>
+                                              <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                              <button class="btn btn-primary">+</button>
+                                          </div>
+                                      </td>
+                                      </tr>
+    
+                                      <tr>
+                                        <th>Ottoman</th>
+                                        <td>
+                                          <div class="d-flex flex-row mb-3 product" data-price="50" data-name="ottoman-upholstery-clean">
+                                              <button class="btn btn-primary">-</button>
+                                              <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                               <button class="btn btn-primary">+</button>
+                                          </div>
+                                      </td>
+                                      <td>
+                                          <div class="d-flex flex-row mb-3 product" data-price="10" data-name="ottoman-upholstery-protect">
+                                              <button class="btn btn-primary">-</button>
+                                              <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                              <button class="btn btn-primary">+</button>
+                                          </div>
+                                      </td>
+                                      <td>
+                                          <div class="d-flex flex-row mb-3 product" data-price="5" data-name="ottoman-upholstery-deodorize">
+                                              <button class="btn btn-primary">-</button>
+                                              <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                              <button class="btn btn-primary">+</button>
+                                          </div>
+                                      </td>
+                                      </tr>
+    
+                                      <tr>
+                                        <th>Dining room chair</th>
+                                        <td>
+                                          <div class="d-flex flex-row mb-3 product" data-price="40" data-name="diningroomchair-upholstery-clean">
+                                              <button class="btn btn-primary">-</button>
+                                              <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                               <button class="btn btn-primary">+</button>
+                                          </div>
+                                      </td>
+                                      <td>
+                                          <div class="d-flex flex-row mb-3 product" data-price="10" data-name="diningroomchair-upholstery-protect">
+                                              <button class="btn btn-primary">-</button>
+                                              <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                              <button class="btn btn-primary">+</button>
+                                          </div>
+                                      </td>
+                                      <td>
+                                          <div class="d-flex flex-row mb-3 product" data-price="5" data-name="diningroomchair-upholstery-deodorize">
+                                              <button class="btn btn-primary">-</button>
+                                              <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                              <button class="btn btn-primary">+</button>
+                                          </div>
+                                      </td>
+                                      </tr>
+                                  </tbody>
+                                </table>          
+                              </div>
+                            </td>
+                          </tr>
+    
+    
+    
+    
+                          <tr class="view">
+                            <td></td>
+                            <td class="arrow"></td>
+                          </tr>
+                          <tr class="fold">
+                            <td colspan="7">
+                              <div class="fold-content">
+                                <h3>LEATHER CLEANING</h3>
+                                <p>Leather furniture still takes on the same dirt and pollutants as more common styles of upholstery. Our technicians are trained to clean, moisturize and protect your leather furniture too.</p>
+                                <table>
+                                  <thead>
+                                    <tr>
+                                      <th>Price</th><th>Clean</th><th>Protect</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th>Sofa</th>
+                                        <td>
+                                            <div class="d-flex flex-row mb-3 product" data-price="150" data-name="sofa-leather-clean">
+                                                <button class="btn btn-primary">-</button>
+                                                <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                                 <button class="btn btn-primary">+</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-row mb-3 product" data-price="50" data-name="sofa-leather-protect">
+                                                <button class="btn btn-primary">-</button>
+                                                <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                                <button class="btn btn-primary">+</button>
+                                            </div>
+                                        </td>
+                                      
+                                    
+                                    </tr>
+                                    <tr>
+                                      <th>Sectional</th>
+                                      <td>
+                                        <div class="d-flex flex-row mb-3 product" data-price="250" data-name="sectional-leather-clean">
+                                            <button class="btn btn-primary">-</button>
+                                            <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                             <button class="btn btn-primary">+</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-row mb-3 product" data-price="75" data-name="sectional-leather-protect">
+                                            <button class="btn btn-primary">-</button>
+                                            <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                            <button class="btn btn-primary">+</button>
+                                        </div>
+                                    </td>
+                                   
+                                      
+                                    </tr>
+                                    <tr>
+                                      <th>Loveseat</th>
+                                      <td>
+                                        <div class="d-flex flex-row mb-3 product" data-price="100" data-name="loveseat-leather-clean">
+                                            <button class="btn btn-primary">-</button>
+                                            <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                             <button class="btn btn-primary">+</button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-row mb-3 product" data-price="40" data-name="loveseat-leather-protect">
+                                            <button class="btn btn-primary">-</button>
+                                            <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                            <button class="btn btn-primary">+</button>
+                                        </div>
+                                    </td>
+                                   
+                                    </tr>
+    
+                                    <tr>
+                                        <th>Chair</th>
+                                        <td>
+                                          <div class="d-flex flex-row mb-3 product" data-price="75" data-name="chair-leather-clean">
+                                              <button class="btn btn-primary">-</button>
+                                              <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                               <button class="btn btn-primary">+</button>
+                                          </div>
+                                      </td>
+                                      <td>
+                                          <div class="d-flex flex-row mb-3 product" data-price="20" data-name="chair-leather-protect">
+                                              <button class="btn btn-primary">-</button>
+                                              <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                              <button class="btn btn-primary">+</button>
+                                          </div>
+                                      </td>
+                                   
+                                      </tr>
+    
+                                      <tr>
+                                        <th>Ottoman</th>
+                                        <td>
+                                          <div class="d-flex flex-row mb-3 product" data-price="50" data-name="ottoman-leather-clean">
+                                              <button class="btn btn-primary">-</button>
+                                              <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                               <button class="btn btn-primary">+</button>
+                                          </div>
+                                      </td>
+                                      <td>
+                                          <div class="d-flex flex-row mb-3 product" data-price="10" data-name="ottoman-leather-protect">
+                                              <button class="btn btn-primary">-</button>
+                                              <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                              <button class="btn btn-primary">+</button>
+                                          </div>
+                                      </td>
+                              
+                                      </tr>
+    
+                                      <tr>
+                                        <th>Dining room chair</th>
+                                        <td>
+                                          <div class="d-flex flex-row mb-3 product" data-price="40" data-name="diningroomchair-leather-clean">
+                                              <button class="btn btn-primary">-</button>
+                                              <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                               <button class="btn btn-primary">+</button>
+                                          </div>
+                                      </td>
+                                      <td>
+                                          <div class="d-flex flex-row mb-3 product" data-price="10" data-name="diningroomchair-leather-protect">
+                                              <button class="btn btn-primary">-</button>
+                                              <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                              <button class="btn btn-primary">+</button>
+                                          </div>
+                                      </td>
+                                
+                                      </tr>
+                                  </tbody>
+                                </table>          
+                              </div>
+                            </td>
+                          </tr>
+    
+    
+                          <tr class="view">
+                            <td></td>
+                            <td class="arrow"></td>
+                          </tr>
+                          <tr class="fold">
+                            <td colspan="7">
+                              <div class="fold-content">
+                                <h3>IN-HOME AREA RUG CLEANING</h3>
+                                <p>We remove dirt and allergens from deep within the fibers of your rug with a gentle touch that won’t damage these decorative floor coverings.</p>
+                                <button id="addRowButton" class="btn btn-primary">Add Row</button>
+                                <table>
+                                  <thead>
+                                    <tr>
+                                      <th>Area Rug (L x W)</th><th>Clean</th><th>Protect</th><th>Deodorize</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody id="tbody">
+                                    <tr>
+                                        <th>
+                                            <div class="rug-area d-flex flex-row">
+                                                <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                                <span class="x">x</span>
+                                                <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                            </div>
+                                        </th>
+                                        <td class="rug-column">
+                                            <div class="d-flex flex-row mb-3 product" data-price="0" data-name="inhomearea-rugcleaning-clean">
+                                                <button class="btn btn-primary">-</button>
+                                                <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                                 <button class="btn btn-primary">+</button>
+                                            </div>
+                                        </td>
+                                        <td class="rug-column">
+                                            <div class="d-flex flex-row mb-3 product" data-price="0" data-name="inhomearea-rugcleaning-protect">
+                                                <button class="btn btn-primary">-</button>
+                                                <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                                <button class="btn btn-primary">+</button>
+                                            </div>
+                                        </td>
+                                        <td class="rug-column">
+                                            <div class="d-flex flex-row mb-3 product" data-price="0" data-name="inhomearea-rugcleaning-deodorize">
+                                                <button class="btn btn-primary">-</button>
+                                                <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
+                                                <button class="btn btn-primary">+</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+    
+                                    
+                                  </tbody>
+                                </table>          
+                              </div>
+                            </td>
+                          </tr>
+                          
+    
+    
+    
+                        </tbody>
+                      </table>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="quote">
+                        <div class="price py-3">
+                            <div class="d-flex flex-row align-items-center justify-content-between">
+                                <h4>YOUR QUOTE</h4>
+                                <a id="clear" href="#" class="mr-2">Clear</a>
+                            </div>
+                            
+                            <ul class="total-details"></ul>
+                        </div>
+                        <div id="priceSummary">
+                        </div>
+                        <h5 class="ml-1">Estimated Total </h5><span class="ml-2" id="total">$0</span>
+                    </div>
+                    <a href="./appointment.html"><button id="nextButton" class="text-white btn-block">Next</button></a>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+
+     <!-- FOOTER -->
+  <div class="footer">
+    <div class="container">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top ">
+  
+    
+        <div class="col mb-3 info-ul">
+          <h3 class="mb-3">Info</h3>
+          <ul class="nav flex-column ">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Services</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3">
+        </div>
+    
+        <div class="col mb-3">
+          <h3>Location</h3>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">CAPITAL CARPET SOLUTIONS
+              7091 SHADOW RIDGE DRIVE
+              OTTAWA, ON K4P1B8 <br>
+              (819)-593-7109</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3">
+          <h3>Hours</h3>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">Monday 8:AM - 8:00PM</li>
+            <li class="nav-item mb-2">Tuesday 8:AM - 8:00PM</li>
+            <li class="nav-item mb-2">Wednesday 8:AM - 8:00PM</li>
+            <li class="nav-item mb-2">Thrusday 8:AM - 8:00PM</li>
+            <li class="nav-item mb-2">Friday 8:AM - 8:00PM</li>
+            <li class="nav-item mb-2">Saturday 8:AM - 8:00PM</li>
+            <li class="nav-item mb-2">Sunday 8:AM - 6:00PM</li>
+          </ul>
+        </div>
+        <div class="col mb-1">
+          <h5>Socials</h5>
+          <ul class="nav flex-lg-row">
+            <li class=""><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+            </svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+              <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+            </svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <div class="copyright-div">
+      <p>COPYRIGHT @2023 CAPITAL CARPET SOLUTIONS, ALL RIGHTS RESERVED <br>
+        <a href="">Terms & conditions</a> <br>
+         <a href="">Privacy Policy</a> <br></p>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+
+        document.querySelectorAll('.nav-link').forEach(function (tab) {
+            tab.addEventListener('click', function (event) {
+                event.preventDefault();
+                var targetTabId = this.getAttribute('data-bs-target');
+                document.querySelectorAll('.tab-pane').forEach(function (tabPane) {
+                    tabPane.classList.remove('show', 'active');
+                });
+                document.querySelector(targetTabId).classList.add('show', 'active');
+                document.querySelectorAll('.nav-link').forEach(function (tabLink) {
+                    tabLink.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+    </script>
+    <script>   
+        document.addEventListener('DOMContentLoaded', function() {
+            var totalPriceInfo = {};
+        
+            // Select all rows with class 'view'
+            var viewRows = document.querySelectorAll('.fold-table tr.view');
+        
+            // Add click event listener to each row
+            viewRows.forEach(function(row) {
+                row.addEventListener('click', function() {
+                    // Toggle 'open' class on the clicked row
+                    this.classList.toggle('open');
+        
+                    // Toggle 'open' class on the next sibling element with class 'fold'
+                    var nextFold = this.nextElementSibling;
+                    if (nextFold && nextFold.classList.contains('fold')) {
+                        nextFold.classList.toggle('open');
+                    }
+                });
+        
+        
+        
+            });
+            var foldRows = document.querySelectorAll('.fold-table tr.fold');
+        
+        
+        
+            function groupAndSumPriceInfo(totalPriceInfo) {
+                let groupedPriceInfo = {};
+        
+                for (const key in totalPriceInfo) {
+                    let parts = key.split('-');
+                    if (parts.length >= 3) {
+                        let mainCategory = parts[1];
+                        // Remove numeric suffix from the subcategory
+                        let subCategory = parts[2].replace(/\d+$/, '');
+        
+                        let value = totalPriceInfo[key];
+        
+                        if (!groupedPriceInfo[mainCategory]) {
+                            groupedPriceInfo[mainCategory] = {};
+                        }
+        
+                        if (!groupedPriceInfo[mainCategory][subCategory]) {
+                            groupedPriceInfo[mainCategory][subCategory] = 0;
+                        }
+        
+                        groupedPriceInfo[mainCategory][subCategory] += value;
+                    }
+                }
+        
+                return groupedPriceInfo;
+            }
+        
+            function createPriceSummaryHtml(groupedPriceInfo, totalSum=0) {
+                const priceSummaryDiv = document.getElementById('priceSummary');
+                priceSummaryDiv.innerHTML = ''; // Clear existing content
+        
+                for (const mainCategory in groupedPriceInfo) {
+                    let hasValidEntries = false;
+                    const categoryDiv = document.createElement('div');
+                    categoryDiv.classList.add('mb-3');
+        
+                    const listGroup = document.createElement('ul');
+                    listGroup.classList.add('list-group');
+        
+                    for (const subCategory in groupedPriceInfo[mainCategory]) {
+                        const value = groupedPriceInfo[mainCategory][subCategory];
+                        if (value > 0) {
+                            hasValidEntries = true;
+                            const listItem = document.createElement('li');
+                            listItem.classList.add('list-group-item');
+                            listItem.textContent = `${subCategory.charAt(0).toUpperCase() + subCategory.slice(1)}: $${value.toFixed(2)}`;
+                            listGroup.appendChild(listItem);
+                        }
+                    }
+        
+                    if (hasValidEntries) {
+                        const categoryHeading = document.createElement('h5');
+                        categoryHeading.textContent = mainCategory.charAt(0).toUpperCase() + mainCategory.slice(1);
+                        categoryDiv.appendChild(categoryHeading);
+                        categoryDiv.appendChild(listGroup);
+                        priceSummaryDiv.appendChild(categoryDiv);
+                    }
+        
+                }
+                let total = document.querySelector('#total')
+                total.textContent = '$' + totalSum + '.00';
+        
+            }
+        
+            function updateTotalPrice() {
+                // console.log(key);
+                let totalSum = 0
+                var products = document.querySelectorAll('.product');
+                products.forEach(function(product, index) {
+                    var key = product.dataset.name;
+                    var input = product.querySelector('input[type="text"]');
+                    var count = parseInt(input.value, 10) || 0;
+                    var pricePerUnit = parseInt(product.dataset.price, 10);
+                    var totalPrice = count * pricePerUnit;
+                    //check if totalPrice is NaN
+                    if(!isNaN(totalPrice)){
+                        totalPriceInfo[key] = totalPrice;
+                        // totalPriceInfo[key] = totalPrice;
+                        totalSum += totalPrice;
+                        
+                    }
+                
+                });
+                let groupedInfo = groupAndSumPriceInfo(totalPriceInfo);
+                console.log(groupedInfo);
+                createPriceSummaryHtml(groupedInfo, totalSum);
+        
+                //select div with class price
+                // var price = document.querySelector('.price');
+                //select span with id total under price div
+                // var total = price.querySelector('#total');
+                //modify the text inside the span
+                // total.textContent = '$' + 0;
+        
+                //select ul with class total-details
+                var totalDetails = price.querySelector('.total-details');
+                //empty the ul
+                totalDetails.innerHTML = '';
+                //loop through the totalPriceInfo object
+                for (const key in totalPriceInfo) {
+                    //only create li element if the key is not empty or has value 0
+                    if(!totalPriceInfo[key]){
+                        continue;
+                    }
+                    //create a li element
+                    var li = document.createElement('li');
+                    //add text to the li element
+                    li.textContent = key + ': $' + totalPriceInfo[key];
+                    //append the li element to the ul
+                    totalDetails.appendChild(li);
+                }
+                //add the totalSum to the total span
+                total.textContent = '$' + totalSum;
+        
+                console.log(totalPriceInfo); // You can use this object as needed
+            }
+            
+
+
+        
+        
+        
+            // Add click event listener to each row
+            foldRows.forEach(function(row) {
+                row.addEventListener('click', function(e){
+                    var target = e.target;
+                    if(target.tagName === 'BUTTON'){
+                        var input = target.parentElement.querySelector('input[type="text"]');
+        
+                    var currentValue = parseInt(input.value, 10) || 0;
+                    // console.log(target.parentElement.dataset.name)
+                    
+                    if (target.textContent === '+') {
+                        input.value = currentValue + 1;
+                        updateTotalPrice();
+                        
+                    } else if (target.textContent === '-') {
+                        input.value = Math.max(currentValue - 1, 0); // Prevents the value from going below 0
+                        updateTotalPrice();
+                    }
+                    }
+                })
+            });
+        
+        
+            //select the clear button
+            var clear = document.querySelector('#clear');
+            //add click event listener to the clear button
+            clear.addEventListener('click', function(){
+                //select all the input elements
+                var inputs = document.querySelectorAll('input[type="text"]');
+                //loop through the inputs
+                inputs.forEach(function(input){
+                    //set the value of each input to 0
+                    input.value = 0;
+                })
+                //empty the totalPriceInfo object
+                totalPriceInfo = {};
+                //update the total price
+                updateTotalPrice();
+            })
+        
+            //select the rug area input
+            var rugArea = document.querySelector('.rug-area');
+        
+            function updateDataPrice(e){
+               let rugArea = e.target.parentElement.parentElement.parentElement;
+               let rugCols = rugArea.querySelectorAll('.rug-column');
+            //    console.log(e.target.parentElement.querySelectorAll('input'));
+            //    console.log('rugCols ', rugCols)
+                 let rugAreaInputs = e.target.parentElement.querySelectorAll('input');
+                    let rugAreaInput1 = rugAreaInputs[0];
+                    let rugAreaInput2 = rugAreaInputs[1];
+        
+                    let rugAreaInput1Value = parseInt(rugAreaInput1.value, 10) || 0;
+                    let rugAreaInput2Value = parseInt(rugAreaInput2.value, 10) || 0;
+        
+                    console.log(rugAreaInput1Value, rugAreaInput2Value)
+        
+                    //loop through rugCols and select div with class product
+                    rugCols.forEach(function(rugCol){
+                        let product = rugCol.querySelector('.product');
+                        // console.log(product)
+                        if(product.dataset.name === 'inhomearea-rugcleaning-clean' || product.dataset.name.includes('inhomearea-rugcleaning-clean')){
+                            product.dataset.price = rugAreaInput1Value * rugAreaInput2Value * 2;
+                        }else if(product.dataset.name === 'inhomearea-rugcleaning-protect' || product.dataset.name.includes('inhomearea-rugcleaning-protect')){
+                            product.dataset.price = rugAreaInput1Value * rugAreaInput2Value * 1;
+                        }else if(product.dataset.name === 'inhomearea-rugcleaning-deodorize'  || product.dataset.name.includes('inhomearea-rugcleaning-deodorize')){
+                            product.dataset.price = rugAreaInput1Value * rugAreaInput2Value * 1;
+                        }
+                    })
+                    updateTotalPrice();
+            }
+        
+            //select inputs under rug-area
+            var rugAreaInputs = rugArea.querySelectorAll('input');
+            rugAreaInputs.forEach(input => input.addEventListener('input', updateDataPrice))
+        
+        
+           
+            var addRowButton = document.getElementById('addRowButton');
+            var tbody = document.getElementById('tbody');
+        
+        
+            var count = 2;
+            function addNewRow() {
+                var existingRow = tbody.querySelector('tr');
+                var newRow = existingRow.cloneNode(true);
+        
+                // Reset input values in the new row
+                newRow.querySelectorAll('input[type="text"]').forEach(function(input) {
+                    input.value = '0';
+                });
+                
+                // Reset data-price values in the new row
+                newRow.querySelectorAll('.product').forEach(function(product) {
+                    product.dataset.price = '0';
+                });
+        
+                //append data-name with a rowIndex counter to the product div
+                newRow.querySelectorAll('.product').forEach(function(product) {
+                    product.dataset.name = product.dataset.name + count;
+                });
+        
+        
+                tbody.appendChild(newRow);
+                count++;
+        
+                //select the rug area input
+                let rugArea = newRow.querySelector('.rug-area');
+                //select inputs under rug-area
+                let rugAreaInputs = rugArea.querySelectorAll('input');
+                rugAreaInputs.forEach(input => input.addEventListener('input', updateDataPrice))
+            }
+        
+            // Attach event listener to the add row button
+            addRowButton.addEventListener('click', addNewRow);
+        
+        
+
+
+
+
+
+
+
+            var nextButton = document.getElementById('nextButton');
+
+    // Add a click event listener to the "Next" button
+    nextButton.addEventListener('click', function() {
+        // Store the content of the quote section in local storage
+        storeQuoteContent();
+    });
+    
+    // Function to store the content of the quote section in local storage
+    function storeQuoteContent() {
+        var quoteSection = document.querySelector('.quote');
+        var quoteContent = quoteSection.innerHTML;
+        localStorage.setItem('quoteContent', quoteContent);
+    }
+        
+        });
+        
+        </script>
+</body>
+
+</html>

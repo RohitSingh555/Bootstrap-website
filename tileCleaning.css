@@ -52,16 +52,6 @@
         border-radius: 4px;
     }
     .form-control{
-        width: 50rem;
-    }
-    .fabrics-row{
-        justify-content: center;
-    }
-    .furniture-row{
-        justify-content: center;
-    }
-    
-    .fabrics-row img{
-       width: 50rem;
+        width: 20rem;
     }
     
