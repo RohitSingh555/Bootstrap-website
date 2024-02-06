@@ -95,3 +95,21 @@ p{
     text-shadow: black;
     font-family: mSemi-Bold;
 }
+@media screen and (max-width: 567px) {
+    .info-div{
+        align-items: flex-start;
+    }
+.edit-info{
+        width: 10rem !important;
+    }
+    .confirm-btn{
+        width: 10rem !important;
+    }
+    .reviewContent{
+        margin-left: 1rem !important;
+    }
+    .quote{
+   margin-left: 1rem !important;
+   margin-right: 1rem !important;
+    }
+}

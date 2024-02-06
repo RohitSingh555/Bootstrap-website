@@ -120,43 +120,57 @@
     </nav>
 
     <main style="background-color: #fff;">
-        <div class="d-flex flex-row w-full justify-content-center my-4">
-            <div class="px-2 status" >
+        <div class="d-flex flex-column flex-md-row justify-content-center">
+            <div class="px-2 status mb-2 mb-md-0">
                 <h4><span class="">1</span>Select Services</h4>
                 <div class="diagonal"></div>
             </div>
-            <div class="px-2 status">
+            <div class="px-2 status active mb-2 mb-md-0">
                 <h4><span>2</span>Scheduling</h4>
                 <div class="diagonal"></div>
             </div>
-            <div class="px-2 status ">
+            <div class="px-2 status active mb-2 mb-md-0">
                 <h4><span>3</span>Your Information</h4>
                 <div class="diagonal"></div>
             </div>
-            <div class="px-2 status ">
+            <div class="px-2 status active mb-2 mb-md-0">
                 <h4><span>4</span>Review</h4>
                 <!-- <div class="diagonal"></div> -->
-            </div> 
+            </div>
         </div>
         <div class="d-flex flex-column w-full justify-content-center my-4 info-div">
            
-        <div id="reviewContent" class="col-lg-3">
+        <div id="reviewContent" class="col-lg-3 reviewContent">
            <h1 class="my-4">Confirm Your Details</h1>
+        </div>
+        
+       
+  
+
         </div>
         <div class="col-lg-3">
             <div class="quote">
                 <!-- Content will be injected here -->
             </div>
+            
         </div>
-        <a href="/yourInformation.html" class="btn btn-lg btn-outline-primary my-4 w-25 edit-info">Edit Information</a>
+
+        <div class="last-btns d-flex justify-content-center align-items-center flex-column">
+        <a class="btn btn-primary my-8 w-25 my-4 edit-info" href="/yourInformation.html">Edit Information</a>
         <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary my-8 w-25" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+<button type="button" class="btn btn-primary my-8 w-25 confirm-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
     Confirm
   </button>
-  
-  <!-- Modal -->
+</div>
+
+
+
+
+
+
+          <!-- Modal -->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="staticBackdropLabel">CONGRATULATIONS</h1>
@@ -172,7 +186,6 @@
       </div>
     </div>
   </div>
-        </div>
         
     </main>
 

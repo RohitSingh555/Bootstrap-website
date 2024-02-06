@@ -19,7 +19,7 @@
 
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="images/logo.png" class="logo" alt="logo" />
+                <img src="/images/logo.png" class="logo" alt="logo" />
                 <img src="images/logo-mobile.png" class="logo-mobile" alt="logo" />
             </a>
 
@@ -121,20 +121,20 @@
 
     <main style="background-color: white">
         <div class="container my-4">
-            <div class="d-flex flex-row w-full justify-content-center">
-                <div class="px-2 status">
-                    <h4><span class="" >1</span>Select Services</h4>
+            <div class="d-flex flex-column flex-md-row justify-content-center">
+                <div class="px-2 status mb-2 mb-md-0">
+                    <h4><span class="">1</span>Select Services</h4>
                     <div class="diagonal"></div>
                 </div>
-                <div class="px-2 status inactive">
+                <div class="px-2 status inactive mb-2 mb-md-0">
                     <h4><span>2</span>Scheduling</h4>
                     <div class="diagonal"></div>
                 </div>
-                <div class="px-2 status inactive">
+                <div class="px-2 status inactive mb-2 mb-md-0">
                     <h4><span>3</span>Your Information</h4>
                     <div class="diagonal"></div>
                 </div>
-                <div class="px-2 status inactive">
+                <div class="px-2 status inactive mb-2 mb-md-0">
                     <h4><span>4</span>Review</h4>
                     <!-- <div class="diagonal"></div> -->
                 </div>
@@ -155,6 +155,7 @@
                               <div class="fold-content">
                                 <h3>CARPET CLEANING</h3>
                                 <p>Every carpet cleaning is proven to remove an average of 94% of common household allergens. We remove the dirt you can see and the allergens you can’t.</p>
+                                <div class="table-responsive">
                                 <table>
                                   <thead>
                                     <tr>
@@ -170,6 +171,7 @@
                                                 <input class="w-25 form-control " type="text" min="0" pattern="[0-9]*" value="0">
                                                  <button class="btn btn-primary">+</button>
                                             </div>
+                                            
                                         </td>
                                         <td>
                                             <div class="d-flex flex-row mb-3 product" data-price="15" data-name="room-carpet-protect">
@@ -237,7 +239,9 @@
                                     </td>
                                     </tr>
                                   </tbody>
-                                </table>          
+                                </table>
+                            </div> 
+                                 
                               </div>
                             </td>
                           </tr>

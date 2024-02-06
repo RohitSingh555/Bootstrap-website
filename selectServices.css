@@ -124,6 +124,7 @@ body th {
 body input {
     margin-left: 3px;
     margin-right: 3px;
+    text-align: center;
 }
 body h4, h5, span {
     font-family: mSemi-Bold;
@@ -191,4 +192,17 @@ color: rgb(134, 131, 131)
 .inactive span {
 background-color: rgb(134, 131, 131); 
 color: #ccc;
+}
+@media screen and (max-width: 567px) {
+  .logo-mobile {
+    width: 200px;
+    display: block;
+  }
+  .mobile-table {
+    display: block;
+    /* Add mobile-specific styles and alignments here */
+    text-align: center;
+    /* Add any other styles you need for mobile view */
+}
+
 }
