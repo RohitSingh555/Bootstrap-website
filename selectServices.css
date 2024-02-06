@@ -1,208 +1,238 @@
-@font-face {
-    font-family: regular;
-    src: url(fonts/Montserrat-Regular.ttf);
-  }
-  @font-face {
-    font-family: mBold;
-    src: url(fonts/Montserrat-Bold.ttf);
-  }
-  @font-face {
-    font-family: mSemi-Bold;
-    src: url(fonts/Montserrat-SemiBold.ttf);
-  }
-  @font-face {
-    font-family: mExtra-Bold;
-    src: url(fonts/Montserrat-ExtraBold.ttf);
-  }
-  @font-face {
-    font-family: mBlack;
-    src: url(fonts/Montserrat-Black.ttf);
-  }
-
-  /* NAVBAR CODE */
-  html, body {
-  height: 100%;
-  margin: 0;
-  overflow-x: hidden !important;
-}
-/* HEADER  */
-.logo {
-  width: 160px;
-}
-.navbar {
-  padding: 0;
-  font-family: mSemi-Bold;
-  font-size: 14px;
-  color: #000;
-}
-.logo-mobile {
-  display: none;
+@charset "UTF-8";
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+.pcs:after {
+  content: " pcs";
 }
 
-.last-div {
-  position: static;
-  margin-left: 10px;
-  width: 250px;
-  height: 80px;
-  background-color: #5ce1e6;
-  display: flex;
-  flex-direction: column;
-  border-bottom-left-radius: 50px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  justify-content: flex-end;
-}
-.child-divider {
-  display: flex;
-  flex-direction: row;
-  background-color: #409b9f;
-}
-.child-1 {
-  padding: 10px;
-  flex: 1;
-  background-color: #5ce1e6;
-  text-align: center;
-}
-.child-2 {
-  text-align: center;
-  flex: 1;
-  padding: 10px;
+.cur:before {
+  content: "$";
 }
 
-.child-3 {
-  border-top: 1px solid;
-  border-image: linear-gradient(
-    to right,
-    transparent,
-    rgb(156, 156, 156),
-    transparent
-  );
-  border-image-slice: 1;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+.per:after {
+  content: "%";
 }
 
-.mega-menu {
-  position: static;
-  left: 30px;
+* {
+  box-sizing: border-box;
 }
-.mega-area {
-  position: absolute;
-  right: 0;
-  left: 0px;
+
+body {
+  padding: 0.2em 2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+table {
   width: 100%;
 }
-.mega-area .row {
-  margin-left: 30%;
-}
-.mobile-search .btn-outline-success {
-  display: none;
-}
-.mobile-search {
-  display: none;
+
+table th {
+  text-align: left;
+  border-bottom: 1px solid #ccc;
 }
 
-/*  NAV BAR ABOVE */
-    .main-container{
-        margin-top: 10rem;
-    }
-body h1 {
-    font-family: mBold;
+
+table th, table td {
+  padding: 1.4em;
 }
-body h3 {
-    font-family: mBold;
+
+table.fold-table {
+  border-collapse: separate;
+  border-spacing:0 20px;
 }
-body p {
-    font-family: regular;
+
+table.fold-table > tbody > tr.view td, table.fold-table > tbody > tr.view th {
+  cursor: pointer;
+  font-size: large;
+  font-weight: 700;
 }
-body th {
-    font-family: mSemi-Bold;
+table.fold-table > tbody > tr.view td.arrow,
+table.fold-table > tbody > tr.view th.arrow {
+  position: relative;
+  padding-left: 0px;
+
 }
-body input {
-    margin-left: 3px;
-    margin-right: 3px;
+
+table.fold-table > tbody > tr.view td.arrow::before,
+table.fold-table > tbody > tr.view th.arrow::before {
+  position: absolute;
+  top: 40%;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  margin-top: -8px;
+  font: 16px fontawesome;
+  background-color: #5ce1e6;
+  border-radius: 20%;
+  text-align: center;
+  color: white;
+  content: "";
+  transition: all 0.3s ease;
+}
+table.fold-table > tbody > tr.view {
+  background: #eee;
+}
+table.fold-table > tbody > tr.view:hover {
+  background: white;
+}
+table.fold-table > tbody > tr.view.open {
+  background: black;
+  color: white;
+}
+table.fold-table > tbody > tr.view.open td.arrow::before, table.fold-table > tbody > tr.view.open th.arrow::before {
+  transform: rotate(-180deg);
+  color: #333;
+}
+table.fold-table > tbody > tr.fold {
+  display: none;
+}
+table.fold-table > tbody > tr.fold.open {
+  display: table-row;
+}
+
+.fold-content {
+  padding: 0.5em;
+}
+.fold-content h3 {
+  margin-top: 0;
+}
+.fold-content > table {
+  border: 2px solid #ccc;
+}
+.fold-content > table > tbody tr:nth-child(even) {
+  background: #eee;
+}
+
+.form-control {
     text-align: center;
 }
-body h4, h5, span {
-    font-family: mSemi-Bold;
-}
-tr .fold{
+
+
+
+.quote {
+   background: #eee;
+    padding: 10px;
     margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5%;
+    height: fit-content;
 }
-    .status {
-/* padding: 1rem; */
-padding: 0.3rem 0;
-background: #5ce1e6;
-color: black;
-margin: 0.5rem;
-/* border-radius: 5%; */
-min-width: 20rem;
-font-size: 0.5rem;
-box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
-cursor: pointer;
-position: relative;
-;
+
+.price h4 {
+  font-weight: 500;
+  font-size: 1.35rem;
+  margin-left: 5px;
+
+}
+
+.price a {
+  color: #5ce1e6;
+}
+
+#priceSummary h5{
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+.quote h5 {
+  font-size: medium;
+}
+
+#total {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.status {
+  /* padding: 1rem; */
+  padding: 0.3rem 0;
+  background: #5ce1e6;
+  color: black;
+  margin: 0.5rem;
+  /* border-radius: 5%; */
+  min-width: 20rem;
+  font-size: 0.5rem;
+  box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  position: relative;
+  ;
 }
 
 
 .status :hover {
-background: #5ce1e6;
-color: black;
-box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
-transition: all 0.3s ease;
+  background: #5ce1e6;
+  color: black;
+  box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
 .status h4 {
-font-size: 1.1rem;
-font-weight: 700;
-margin: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0.5rem;
 
 }
 
 .status span {
-background-color: black; 
-color: #5ce1e6;
-padding: 0.2rem 0.5rem;
-margin: 0.5rem 1rem;
-border-radius: 10%;
-display: inline-block;
-width: fit-content;
+  background-color: black; 
+  color: #5ce1e6;
+  padding: 0.2rem 0.5rem;
+  margin: 0.5rem 1rem;
+  border-radius: 10%;
+  display: inline-block;
+  width: fit-content;
 }
-#nextButton {
-background-color: #5ce1e6;
-color: black;
-padding: 0.5rem 1rem;
-border-radius: 5%;
-border: none;
-font-size: 1rem;
-font-weight: 700;
 
-cursor: pointer;
-box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
-}
 
 .inactive {
-background: #bfbfbf;
-color: rgb(134, 131, 131)
+  background: #bfbfbf;
+  color: rgb(134, 131, 131)
 }
 
 .inactive span {
-background-color: rgb(134, 131, 131); 
-color: #ccc;
-}
-@media screen and (max-width: 567px) {
-  .logo-mobile {
-    width: 200px;
-    display: block;
-  }
-  .mobile-table {
-    display: block;
-    /* Add mobile-specific styles and alignments here */
-    text-align: center;
-    /* Add any other styles you need for mobile view */
+  background-color: rgb(134, 131, 131); 
+  color: #ccc;
 }
 
+
+
+/* .diagonal {
+  width: 0; 
+  height: 4.3rem; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #bbb;
+  top: 0; right: 0;
+  position: absolute;
+  transform: translateX(100%);
+  z-index: 1;
+} */
+
+#nextButton {
+  background-color: #5ce1e6;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 5%;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+  box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.footer{
+  width: 100vw !important;
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+main{
+  margin-top: 10rem;
 }

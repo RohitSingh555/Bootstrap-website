@@ -95,6 +95,9 @@ p{
     text-shadow: black;
     font-family: mSemi-Bold;
 }
+main{
+    margin-top: 10rem;
+  }
 @media screen and (max-width: 567px) {
     .info-div{
         align-items: flex-start;

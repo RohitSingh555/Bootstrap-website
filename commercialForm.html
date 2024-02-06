@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Commercial Form</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/aboutUs.css" />
+    <link rel="stylesheet" href="/commercialForm.css" />
 </head>
 
 <body>
@@ -140,51 +140,143 @@
           </div>
         </div>
       </nav>
-    <main style="background-color: #F3F1F6;">
-        <div class="hero-1">
 
-
-
-        </div>
-        <div class="container mt-5">
-            <h1 class="card-title fw-bold pb-5">Our Family: Meet The Capital Carpet Solutions Team
-            </h1>
-            <div class="row mb-5">
-                <div class="col-md-7">
-                    <div class="h--accent"></div>
-                    <p> Our family-owned and operated business, Capital Carpet Solutions, uses state-of-the-art
-                        technology to provide higher quality cleaning services than ever before</p>
-                    <p> Our teamtakes agreat deal of pride in every job. We do business with more ethics and
-                        honesty than you've ever experienced</p>
-                        <p>Whether it’s residential or commercial cleaning services you need, look no further than the
-                            companythat has earned the title of Ontario's most trusted cleaning company</p>
+    <main style="background-color: #fff">
+        <div class="container my-4">
+            <h1>COMMERCIAL ESTIMATE</h1>
+            <hr>
+            <br><br>
+            <h5>Select Services*        </h5>
+            <form action="" id="commercial-form">
+                <div class="row justify-content-center my-4">
+                
+                    <div class="form-check col-lg-6">
+                        <input class="form-check-input" type="checkbox" id="carpet" value="carpet">
+                        <label class="form-check-label" for="carpet">Carpet</label>
+                      </div>
+                      <div class="form-check col-lg-6">
+                        <input class="form-check-input" type="checkbox" id="upholstery" value="upholstery">
+                        <label class="form-check-label" for="upholstery">Upholstery</label>
+                      </div>
+                    
                 </div>
-                <div class="col-md-5 mt-4 mt-md-0">
-                    <div class="card p-3 w-5 floatingcard d-none d-md-block"
-                        style="position: absolute;top:50%;width:300px;right:4%;    text-align: center;">
-                        <h5>BOOK YOUR CAR, BOAT & RV CLEANING</h5>
-                        <p>We offer instant quotes and online booking</p>
-                        <button style="background-color: rgb(75, 26, 139);color:white" type="button"
-                            class="btn btn-primary mx-0 fw-bold ">GET QUOTE</button>
+                <div class="row justify-content-center my-4">
+                
+                    <div class="form-check col-lg-6">
+                        <input class="form-check-input" type="checkbox" id="tile" value="tile">
+                        <label class="form-check-label" for="tile">Tile</label>
+                      </div>
+                      <div class="form-check col-lg-6">
+                        <input class="form-check-input" type="checkbox" id="hardwood" value="hardwood">
+                        <label class="form-check-label" for="hardwood">Hardwood</label>
+                      </div>
+                    
+                </div>
+                <!-- <div class="row justify-content-center my-4">
+                
+                    <div class="form-check col-lg-6">
+                        <input class="form-check-input" type="checkbox" id="airduct" value="airduct">
+                        <label class="form-check-label" for="airduct">Air Duct</label>
+                      </div>
+                      <div class="form-check col-lg-6">
+                        <input class="form-check-input" type="checkbox" id="disinfection" value="disinfection">
+                        <label class="form-check-label" for="disinfection">Disinfection</label>
+                      </div>
+                    
+                </div>
+                <div class="row justify-content-start my-4">
+                
+                    <div class="form-check col-lg-6">
+                        <input class="form-check-input" type="checkbox" id="encapsulation" value="encapsulation">
+                        <label class="form-check-label" for="encapsulation">Encapsulation</label>
+                      </div>
+                </div> -->
+    
+                <h3>Contact Details</h3>
+                <div class="row justify-content-start my-4">
+                    <div class="col-lg-6">
+                        <label for="firstName">First Name</label>
+                        <input class="form-control" type="text" name="firstName" id="firstName">
                     </div>
-
-                    <div class="image">
-                        <img src="images" class="img-fluid" alt="Carpet Cleaning Image" width="350px" />
+                    <div class="col-lg-6">
+                        <label for="lastName">Last Name</label>
+                        <input class="form-control" type="text" name="lastName" id="lastName">
                     </div>
                 </div>
-            </div>
-
-        </div>
-     
-        <div class="container-fluid banner mb-5">
-            <h2 class="display-4">MASSIVE DISCOUNTS & OFFERS</h2>
-            <p class="lead">Unlock exclusive deals and surprises! Enter your email to join our VIP list and be the first
-                to know about special offers and promotions.</p>
-            <form class="d-flex justify-content-center mt-4 w-25 mx-auto">
-                <input type="email" class="form-control me-2 w-10 " placeholder="Your Email">
-                <button type="submit" class="btn btn-warning">Subscribe</button>
+                <div class="row justify-content-start my-4">
+                    <div class="col-lg-6">
+                        <label for="companyName">Company Name</label>
+                        <input class="form-control" type="text" name="companyName" id="companyName">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="numberofEmployees">Number of Employees</label>
+                        <select class="custom-select" name="numberofEmployees" id="numberofEmployees">
+                            <option value="">Select</option>
+                            <option value="2-10">2-10</option>
+                            <option value="11-50">11-50</option>
+                            <option value="51-200">51-200</option>
+                            <option value="201-500">201-500</option>
+                            <option value="501-1000">501-1000</option>
+    
+                        </select>
+                    </div>
+                </div>
+                
+    
+                <div class="row justify-content-start my-4">
+                    <div class="col-lg-6">
+                        <label for="address1">Address 1</label>
+                        <input class="form-control" type="text" name="address1" id="address1">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="address2">Address 2</label>
+                        <input class="form-control" type="text" name="address2" id="address2">
+                    </div>
+                </div>
+                <div class="row justify-content-start my-4">
+                    <div class="col-lg-4">
+                        <label for="city">City</label>
+                        <input class="form-control" type="text" name="city" id="city">
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="zip">Postal Code</label>
+                        <input class="form-control" type="number" name="zip" id="zip">
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="state">Province</label>
+                        <input class="form-control" type="text" name="state" id="state">
+                    </div>
+                </div>
+                <div class="row justify-content-start my-4">
+                    <div class="col-lg-3">
+                        <label for="numberoflocation">Number of Locations</label>
+                        <input class="form-control" type="number" name="numberoflocation" id="numberoflocation">
+                    </div>
+                    <div class="col-lg-3">
+                        <label for="PO#">PO#</label>
+                        <input class="form-control" type="text" name="PO#" id="PO#">
+                    </div>
+                    <div class="col-lg-3">
+                        <label for="phone">Phone</label>
+                        <input class="form-control" type="number" name="phone" id="phone">
+                    </div>
+                    <div class="col-lg-3">
+                        <label for="alternatephone">Alternate Phone</label>
+                        <input class="form-control" type="number" name="alternatephone" id="alternatephone">
+                    </div>
+                </div>
+                <div class="row justify-content-start my-4">
+                    <div class="col-lg-6">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" name="email" id="email">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="email">Confirm Email</label>
+                        <input class="form-control" type="email" name="email" id="email">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-secondary submit-btn">Submit</button>
             </form>
-
         </div>
     </main>
 
@@ -198,7 +290,7 @@
         <div class="col mb-3 info-ul">
           <h3 class="mb-3">Info</h3>
           <ul class="nav flex-column ">
-            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Services</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact</a></li>
@@ -256,7 +348,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
     <script>
 
         document.querySelectorAll('.nav-link').forEach(function (tab) {
@@ -273,6 +365,34 @@
                 this.classList.add('active');
             });
         });
+
+
+        let commercialForm = document.getElementById('commercial-form');
+    //select all the checkboxes in the form
+    let checkboxes = commercialForm.querySelectorAll('input[type="checkbox"]');
+    //add event listener to each checkbox
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function(e) {
+            //if the checkbox is checked
+            if(this.checked) {
+                //add an extra input field to the parent div with text input   
+                let input = document.createElement('input');
+                input.setAttribute('type', 'number');
+                input.setAttribute('class', 'form-control');
+                input.setAttribute('placeholder', 'Enter the square approximate footage');
+                input.setAttribute('name', this.value + 'squareFootage');
+                //append it to the parent div
+                this.parentElement.appendChild(input);
+                
+            }
+            //if the checkbox is unchecked
+            else {
+                //remove the input field from the parent div
+                this.parentElement.removeChild(this.parentElement.lastChild);
+            }
+        })
+    })
+
     </script>
 </body>
 
