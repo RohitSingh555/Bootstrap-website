@@ -5,3 +5,19 @@
 .faq h1{
     font-family: mBold;
   }
+.navbar{
+  margin-bottom: 10rem !important;
+}
+.carpetCleaningFaq{
+  padding-top: 4rem !important
+}
+.last-div-car{
+  padding-top: 4rem;
+}
+@media screen and (max-width: 567px) {
+
+  main{
+    margin-top: 5rem;
+  }
+
+}

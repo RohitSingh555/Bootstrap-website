@@ -1,6 +1,4 @@
-.hero-1{
-    background-image: url(/images/carCleaning-bg.png);
-    }
+
     .nav-item button {
         color: black !important;
         font-size: 18px; /* Adjust the size as needed */
@@ -65,3 +63,13 @@
        width: 50rem;
     }
     
+    .container{
+        margin-top: 10rem !important
+    }
+    
+    @media screen and (max-width: 567px) {
+
+        .container {
+            margin-top: 13rem !important
+        }
+    } 

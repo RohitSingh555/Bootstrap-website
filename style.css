@@ -39,6 +39,8 @@ html, body {
 }
 
 .last-div {
+  position: fixed;
+  right: 0;
   position: static;
   margin-left: 10px;
   width: 250px;
@@ -50,6 +52,7 @@ html, body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   justify-content: flex-end;
 }
+
 .child-1 :hover{
   font-size: 15px;
 }
@@ -289,9 +292,13 @@ margin-left: 1rem;
 .copyright-div a{
 color: white;
 }
+.last-div {
+  transition: none; /* Remove any transition effect */
+}
 
 
 @media screen and (max-width: 567px) {
+
   body {
     width: 100%;
     overflow-x: hidden;
@@ -311,8 +318,9 @@ color: white;
     margin-right: 100%;
   }
   .last-div {
-    margin-top: -40px;
-    position: static;
+    position: fixed;
+    right: 0;
+    margin-top: 10rem;
   }
   .mobile-search {
     margin-bottom: 10px;
@@ -323,11 +331,36 @@ color: white;
   .btn-outline-success {
     display: none;
   }
+  .last-div {
+    transition: none !important /* Remove any transition effect */
+  }
+
+
   .navbar-toggler[aria-expanded="true"] + .last-div {
     display: none;
+    transition: display 0s;
+  }
+  .navbar-toggler[aria-expanded="false"] + .last-div {
+    display: block !important;
+    transition: display 0s !important;
+  }
+  .navbar-toggler {
+    transition: none !important; /* Override Bootstrap's transition */
+  }
+
+
+
+
+
+
+  .mega-area .row {
+    margin: 0;
   }
 
   /* HERO-1 CODE BELOW */
+  .container-fluid{
+    padding-bottom: 8px !important;
+  }
   .hero-1 {
     margin: 0;
     padding: 0;
@@ -397,5 +430,15 @@ color: white;
   /* WHY US DIV */
   .why-us-desktop{
     display: none;
+  }
+
+  /* FOOTER */
+  .footer{
+   text-align: center;
+   align-items: center;
+
+  }
+  .socials{
+display: inline-flex;
   }
 }

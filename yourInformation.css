@@ -84,4 +84,7 @@ box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
 main{
     margin-top: 10rem;
   }
+  .quote a{
+    display: none;
+  }
 

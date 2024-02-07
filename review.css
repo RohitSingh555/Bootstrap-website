@@ -98,6 +98,9 @@ p{
 main{
     margin-top: 10rem;
   }
+  .quote a{
+    display: none;
+  }
 @media screen and (max-width: 567px) {
     .info-div{
         align-items: flex-start;
@@ -112,6 +115,7 @@ main{
         margin-left: 1rem !important;
     }
     .quote{
+        width: 90vw !important;
    margin-left: 1rem !important;
    margin-right: 1rem !important;
     }

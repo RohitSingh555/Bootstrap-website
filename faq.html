@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="/faq.css" />
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+<body style="background-color: #F3F1F6;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbarID">
         <div class="container-fluid">
           <a class="navbar-brand" href="/index.html">
             <img src="/images/logo.png" class="logo" alt="logo" />
@@ -72,7 +72,7 @@
                       <a class="dropdown-item" href="/carpetCleaning.html">CARPET CLEANING</a>
                       <a class="dropdown-item" href="/upholsteryCleaning.html">UPHOLSTERY CLEANING</a>
                       <a class="dropdown-item" href="/tileCleaning.html">TILE & GROUT CLEANING</a>
-                      <a class="dropdown-item" href=""
+                      <a class="dropdown-item" href="/hardwood.html"
                         >HARDWOOD FLOOR REFINISHING</a
                       >
                     </div>
@@ -142,16 +142,19 @@
       </nav>
 
     <main style="background-color: #F3F1F6;">
+        <div class="divider">
+
+        </div>
 <div class="container col-xxl-8 px-4 py-5 main-div">
     <div class="row flex-lg-row align-items-center g-5 py-5">
 
 
       <div class="col-10 col-sm-8 col-lg-3 filters">
 
-     <h2>FILTERS</h2>
+     <h2 class="my-3">FILTERS</h2>
 
-     <div class="form-check my-3">
-        <input class="form-check-input" type="checkbox" value="carpetClean" id="carpetClean" style="transform: scale(1.5); margin-top: 6px" onclick="scrollToSection('carpetCleaningSection')">
+     <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="carpetClean" id="carpetClean" style="transform: scale(1.5); margin-top: 6px" onclick="scrollToSection('carpetCleaningSection', 'navbarID')">
         <label class="form-check-label" for="flexCheckDefault">
            CARPET CLEANING
         </label>
@@ -206,7 +209,7 @@
 
       <div class="form-check my-3">
         <input class="form-check-input" type="checkbox" value="car" id="car" style="transform: scale(1.5); margin-top: 6px"
-        onclick="scrollToSection('carSection')">
+        onclick="scrollToSection('123')">
         <label class="form-check-label" for="flexCheckDefault"
         >
              CAR, BOAT & RV CLEANING
@@ -219,16 +222,15 @@
       <div class="col-lg-20 faq">
         <div class="container-fluid p-0" style="background-color: #f3f1f6a6;">
             <div class="container">
-                <h1 class="text-center md-5">FREQUENTLY ASKED QUESTIONS</h1>
-<div class="carpetCleaningFaq my-5" id="carpetCleaningSection">
+                <h1 class="text-center md-5"  id="carpetCleaningSection">FREQUENTLY ASKED QUESTIONS</h1>
+<div class="carpetCleaningFaq my-5" id="carpetProtectorSection">
     <h2 class="mb-3">CARPET CLEANING</h2>
 <div class="accordion accordion-flush" id="accordionFlush1">
     <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                "I just had my carpet cleaned, and now there are bubbles or ripples in it. What might
-have caused this?
+                I JUST HAD MY CARPET CLEANED, AND NOW THERE ARE BUBBLES OR RIPPLES IN IT. WHAT MIGHT HAVE CAUSED THIS?
             </button>
         </h2>
         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
@@ -243,7 +245,7 @@ have caused this?
         <h2 class="accordion-header" id="flush-headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                Can you guarantee that all spots or stains will be removed from the carpet?
+                CAN YOU GUARANTEE THAT ALL SPOTS OR STAINS WILL BE REMOVED FROM THE CARPET?
             </button>
         </h2>
         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
@@ -294,7 +296,7 @@ have caused this?
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseFive" aria-expanded="false"
                 aria-controls="flush-collapseFour">
-                Do you move furniture prior to cleaning?
+                DO YOU MOVE FURNITURE PRIOR TO CLEANING?
             </button>
         </h2>
         <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
@@ -371,7 +373,7 @@ have caused this?
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#flush-collapse9" aria-expanded="false"
                 aria-controls="flush-collapseFour">
-                WHYDOYOURPRICESVARYFROMOTHERCARPETCLEANERS
+                WHY DO YOUR PRICES VARY FROM OTHER CARPET CLEANERS?
             </button>
         </h2>
         <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-heading9"
@@ -395,7 +397,7 @@ have caused this?
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#flush-collapse10" aria-expanded="false"
                 aria-controls="flush-collapse10">
-                HOWLONGWILLITTAKEFORMYCARPETTODRY?
+                HOW LONG WILL IT TAKE FOR MY CARPET TO DRY?
             </button>
         </h2>
         <div id="flush-collapse10" class="accordion-collapse collapse" aria-labelledby="flush-heading10"
@@ -418,14 +420,14 @@ have caused this?
 </div>
 </div>
 
-<div class="carpetProtector" id="carpetProtectorSection">
+<div class="carpetProtector my-5" id="tileCleaningSection" >
     <h2 class="mb-3">CARPET PROTECTOR</h2>
     <div class="accordion accordion-flush" id="faqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header" id="questionOneHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerOneCollapse" aria-expanded="false" aria-controls="answerOneCollapse">
-                    WHATARETHEBENEFITSOFAPPLYINGAPROTECTORTOMYCLEANEDCARPETS?
+                    WHAT ARE THE BENEFITS OF APPLYING A PROTECTOR TO MY CLEANED CARPETS?
                 </button>
             </h2>
             <div id="answerOneCollapse" class="accordion-collapse collapse" aria-labelledby="questionOneHeader"
@@ -447,8 +449,7 @@ have caused this?
             <h2 class="accordion-header" id="questionTwoHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerTwoCollapse" aria-expanded="false" aria-controls="answerTwoCollapse">
-                    HOWEFFECTIVE IS YOUR DEODORIZER IN ELIMINATING ODORS?
-                </button>
+                    HOW EFFECTIVE IS YOUR DEODORIZER IN ELIMINATING ODORS?</button>
             </h2>
             <div id="answerTwoCollapse" class="accordion-collapse collapse" aria-labelledby="questionTwoHeader"
                 data-bs-parent="#faqAccordion">
@@ -466,7 +467,7 @@ have caused this?
             <h2 class="accordion-header" id="questionThreeHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerThreeCollapse" aria-expanded="false" aria-controls="answerThreeCollapse">
-                    IS CARPET MANUFACTUREDWITHAPROTECTOR?
+                    IS CARPET MANUFACTURED WITH A PROTECTOR?
                 </button>
             </h2>
             <div id="answerThreeCollapse" class="accordion-collapse collapse" aria-labelledby="questionThreeHeader"
@@ -480,14 +481,14 @@ have caused this?
         <!-- End of example question and answer -->
     </div>
 </div>
-<div class="tileCleaning my-5" id="tileCleaningSection">
+<div class="tileCleaning my-5" id="hardwoodSection">
     <h2 class="mb-3">TILE & GROUT CLEANING</h2>
     <div class="accordion accordion-flush" id="anotherFaqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header" id="anotherQuestionOneHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#anotherAnswerOneCollapse" aria-expanded="false" aria-controls="anotherAnswerOneCollapse">
-                    HOWDOYOUCLEANMYTILEANDGROUT?
+                    HOW DO YOU CLEAN MY TILE AND GROUT?
                 </button>
             </h2>
             <div id="anotherAnswerOneCollapse" class="accordion-collapse collapse" aria-labelledby="anotherQuestionOneHeader"
@@ -504,7 +505,7 @@ have caused this?
             <h2 class="accordion-header" id="anotherQuestionTwoHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#anotherAnswerTwoCollapse" aria-expanded="false" aria-controls="anotherAnswerTwoCollapse">
-                    DOIHAVETOUSESPECIALFLOORCLEANERIFIHAVETHESEALANTAPPLIED?
+                    DO I HAVE TO USE SPECIAL FLOOR CLEANER IF I HAVE THE SEALANT APPLIED?
                 </button>
             </h2>
             <div id="anotherAnswerTwoCollapse" class="accordion-collapse collapse" aria-labelledby="anotherQuestionTwoHeader"
@@ -521,7 +522,7 @@ have caused this?
             <h2 class="accordion-header" id="anotherQuestionThreeHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#anotherAnswerThreeCollapse" aria-expanded="false" aria-controls="anotherAnswerThreeCollapse">
-                    WHYSHOULDIHAVEMYGROUTLINESSEALED?
+                    WHY SHOULD I HAVE MY GROUT LINES SEALED?
                 </button>
             </h2>
             <div id="anotherAnswerThreeCollapse" class="accordion-collapse collapse" aria-labelledby="anotherQuestionThreeHeader"
@@ -536,8 +537,7 @@ have caused this?
             <h2 class="accordion-header" id="anotherQuestionFourHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#anotherAnswerFourCollapse" aria-expanded="false" aria-controls="anotherAnswerFourCollapse">
-                    HOWLONGDOIHAVETOSTAYOFFTHEFLOORAFTERSEALANTHASBEEN
- APPLIED?
+                    HOW LONG DO I HAVE TO STAY OFF THE FLOOR AFTER SEALANT HAS BEEN APPLIED?
                 </button>
             </h2>
             <div id="anotherAnswerFourCollapse" class="accordion-collapse collapse" aria-labelledby="anotherQuestionFourHeader"
@@ -552,7 +552,7 @@ have caused this?
             <h2 class="accordion-header" id="anotherQuestionFiveHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#anotherAnswerFiveCollapse" aria-expanded="false" aria-controls="anotherAnswerFiveCollapse">
-                    HOWOFTENSHOULDIHAVEMYTILEFLOORCLEANED?
+                    HOW OFTEN SHOULD I HAVE MY TILE FLOOR CLEANED?
                 </button>
             </h2>
             <div id="anotherAnswerFiveCollapse" class="accordion-collapse collapse" aria-labelledby="anotherQuestionFiveHeader"
@@ -565,7 +565,7 @@ have caused this?
             <h2 class="accordion-header" id="anotherQuestionSixHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#anotherAnswerSixCollapse" aria-expanded="false" aria-controls="anotherAnswerSixCollapse">
-                    WHYSHOULDIHAVEMYTILEANDGROUTCLEANED?
+                    WHY SHOULD I HAVE MY TILE AND GROUT CLEANED?
                 </button>
             </h2>
             <div id="anotherAnswerSixCollapse" class="accordion-collapse collapse" aria-labelledby="anotherQuestionSixHeader"
@@ -579,14 +579,14 @@ have caused this?
 
     </div>
 </div>
-<div class="hardwood my-5" id="hardwoodSection">
+<div class="hardwood my-5" id="upholsterySection">
     <h2 class="mb-3">HARDWOOD REFINISHING</h2>
     <div class="accordion accordion-flush" id="yetAnotherFaqAccordion">
         <div class="accordion-item">
             <h2 class="accordion-header" id="yetAnotherQuestionOneHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#yetAnotherAnswerOneCollapse" aria-expanded="false" aria-controls="yetAnotherAnswerOneCollapse">
-                    WHATISTHEPURPOSEOFASCREENANDRECOAT?
+                  WHAT IS THE PURPOSE OF A SCREEN AND RECOAT?
                 </button>
             </h2>
             <div id="yetAnotherAnswerOneCollapse" class="accordion-collapse collapse" aria-labelledby="yetAnotherQuestionOneHeader"
@@ -601,7 +601,7 @@ have caused this?
             <h2 class="accordion-header" id="yetAnotherQuestionTwoHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#yetAnotherAnswerTwoCollapse" aria-expanded="false" aria-controls="yetAnotherAnswerTwoCollapse">
-                    WHATARETHEBENEFITSOFASCREENANDRECOAT?
+                    WHAT ARE THE BENEFITS OF A SCREEN AND RECOAT?
                 </button>
             </h2>
             <div id="yetAnotherAnswerTwoCollapse" class="accordion-collapse collapse" aria-labelledby="yetAnotherQuestionTwoHeader"
@@ -619,7 +619,7 @@ have caused this?
             <h2 class="accordion-header" id="yetAnotherQuestionThreeHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#yetAnotherAnswerThreeCollapse" aria-expanded="false" aria-controls="yetAnotherAnswerThreeCollapse">
-                    WHATARETHELIMITATIONSOFASCREENANDRECOAT?
+                    WHAT ARE THE LIMITATIONS OF A SCREEN AND RECOAT?
                 </button>
             </h2>
             <div id="yetAnotherAnswerThreeCollapse" class="accordion-collapse collapse" aria-labelledby="yetAnotherQuestionThreeHeader"
@@ -636,7 +636,7 @@ have caused this?
             <h2 class="accordion-header" id="yetAnotherQuestionfourHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#yetAnotherAnswerfourCollapse" aria-expanded="false" aria-controls="yetAnotherAnswerfourCollapse">
-                    CANSCREENANDRECOATSBEAPPLIEDONPREFINISHEDHARDWOODFLOORS
+                    CAN SCREEN AND RECOATS BE APPLIED ON PREFINISHED HARDWOOD FLOORS?
                 </button>
             </h2>
             <div id="yetAnotherAnswerfourCollapse" class="accordion-collapse collapse" aria-labelledby="yetAnotherQuestionfourHeader"
@@ -650,8 +650,7 @@ have caused this?
             <h2 class="accordion-header" id="yetAnotherQuestionfiveHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#yetAnotherAnswerfiveCollapse" aria-expanded="false" aria-controls="yetAnotherAnswerfiveCollapse">
-                    HOWFREQUENTLYSHOULDASCREENANDRECOATBEDONEONPOLYURETHANE
- FINISHED FLOORS?
+                    HOW FREQUENTLY SHOULD A SCREEN AND RECOAT BE DONE ON POLYURETHANE FINISHED FLOORS?
                 </button>
             </h2>
             <div id="yetAnotherAnswerfiveCollapse" class="accordion-collapse collapse" aria-labelledby="yetAnotherQuestionfiveHeader"
@@ -665,15 +664,14 @@ have caused this?
 
     </div>
 </div>
-<div class="upholstery my-5" id="upholsterySection" >
+<div class="upholstery my-5"  id="areaRugSection">
     <h2 class="mb-3"> UPHOLSTERY CLEANING</h2>
     <div class="accordion accordion-flush" id="faqAccordionSet5">
         <div class="accordion-item">
             <h2 class="accordion-header" id="questionSet5OneHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet5OneCollapse" aria-expanded="false" aria-controls="answerSet5OneCollapse">
-                    HOWDOESPROFESSIONALUPHOLSTERYCLEANINGAFFECTTHEPROTECTIVE
-                    COATING ONMYFURNITURE?
+                    HOW DOES PROFESSIONAL UPHOLSTERY CLEANING AFFECT THE PROTECTIVE COATING ON MY FURNITURE?
                 </button>
             </h2>
             <div id="answerSet5OneCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet5OneHeader"
@@ -692,7 +690,7 @@ have caused this?
             <h2 class="accordion-header" id="questionSet5TwoHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet5TwoCollapse" aria-expanded="false" aria-controls="answerSet5TwoCollapse">
-                    WHATISTHEEXPECTEDDRYINGTIMEFORMYFURNITUREPOST-CLEANING?
+                    WHAT IS THE EXPECTED DRYING TIME FOR MY FURNITURE POST-CLEANING?
                 </button>
             </h2>
             <div id="answerSet5TwoCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet5TwoHeader"
@@ -708,7 +706,7 @@ have caused this?
             <h2 class="accordion-header" id="questionSet5ThreeHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet5ThreeCollapse" aria-expanded="false" aria-controls="answerSet5ThreeCollapse">
-                    WHATISYOURPROCESSFORCLEANINGUPHOLSTERY?
+                    WHAT IS YOUR PROCESS FOR CLEANING UPHOLSTERY?
                 </button>
             </h2>
             <div id="answerSet5ThreeCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet5ThreeHeader"
@@ -723,8 +721,7 @@ have caused this?
             <h2 class="accordion-header" id="questionSet5fourHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet5fourCollapse" aria-expanded="false" aria-controls="answerSet5fourCollapse">
-                    HOWOFTENSHOULDUPHOLSTERYBEPROFESSIONALLYCLEANED,ACCORDINGTO
-                    MANUFACTURERS
+                    HOW OFTEN SHOULD UPHOLSTERY BE PROFESSIONALLY CLEANED, ACCORDING TO MANUFACTURERS?
                 </button>
             </h2>
             <div id="answerSet5fourCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet5fourHeader"
@@ -739,14 +736,14 @@ have caused this?
     </div>
 </div>
 
-<div class="areaRug my-5" id="areaRugSection">
+<div class="areaRug my-5" id="commercialSection" >
     <h2 class="mb-3"> AREA RUG CLEANING</h2>
     <div class="accordion accordion-flush" id="faqAccordionSet6">
         <div class="accordion-item">
             <h2 class="accordion-header" id="questionSet6OneHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet6OneCollapse" aria-expanded="false" aria-controls="answerSet6OneCollapse">
-                    WHO CLEANS AREARUGS?
+                    WHO CLEANS AREA RUGS?
                 </button>
             </h2>
             <div id="answerSet6OneCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet6OneHeader"
@@ -763,7 +760,7 @@ have caused this?
             <h2 class="accordion-header" id="questionSet6TwoHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet6TwoCollapse" aria-expanded="false" aria-controls="answerSet6TwoCollapse">
-                    HOWMUCHISORIENTALRUGCLEANING?
+                    HOW MUCH IS ORIENTAL RUG CLEANING?
                 </button>
             </h2>
             <div id="answerSet6TwoCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet6TwoHeader"
@@ -777,7 +774,7 @@ have caused this?
             <h2 class="accordion-header" id="questionSet6ThreeHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet6ThreeCollapse" aria-expanded="false" aria-controls="answerSet6ThreeCollapse">
-                    WHATMETHODDOYOUUSETOCLEANAREARUGS?
+                    WHAT METHOD DO YOU USE TO CLEAN AREA RUGS?
                 </button>
             </h2>
             <div id="answerSet6ThreeCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet6ThreeHeader"
@@ -792,7 +789,7 @@ have caused this?
             <h2 class="accordion-header" id="questionSet6fourHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet6fourCollapse" aria-expanded="false" aria-controls="answerSet6fourCollapse">
-                    WHATISTHECOSTOFCLEANINGANAREARUG?
+                    WHAT IS THE COST OF CLEANING AN AREA RUG?
                 </button>
             </h2>
             <div id="answerSet6fourCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet6fourHeader"
@@ -804,14 +801,14 @@ have caused this?
         </div>
     </div>
 </div>
-<div class="commercial my-5" id="commercialSection">
+<div class="commercial my-5" id="carSection" >
     <h2 class="mb-3">COMMERCIAL CLEANING</h2>
     <div class="accordion accordion-flush" id="faqAccordionSet7">
         <div class="accordion-item">
             <h2 class="accordion-header" id="questionSet7OneHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet7OneCollapse" aria-expanded="false" aria-controls="answerSet7OneCollapse">
-                    IS A CARPETPROTECTORUSEFUL?
+                    IS A CARPET PROTECTOR USEFUL?
                 </button>
             </h2>
             <div id="answerSet7OneCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet7OneHeader"
@@ -828,7 +825,7 @@ have caused this?
             <h2 class="accordion-header" id="questionSet7TwoHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet7TwoCollapse" aria-expanded="false" aria-controls="answerSet7TwoCollapse">
-                    HOWFREQUENTLYSHOULDCARPETSBECLEANED?
+                    HOW FREQUENTLY SHOULD CARPETS BE CLEANED?
                 </button>
             </h2>
             <div id="answerSet7TwoCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet7TwoHeader"
@@ -845,7 +842,7 @@ have caused this?
             <h2 class="accordion-header" id="questionSet7ThreeHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet7ThreeCollapse" aria-expanded="false" aria-controls="answerSet7ThreeCollapse">
-                    DOES THECLEANINGPROCESSLEAVEANYRESIDUE?
+                    DOES THE CLEANING PROCESS LEAVE ANY RESIDUE??
                 </button>
             </h2>
             <div id="answerSet7ThreeCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet7ThreeHeader"
@@ -859,7 +856,7 @@ have caused this?
             <h2 class="accordion-header" id="questionSet7fourHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet7fourCollapse" aria-expanded="false" aria-controls="answerSet7fourCollapse">
-                    CANTHECLEANINGBECONDUCTEDWHILEPEOPLEAREPRESENT?
+                    CAN THE CLEANING BE CONDUCTED WHILE PEOPLE ARE PRESENT?
                 </button>
             </h2>
             <div id="answerSet7fourCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet7fourHeader"
@@ -874,7 +871,7 @@ have caused this?
             <h2 class="accordion-header" id="questionSet7fiveHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet7fiveCollapse" aria-expanded="false" aria-controls="answerSet7fiveCollapse">
-                    CANCLEANINGBEDONEOVERTHEWEEKEND?
+                    CAN CLEANING BE DONE OVER THE WEEKEND?
                 </button>
             </h2>
             <div id="answerSet7fiveCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet7fiveHeader"
@@ -888,12 +885,12 @@ have caused this?
             <h2 class="accordion-header" id="questionSet7sixHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet7sixCollapse" aria-expanded="false" aria-controls="answerSet7sixCollapse">
-                    HOWQUICKLYCANTHECARPETBEUSEDPOST-CLEANING?
+                    HOW QUICKLY CAN THE CARPET BE USED POST-CLEANING??
                 </button>
             </h2>
             <div id="answerSet7sixCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet7sixHeader"
                 data-bs-parent="#faqAccordionSet7">
-                <div class="accordion-body">  Whenis it safe to walk on carpets after cleaning? The carpets can be used for light
+                <div class="accordion-body">When is it safe to walk on carpets after cleaning? The carpets can be used for light
                     traffic immediately after cleaning.</div>
             </div>
         </div>
@@ -916,7 +913,7 @@ have caused this?
             <h2 class="accordion-header" id="questionSet8eightHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet8eightCollapse" aria-expanded="false" aria-controls="answerSet8eightCollapse">
-                    WHATPAYMENTMETHODSAREACCEPTED?
+                    WHAT PAYMENT METHODS ARE ACCEPTED??
                 </button>
             </h2>
             <div id="answerSet8eightCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet8eightHeader"
@@ -930,7 +927,7 @@ have caused this?
             <h2 class="accordion-header" id="questionSet9nineHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet9nineCollapse" aria-expanded="false" aria-controls="answerSet9nineCollapse">
-                    WHATOTHERCLEANINGSERVICESAREOFFERED?
+                    WHAT OTHER CLEANING SERVICES ARE OFFERED??
                 </button>
             </h2>
             <div id="answerSet9nineCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet9nineHeader"
@@ -944,7 +941,7 @@ have caused this?
             <h2 class="accordion-header" id="questionSet10tenHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet10tenCollapse" aria-expanded="false" aria-controls="answerSet10tenCollapse">
-                    CANAREGULARCLEANINGSCHEDULEBEARRANGED?
+                    CAN A REGULAR CLEANING SCHEDULE BE ARRANGED?
                 </button>
             </h2>
             <div id="answerSet10tenCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet10tenHeader"
@@ -960,7 +957,7 @@ have caused this?
             <h2 class="accordion-header" id="questionSet11elevenHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet11elevenCollapse" aria-expanded="false" aria-controls="answerSet11elevenCollapse">
-                    ARE ANYHARMFULCHEMICALSUSEDINCLEANING?
+                    ARE ANY HARMFUL CHEMICALS USED IN CLEANING??
                 </button>
             </h2>
             <div id="answerSet11elevenCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet11elevenHeader"
@@ -974,7 +971,7 @@ have caused this?
             <h2 class="accordion-header" id="questionSet12twelveHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet12twelveCollapse" aria-expanded="false" aria-controls="answerSet12twelveCollapse">
-                    HOWSOONCANACLEANINGESTIMATEBESCHEDULED?
+                    HOW SOON CAN A CLEANING ESTIMATE BE SCHEDULED?
                 </button>
             </h2>
             <div id="answerSet12twelveCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet12twelveHeader"
@@ -989,7 +986,7 @@ have caused this?
     <h2 class="accordion-header" id="questionSet13thirteenHeader">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#answerSet13thirteenCollapse" aria-expanded="false" aria-controls="answerSet13thirteenCollapse">
-            WHATISTHEDURATIONOFTHECLEANINGPROCESS?
+            WHAT IS THE DURATION OF THE CLEANING PROCESS?
         </button>
     </h2>
     <div id="answerSet13thirteenCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet13thirteenHeader"
@@ -1005,7 +1002,7 @@ have caused this?
     <h2 class="accordion-header" id="questionSet14fourteenHeader">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#answerSet14fourteenCollapse" aria-expanded="false" aria-controls="answerSet14fourteenCollapse">
-            IS THERE AMINIMUMCHARGEFORCOMMERCIALCLEANING?
+            IS THERE A MINIMUM CHARGE FOR COMMERCIAL CLEANING?
         </button>
     </h2>
     <div id="answerSet14fourteenCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet14fourteenHeader"
@@ -1020,7 +1017,7 @@ have caused this?
     <h2 class="accordion-header" id="questionSet15fifteenHeader">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#answerSet15fifteenCollapse" aria-expanded="false" aria-controls="answerSet15fifteenCollapse">
-            Do you movefurniture prior to cleaning?
+            DO YOU MOVE FURNITURE PRIOR TO CLEANING?
         </button>
     </h2>
     <div id="answerSet15fifteenCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet15fifteenHeader"
@@ -1044,15 +1041,17 @@ have caused this?
 
     </div>
 </div>
+<div class="last-div-car" id="123" >
 
-<div class="car my-5" id="carSection">
+</div>
+<div class="car my-5"  >
     <h2 class="mb-3">CAR, BOAT & RV CLEANING</h2>
     <div class="accordion accordion-flush" id="faqAccordionSet8">
         <div class="accordion-item">
             <h2 class="accordion-header" id="questionSet8OneHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet8OneCollapse" aria-expanded="false" aria-controls="answerSet8OneCollapse">
-                    What is Vehicle Cleaning?
+                    WHAT IS VEHICLE CLEANING?
                 </button>
             </h2>
             <div id="answerSet8OneCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet8OneHeader"
@@ -1068,7 +1067,7 @@ have caused this?
             <h2 class="accordion-header" id="questionSet8TwoHeader">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#answerSet8TwoCollapse" aria-expanded="false" aria-controls="answerSet8TwoCollapse">
-                    How Frequently Should I Clean My Car?
+                    HOW FREQUENTLY SHOULD I CLEAN MY CAR?
                 </button>
             </h2>
             <div id="answerSet8TwoCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet8TwoHeader"
@@ -1083,79 +1082,78 @@ have caused this?
     </div>
 </div>
 
+
 </div>
         </div>
         </div>
         </div>
       </div>
-    </div>
-  </div>
     </main>
 
 
      <!-- FOOTER -->
-  <div class="footer">
-    <div class="container">
-      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top ">
-  
-    
-        <div class="col mb-3 info-ul">
-          <h3 class="mb-3">Info</h3>
-          <ul class="nav flex-column ">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Services</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact</a></li>
-          </ul>
+     <div class="footer">
+        <div class="container">
+          <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top ">
+      
+        
+            <div class="col mb-3 info-ul">
+              <h3 class="mb-3">INFO</h3>
+              <ul class="nav flex-column ">
+                <li class="nav-item mb-2"><a href="/index.html" class="nav-link p-0 text-body-secondary">HOME</a></li>
+                <li class="nav-item mb-2"><a href="/aboutUs.html" class="nav-link p-0 text-body-secondary">ABOUT</a></li>
+                <li class="nav-item mb-2"><a href="/index.html" class="nav-link p-0 text-body-secondary">SERVICES</a></li>
+                <li class="nav-item mb-2"><a href="/contactUs.html" class="nav-link p-0 text-body-secondary">CONTACT</a></li>
+              </ul>
+            </div>
+        
+            <div class="col mb-3">
+            </div>
+        
+            <div class="col mb-3">
+              <h3>Location</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">CAPITAL CARPET SOLUTIONS
+                  7091 SHADOW RIDGE DRIVE
+                  OTTAWA, ON K4P1B8 <br>
+                  (819)-593-7109</a></li>
+              </ul>
+            </div>
+        
+            <div class="col mb-3">
+              <h3>Hours</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">Monday 8:AM - 8:00PM</li>
+                <li class="nav-item mb-2">Tuesday 8:AM - 8:00PM</li>
+                <li class="nav-item mb-2">Wednesday 8:AM - 8:00PM</li>
+                <li class="nav-item mb-2">Thrusday 8:AM - 8:00PM</li>
+                <li class="nav-item mb-2">Friday 8:AM - 8:00PM</li>
+                <li class="nav-item mb-2">Saturday 8:AM - 8:00PM</li>
+                <li class="nav-item mb-2">Sunday 8:AM - 6:00PM</li>
+              </ul>
+            </div>
+            <div class="col mb-1 ">
+              <h5>Socials</h5>
+              <ul class="nav flex-lg-row socials">
+                <li class=""><a class="text-body-secondary" href="https://www.instagram.com/capitalcarpetsolutions_?fbclid=IwAR2lepo8R4AjNJCFXMGNGE5vjSVpesmgmuhLIDb9E4q4JGqvEGkFi6UII5U"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com/@capitalcarpetsolutions/"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.tiktok.com/@capitalcarpetsolutions"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                </svg></a></li>
+              </ul>
+            </div>
+          </footer>
         </div>
-    
-        <div class="col mb-3">
+        <div class="copyright-div">
+          <p>COPYRIGHT @2023 CAPITAL CARPET SOLUTIONS, ALL RIGHTS RESERVED <br>
+            <a href="">Terms & conditions</a> <br>
+             <a href="">Privacy Policy</a> <br></p>
         </div>
-    
-        <div class="col mb-3">
-          <h3>Location</h3>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">CAPITAL CARPET SOLUTIONS
-              7091 SHADOW RIDGE DRIVE
-              OTTAWA, ON K4P1B8 <br>
-              (819)-593-7109</a></li>
-          </ul>
-        </div>
-    
-        <div class="col mb-3">
-          <h3>Hours</h3>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">Monday 8:AM - 8:00PM</li>
-            <li class="nav-item mb-2">Tuesday 8:AM - 8:00PM</li>
-            <li class="nav-item mb-2">Wednesday 8:AM - 8:00PM</li>
-            <li class="nav-item mb-2">Thrusday 8:AM - 8:00PM</li>
-            <li class="nav-item mb-2">Friday 8:AM - 8:00PM</li>
-            <li class="nav-item mb-2">Saturday 8:AM - 8:00PM</li>
-            <li class="nav-item mb-2">Sunday 8:AM - 6:00PM</li>
-          </ul>
-        </div>
-        <div class="col mb-1">
-          <h5>Socials</h5>
-          <ul class="nav flex-lg-row">
-            <li class=""><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-            </svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-            </svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
-              <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
-            </svg></a></li>
-          </ul>
-        </div>
-      </footer>
-    </div>
-    <div class="copyright-div">
-      <p>COPYRIGHT @2023 CAPITAL CARPET SOLUTIONS, ALL RIGHTS RESERVED <br>
-        <a href="">Terms & conditions</a> <br>
-         <a href="">Privacy Policy</a> <br></p>
-    </div>
-  </div>
+      </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -1178,12 +1176,15 @@ have caused this?
             });
         });
 
+
         function scrollToSection(sectionId) {
         var section = document.getElementById(sectionId);
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
         }
     }
+
+
     </script>
 </body>
 

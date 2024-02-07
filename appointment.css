@@ -72,3 +72,6 @@
 main{
   margin-top: 10rem;
 }
+.quote a{
+  display: none;
+}
