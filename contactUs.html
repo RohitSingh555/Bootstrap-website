@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="/index.html">
@@ -22,7 +23,7 @@
         <img src="/images/logo-mobile.png" class="logo-mobile" alt="logo" />
       </a>
 
-      <form class="d-flex mobile-search" role="search" data-netlify="true">
+      <form class="d-flex mobile-search" role="search" >
         <input
           id="searchInputMobile"
           class="form-control me-2"
@@ -96,7 +97,7 @@
             >CONTACT US
           </a>
 
-          <a class="nav-link active" href="/faq.html"> FAQ'S</a>
+          <a class="nav-link active" href="/faq.html">FAQ'S</a>
         </ul>
       </div>
 
@@ -159,7 +160,7 @@
           <div class="main-div">
             <div class="form-div my-5">
                 <h1>Schedule Online</h1>
-                <form>
+                <form name="contactForm" method="POST" data-netlify="true">
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Name*</label>
                       <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
