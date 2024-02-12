@@ -161,46 +161,41 @@
             <div class="form-div my-5">
                 <h1>Schedule Online</h1>
                 <form name="contactForm" method="POST" data-netlify="true">
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Name*</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-             
-                    </div>
-                    <div class="mb-3">
+                  <div class="mb-3">
+                      <label for="exampleInputName" class="form-label">Name*</label>
+                      <input type="text" class="form-control" id="exampleInputName" name="name" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
                       <label for="exampleInputAddress" class="form-label">Address</label>
-                      <input type="text" class="form-control" id="exampleInputAddress">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputAddress" class="form-label">Phone Number</label>
-                        <input type="number" class="form-control" id="exampleInputphone">
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="exampleInputEmail" class="form-label">Email*</label>
-                        <input type="email" class="form-control" id="exampleInputEmail">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputWhere" class="form-label">Where Did You Hear About Us?*</label>
-                        <input type="text" class="form-control" id="exampleInputWhere">
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="exampleInputBest" class="form-label">Best Method Of Contact
-                        <input type="text" class="form-control" id="exampleInputBest">
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="exampleInputWhere" class="form-label ">How we Can Service You
-                        <input type="text-area" class="form-control" id="exampleInputHow">
-                      </div>
-
-                      <div class="input-group mb-3">
-                        <label for="exampleInputWhere" class="form-label ">Attach Photos
-                        <input type="file" class="form-control" id="inputGroupFile01">
-                      </div>
-                    <button 
-                    type="submit" class="btn btn-primary">Submit</button>
-                  </form>
+                      <input type="text" class="form-control" id="exampleInputAddress" name="address">
+                  </div>
+                  <div class="mb-3">
+                      <label for="exampleInputPhone" class="form-label">Phone Number</label>
+                      <input type="tel" class="form-control" id="exampleInputPhone" name="phone">
+                  </div>
+                  <div class="mb-3">
+                      <label for="exampleInputEmail" class="form-label">Email*</label>
+                      <input type="email" class="form-control" id="exampleInputEmail" name="email">
+                  </div>
+                  <div class="mb-3">
+                      <label for="exampleInputWhere" class="form-label">Where Did You Hear About Us?*</label>
+                      <input type="text" class="form-control" id="exampleInputWhere" name="heardAboutUs">
+                  </div>
+                  <div class="mb-3">
+                      <label for="exampleInputBest" class="form-label">Best Method Of Contact</label>
+                      <input type="text" class="form-control" id="exampleInputBest" name="bestContactMethod">
+                  </div>
+                  <div class="mb-3">
+                      <label for="exampleInputHow" class="form-label ">How Can We Service You</label>
+                      <textarea class="form-control" id="exampleInputHow" name="serviceRequest"></textarea>
+                  </div>
+                  <div class="input-group mb-3">
+                      <label for="inputGroupFile01" class="form-label">Attach Photos</label>
+                      <input type="file" class="form-control" id="inputGroupFile01" name="photos">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              
 
             </div>
             <div class="map-div" >
