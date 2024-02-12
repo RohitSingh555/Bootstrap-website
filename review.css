@@ -1,16 +1,8 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-
-body {
-font-family: 'Montserrat', sans-serif;
-}
-body h4, h5, span {
-    font-family: mSemi-Bold;
-}
 .status {
 /* padding: 1rem; */
 padding: 0.3rem 0;
-background: #5ce1e6;
+background: #ECBC2C;
 color: black;
 margin: 0.5rem;
 /* border-radius: 5%; */
@@ -24,7 +16,7 @@ position: relative;
 
 
 .status :hover {
-background: #5ce1e6;
+background: #ECBC2C;
 color: black;
 box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
 transition: all 0.3s ease;
@@ -39,7 +31,7 @@ margin: 0.5rem;
 
 .status span {
 background-color: black; 
-color: #5ce1e6;
+color: #ECBC2C;
 padding: 0.2rem 0.5rem;
 margin: 0.5rem 1rem;
 border-radius: 10%;
@@ -69,7 +61,7 @@ font-size: x-large;
 }
 
 #nextButton {
-background-color: #5ce1e6;
+background-color: #ECBC2C;
 color: black;
 padding: 0.5rem 1rem;
 border-radius: 5%;
@@ -89,7 +81,7 @@ p{
     font-size: larger;
 }
 .info-div .edit-info{
-    background-color: #5ce1e6 !important;
+    background-color: #ECBC2C !important;
     color: rgb(0, 0, 0) !important;
     border: none;
     text-shadow: black;
@@ -100,6 +92,9 @@ main{
   }
   .quote a{
     display: none;
+  }
+  span {
+    font-family: renegade;
   }
 @media screen and (max-width: 567px) {
     .info-div{

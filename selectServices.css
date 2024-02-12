@@ -65,7 +65,7 @@ table.fold-table > tbody > tr.view th.arrow::before {
   height: 25px;
   margin-top: -8px;
   font: 16px fontawesome;
-  background-color: #5ce1e6;
+  background-color: #ECBC2C;
   border-radius: 20%;
   text-align: center;
   color: white;
@@ -129,7 +129,7 @@ table.fold-table > tbody > tr.fold.open {
 }
 
 .price a {
-  color: #5ce1e6;
+  color: #ECBC2C;
 }
 
 #priceSummary h5{
@@ -150,7 +150,7 @@ table.fold-table > tbody > tr.fold.open {
 .status {
   /* padding: 1rem; */
   padding: 0.3rem 0;
-  background: #5ce1e6;
+  background: #ECBC2C;
   color: black;
   margin: 0.5rem;
   /* border-radius: 5%; */
@@ -164,7 +164,7 @@ table.fold-table > tbody > tr.fold.open {
 
 
 .status :hover {
-  background: #5ce1e6;
+  background: #ECBC2C;
   color: black;
   box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
@@ -179,7 +179,7 @@ table.fold-table > tbody > tr.fold.open {
 
 .status span {
   background-color: black; 
-  color: #5ce1e6;
+  color: #ECBC2C;
   padding: 0.2rem 0.5rem;
   margin: 0.5rem 1rem;
   border-radius: 10%;
@@ -213,7 +213,7 @@ table.fold-table > tbody > tr.fold.open {
 } */
 
 #nextButton {
-  background-color: #5ce1e6;
+  background-color: #ECBC2C;
   color: black;
   padding: 0.5rem 1rem;
   border-radius: 5%;

@@ -1,22 +1,11 @@
+
 @font-face {
-  font-family: regular;
-  src: url(fonts/Montserrat-Regular.ttf);
+  font-family:acumin ;
+  src: url(/fonts/Acumin-Variable-Concept.ttf);
 }
 @font-face {
-  font-family: mBold;
-  src: url(fonts/Montserrat-Bold.ttf);
-}
-@font-face {
-  font-family: mSemi-Bold;
-  src: url(fonts/Montserrat-SemiBold.ttf);
-}
-@font-face {
-  font-family: mExtra-Bold;
-  src: url(fonts/Montserrat-ExtraBold.ttf);
-}
-@font-face {
-  font-family: mBlack;
-  src: url(fonts/Montserrat-Black.ttf);
+  font-family: renegade;
+  src: url(/fonts/Renegade.otf);
 }
 
 html, body {
@@ -24,13 +13,33 @@ html, body {
   margin: 0;
   overflow-x: hidden !important;
 }
+body h1, h2, h3, h4,h5{
+  font-family: renegade;
+}
+body p {
+  font-size: 18px !important;
+  font-family: acumin;
+}
+body a {
+  font-size: 15px !important;
+  font-family: acumin;
+}
+body li {
+  font-size: 15px !important;
+  font-family: acumin;
+}
+body input {
+  font-size: 15px !important;
+  font-family: acumin;
+}
+
 /* HEADER  */
 .logo {
   width: 160px;
 }
 .navbar {
+  font-family: renegade !important;
   padding: 0;
-  font-family: mSemi-Bold;
   font-size: 14px;
   color: #000;
 }
@@ -45,12 +54,13 @@ html, body {
   margin-left: 10px;
   width: 250px;
   height: 80px;
-  background-color: #5ce1e6;
+  background-color: #ECBC2C;
   display: flex;
   flex-direction: column;
   border-bottom-left-radius: 50px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   justify-content: flex-end;
+  margin-top: 0;
 }
 
 .child-1 :hover{
@@ -65,12 +75,12 @@ html, body {
 .child-divider {
   display: flex;
   flex-direction: row;
-  background-color: #409b9f;
+  background-color: #ECBC2C;
 }
 .child-1 {
   padding: 10px;
   flex: 1;
-  background-color: #5ce1e6;
+  background-color: #ECBC2C;
   text-align: center;
 }
 .child-2 {
@@ -84,7 +94,7 @@ html, body {
   border-image: linear-gradient(
     to right,
     transparent,
-    rgb(156, 156, 156),
+    rgb(255, 255, 255),
     transparent
   );
   border-image-slice: 1;
@@ -133,7 +143,6 @@ html, body {
 }
 
 .hero-1 .hero-headings {
-  font-family: mExtra-Bold;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   margin-top: 50px;
@@ -144,44 +153,44 @@ html, body {
   margin-left: 20%;
 }
 .hero-button button {
-  background-color: #5ce1e6;
+  background-color: #ECBC2C;
   border: none;
   color: #000;
-  font-family: mSemi-Bold;
+
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .hero-button button:hover {
-  background-color: #80fbff;
+  background-color: #ECBC2C;
   color: #000;
 }
 /* CODE FOR SECOND DIV BELOW */
 .second-div-h2 {
-  font-family: mSemi-bold;
+font-size: 35px;
 }
 .second-div-p {
-  font-family: regular;
+
   font-size: 18px;
 }
 .mobile-view-carousel {
   height: 100vh;
 }
 .schedule-now-btn {
-  background-color: #5ce1e6;
+  background-color: #ECBC2C;
   color: #000;
   border: none;
 }
 .schedule-now-btn:hover {
-  background-color: #80fbff;
+  background-color: #ECBC2C;
   color: #000;
 }
 .btn-primary {
-  font-family: mSemi-Bold;
-  background-color: #5ce1e6;
+  
+  background-color: #ECBC2C;
   color: #000;
   border: none;
 }
 .btn-primary:hover {
-  background-color: #80fbff;
+  background-color: #ECBC2C;
   color: #000;
 }
 
@@ -205,12 +214,12 @@ html, body {
   color: white;
 }
 .email-button {
-  background-color: #5ce1e6;
+  background-color: #ECBC2C;
   border: none;
   color: #000;
 }
 .email-button:hover {
-  background-color: #80fbff;
+  background-color: #ECBC2C;
   color: #000;
 }
 .discount-div-email {
@@ -225,14 +234,14 @@ html, body {
   margin-bottom: 3rem;
 }
 .why-us-border{
-  border-bottom: 5px solid #5ce1e6;
+  border-bottom: 5px solid #ECBC2C;
   margin-left: 45%;
   margin-right: 45%;
 margin-top: 0;
 }
 
 .why-us h1 {
-  font-family: mBlack;
+ 
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -243,11 +252,11 @@ margin-top: 0;
 }
 .why-us-text-1 h1 {
   text-align: end;
-  font-family: mBold;
+ 
   font-size: 30px;
 }
 .why-us-text-1 p {
-  font-family: regular;
+
   font-size: 15px;
 }
 
@@ -256,11 +265,11 @@ margin-top: 0;
 }
 .why-us-text-2 h1 {
   text-align: start;
-  font-family: mBold;
+
   font-size: 30px;
 }
 .why-us-text-2 p {
-  font-family: regular;
+
   font-size: 15px;
 }
 
@@ -273,7 +282,7 @@ margin-left: 1rem;
 /* CODE FOR FOOTER */
 .footer{
   width: 100% !important;
-  background-color: #6EA8DF !important;
+  background-color: #ECBC2C !important;
   color: #fff;
 }
 .social-ul{
@@ -295,6 +304,12 @@ color: white;
 .last-div {
   transition: none; /* Remove any transition effect */
 }
+.icon-link {
+  color: #D3A41A;
+  text-decoration-color: #D3A41A;
+  
+}
+
 
 
 @media screen and (max-width: 567px) {
@@ -308,7 +323,7 @@ color: white;
     display: none;
   }
   .logo-mobile {
-    width: 200px;
+    width: 170px;
     display: block;
   }
   .btn-outline-success {
@@ -397,7 +412,7 @@ color: white;
     text-align: center;
   }
   .second-div button {
-    background-color: #5ce1e6;
+    background-color: #ECBC2C;
     border: none;
     color: #000;
     margin-left: 25%;

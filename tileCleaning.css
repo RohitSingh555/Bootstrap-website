@@ -54,4 +54,19 @@
     .form-control{
         width: 20rem;
     }
+    .floatingcard {
+        color: rgb(255, 255, 255);
+        width: 300px;
+        background-color: #ecbc2c;
+        width: 300px;
+        text-align: center;
+        display: block !important;
+      }
+      .card-container{
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      margin-right: 5rem;
+      margin-top: -5rem;
+      }
     
