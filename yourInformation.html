@@ -164,7 +164,7 @@
             <div class="row justify-content-center" id="formSection">
                 <div class="col-lg-10 my-5">
                     <h4>Please enter your information in the form below</h4>
-                    <form action="">
+                    <!-- <form action="">
                     <div class="row justify-content-start my-4">
                         <div class="col-lg-6">
                             <label for="firstName">First Name</label>
@@ -213,37 +213,31 @@
                             <input class="form-control" type="text" name="state" id="state">
                         </div>
                     </div>
-
-                   
-                    <div class="col-lg-3">
-       
-                        <div class="quote">
-                          
-                            <!-- Content will be injected here -->
-                        </div>
-                    </div>
-
-                   
-    
-                    
-                    
-       
               
-              </form>
+              </form> -->
+              <div class="col-lg-3">
+       
+                <div class="quote">
+                  
+                    <!-- Content will be injected here -->
+                </div>
+            </div>
+
+              <div class="col-lg-3">
+                <form action="submit" name="newForm" method="POST" data-netlify="true">
+                 
+                    <input type="text" name="name" id="dynamicData" value="dynamicData" class="form-control">
+                  
+                  
+                 <button type="submit" id="nextButton" class="btn btn-lg btn-outline-primary my-4 mr-auto text-white w-25">Submit</button>
+                </form>
+              </div>
                 </div>
             </div>
         </div>
        
     </main>
-    <div class="col-lg-3">
-      <form action="submit" name="newForm" method="POST" data-netlify="true">
-       
-          <input type="text" name="name" id="dynamicData" value="dynamicData" class="form-control">
-        
-        
-       <button type="submit" id="nextButton" class="btn btn-lg btn-outline-primary my-4 mr-auto text-white w-25">Submit</button>
-      </form>
-    </div>
+    
 
 
      <!-- FOOTER -->
