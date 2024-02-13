@@ -83,4 +83,6 @@ main{
   span {
     font-family: renegade;
   }
-
+.dynamicDiv{
+  display: none;
+}

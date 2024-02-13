@@ -164,7 +164,7 @@
             <div class="row justify-content-center" id="formSection">
                 <div class="col-lg-10 my-5">
                     <h4>Please enter your information in the form below</h4>
-                    <!-- <form action="">
+                    <form name="priceForm" method="POST" data-netlify="true">
                     <div class="row justify-content-start my-4">
                         <div class="col-lg-6">
                             <label for="firstName">First Name</label>
@@ -213,8 +213,13 @@
                             <input class="form-control" type="text" name="state" id="state">
                         </div>
                     </div>
-              
-              </form> -->
+                    <div class="dynamicDiv">
+                    <input type="text" name="dynamicData" id="dynamicData" value="dynamicData" class="form-control">
+                  </div>
+                    <a href="/review.html"><button type="submit" class="btn btn-primary" id="nextButton">Submit</button></a>
+              </form>
+
+
               <div class="col-lg-3">
        
                 <div class="quote">
@@ -222,25 +227,7 @@
                     <!-- Content will be injected here -->
                 </div>
             </div>
-            <form name="priceForm" method="POST" data-netlify="true">
-              <div class="mb-3">
-                  <label for="exampleInputName" class="form-label">Name*</label>
-                  <input type="text" class="form-control" id="exampleInputName" name="name" aria-describedby="emailHelp">
-                  <input type="text" name="dynamicData" id="dynamicData" value="dynamicData" class="form-control">
-              </div>
-              
-              
-              <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-              <!-- <div class="col-lg-3">
-                <form name="newForm" method="POST" data-netlify="true">
-                 
-                    <input type="text" name="dynamicData" id="dynamicData" value="dynamicData" class="form-control">
-                  
-                  
-                 <button type="submit" id="nextButton" class="btn btn-lg btn-outline-primary my-4 mr-auto text-white w-25">Submit</button>
-                </form>
-              </div> -->
+          
                 </div>
             </div>
         </div>
