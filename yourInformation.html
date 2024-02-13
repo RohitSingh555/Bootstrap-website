@@ -393,28 +393,28 @@
     var form = document.getElementById('userForm');
 
         // Add an event listener for form submission
-        document.getElementById('nextButton').addEventListener('click', function (event) {
-            event.preventDefault();
+        // document.getElementById('nextButton').addEventListener('click', function (event) {
+        //     event.preventDefault();
 
-            // Create an object to store form data
-            var formData = {
-                "First Name": document.getElementById('firstName').value,
-                "Last Name": document.getElementById('lastName').value,
-                Email: document.getElementById('email').value,
-                Phone : document.getElementById('phone').value,
-                Address : document.getElementById('address1').value,
-                City : document.getElementById('city').value,
-                Zip : document.getElementById('zip').value,
-                State : document.getElementById('state').value,
-                // Add other form fields as needed
-            };
+        //     // Create an object to store form data
+        //     var formData = {
+        //         "First Name": document.getElementById('firstName').value,
+        //         "Last Name": document.getElementById('lastName').value,
+        //         Email: document.getElementById('email').value,
+        //         Phone : document.getElementById('phone').value,
+        //         Address : document.getElementById('address1').value,
+        //         City : document.getElementById('city').value,
+        //         Zip : document.getElementById('zip').value,
+        //         State : document.getElementById('state').value,
+        //         // Add other form fields as needed
+        //     };
 
-            // Convert the object to a JSON string and save it to localStorage
-            localStorage.setItem('formData', JSON.stringify(formData));
+        //     // Convert the object to a JSON string and save it to localStorage
+        //     localStorage.setItem('formData', JSON.stringify(formData));
 
-            // Redirect to the review page
-            window.location.href = "/review.html";
-        });
+        //     // Redirect to the review page
+        //     window.location.href = "/review.html";
+        // });
 });
 
 </script>
