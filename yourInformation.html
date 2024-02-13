@@ -225,12 +225,47 @@
 
                     <div class="col-lg-3">
                       <form name="quoteForm1" method="POST" data-netlify="true">
+                        <div class="mb-3">
+                            <label for="exampleInputName" class="form-label">Name*</label>
+                            <input type="text" class="form-control" id="exampleInputName" name="name" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="exampleInputAddress" name="address">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPhone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="exampleInputPhone" name="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail" class="form-label">Email*</label>
+                            <input type="email" class="form-control" id="exampleInputEmail" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputWhere" class="form-label">Where Did You Hear About Us?*</label>
+                            <input type="text" class="form-control" id="exampleInputWhere" name="heardAboutUs">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputBest" class="form-label">Best Method Of Contact</label>
+                            <input type="text" class="form-control" id="exampleInputBest" name="bestContactMethod">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputHow" class="form-label ">How Can We Service You</label>
+                            <textarea class="form-control" id="exampleInputHow" name="serviceRequest"></textarea>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label for="inputGroupFile01" class="form-label">Attach Photos</label>
+                            <input type="file" class="form-control" id="inputGroupFile01" name="photos">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                      <!-- <form name="quoteForm1" method="POST" data-netlify="true">
                        
                           <input type="text" name="name" id="dynamicData" value="dynamicData" class="form-control">
                             <!-- Content will be injected here -->
                         
                        <button type="submit" id="nextButton" class="btn btn-lg btn-outline-primary my-4 mr-auto text-white w-25">Submit</button>
-                      </form>
+                      </form> -->
                     </div>
     
                     
