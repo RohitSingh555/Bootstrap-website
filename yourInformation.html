@@ -213,17 +213,20 @@
                             <input class="form-control" type="text" name="state" id="state">
                         </div>
                     </div>
-                    <form name="priceForm" method="POST" data-netlify="true">
+
+                    <form action="/review.html" method="POST" data-netlify="true">
                     <div class="col-lg-3">
                         <div class="quote">
+                          <input type="hidden" name="quoteContent" id="quoteContent">
+                          <button type="submit" id="nextButton" class="btn btn-lg btn-outline-primary my-4 mr-auto text-white w-25">Submit</button>
                             <!-- Content will be injected here -->
                         </div>
                     </div>
-                  
+                  </form>
     
                     
                     
-                </form>
+       
                 <a href="/review.html"><button type="submit" id="nextButton" class="btn btn-lg btn-outline-primary my-4 mr-auto text-white w-25">Submit</button>
                 </a>
               </form>
@@ -328,6 +331,7 @@
         // Inject the stored content into the corresponding div on the next page
         var quoteSectionOnNextPage = document.querySelector('.quote');
         quoteSectionOnNextPage.innerHTML = storedQuoteContent;
+        document.getElementById('quoteContent').value = storedQuoteContent;
     }
 
 
