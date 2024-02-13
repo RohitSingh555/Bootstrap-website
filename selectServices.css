@@ -20,7 +20,6 @@
 body {
   padding: 0.2em 2em;
   font-family: 'Montserrat', sans-serif;
-  overflow-x: scroll !important;
 }
 
 
@@ -236,4 +235,17 @@ body{
 }
 main{
   margin-top: 10rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+ .calculator-pc{
+  display: block;
+ }
+ .calculator-mobile{
+  width: 50vw !important
+ }
+ table{
+  width: 5rem;
+ }
 }
