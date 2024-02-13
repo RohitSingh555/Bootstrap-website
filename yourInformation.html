@@ -216,17 +216,27 @@
 
                    
                     <div class="col-lg-3">
-                      <form name="quoteForm1" method="POST" data-netlify="true">
+       
                         <div class="quote">
-                          <input type="text" name="dynamicData" id="dynamicData">
+                          
                             <!-- Content will be injected here -->
                         </div>
                         <a href=""><button type="submit" id="nextButton" class="btn btn-lg btn-outline-primary my-4 mr-auto text-white w-25">Submit</button>
                         </a>
                         
+             
+                    </div>
+
+                    <div class="col-lg-3">
+                      <form name="quoteForm1" method="POST" data-netlify="true">
+                       
+                          <input type="hidden" name="dynamicData" id="dynamicData">
+                            <!-- Content will be injected here -->
+                        </div>
+
+                        
                       </form>
                     </div>
-          
     
                     
                     
@@ -347,7 +357,7 @@
         // Populate the hidden input field with dynamic content
         document.getElementById('dynamicData').value = dynamicData;
     }
-    
+
   
 
     var form = document.getElementById('userForm');
