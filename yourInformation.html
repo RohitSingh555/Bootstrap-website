@@ -214,10 +214,10 @@
                         </div>
                     </div>
 
-                    <form action="/review.html" method="POST" data-netlify="true">
+                    <form action="/review.html" method="POST" netlify>
                     <div class="col-lg-3">
                         <div class="quote">
-                          <input type="hidden" name="quoteContent" id="quoteContent">
+                          <input type="hidden" name="dynamicData" id="dynamicData">
                           <button type="submit" id="nextButton" class="btn btn-lg btn-outline-primary my-4 mr-auto text-white w-25">Submit</button>
                             <!-- Content will be injected here -->
                         </div>
@@ -326,12 +326,13 @@
         document.addEventListener('DOMContentLoaded', function() {
     // Retrieve the stored quote content from local storage
     var storedQuoteContent = localStorage.getItem('quoteContent');
-
+    console.log(storedQuoteContent);
     if (storedQuoteContent) {
         // Inject the stored content into the corresponding div on the next page
         var quoteSectionOnNextPage = document.querySelector('.quote');
         quoteSectionOnNextPage.innerHTML = storedQuoteContent;
-        document.getElementById('quoteContent').value = storedQuoteContent;
+        document.getElementById('dynamicData').value = storedQuoteContent;
+      
     }
 
 
