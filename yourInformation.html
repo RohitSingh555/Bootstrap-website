@@ -216,7 +216,7 @@
                     <div class="dynamicDiv">
                     <input type="text" name="dynamicData" id="dynamicData" value="dynamicData" class="form-control">
                   </div>
-                   <button type="submit" class="btn btn-primary" id="nextButton">Submit</button>
+                   <button type="submit" class="btn btn-primary submit-btn" id="nextButton" >Submit</button>
               </form>
 
 
@@ -369,22 +369,7 @@
               localStorage.setItem('formData', JSON.stringify(formData));
 
               // Redirect to the review page
-              window.location.href = "/review.html";
-
-              if (storedQuoteContent) {
-          // Inject the stored content into the corresponding div on the next page
-          var quoteSectionOnNextPage = document.querySelector('.quote');
-          quoteSectionOnNextPage.innerHTML = storedQuoteContent;
-
-          var dynamicData = Array.from(quoteSectionOnNextPage.querySelectorAll('h5, li, span'))
-              .map(function(element) {
-                  return element.textContent.trim();
-              })
-              .join(', '); // You can adjust the delimiter as needed
-
-          // Populate the hidden input field with dynamic content
-          document.getElementById('dynamicData').value = dynamicData;
-      }
+              // window.location.href = "/review.html";
           });
   });
 
