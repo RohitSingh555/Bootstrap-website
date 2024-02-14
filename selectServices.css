@@ -236,16 +236,115 @@ body{
 main{
   margin-top: 10rem;
 }
+.calculator-mobile{
+  display: none;
+}
+.quote-div{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.btn-block{
+  display: flex;
+  text-decoration: none;
+}
 
 
 @media only screen and (max-width: 768px) {
  .calculator-pc{
-  display: block;
+  display: none;
  }
- .calculator-mobile{
-  width: 50vw !important
- }
- table{
-  width: 5rem;
- }
+table{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
+tr{
+  padding: 0 !important
+}
+.room-table, .hallway-table, .staircase-table, .sofa-table , .sectional-table , .loveseat-table, .dining-table , .ottoman-table , .chair-table 
+,.l-sofa-table ,.l-sectional-table ,.l-loveseat-table ,.l-chair-table ,.l-ottoman-table ,.l-dining-table
+{
+  display: none;
+}
+.innerDropDowns{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: acumin;
+  background-color: #c7c6c6;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.innerDropDownSpan{
+  padding-top: 5px;
+
+}
+input{
+  margin-left: 0.5rem !important;
+  margin-right: 0.5rem !important;
+}
+.w-25{
+  width: 3rem !important;
+}
+.inputLXW{
+ 
+}
+.cpdInputs{
+  display: flex;
+  flex-direction: column;
+}
+.last-tr{
+  
+}
+.iharc {
+  padding: 0 !important;
+  margin: 0;
+}
+tbody{
+  margin-top: 5rem !important;
+  padding: 0;
+}
+.iharc-th{
+  padding: 0px !important;
+  margin-right: 5px;
+}
+.rug-column{
+  padding: 5px !important;
+}
+table th{
+  border: none !important
+}
+.rug-area{
+  border-top: 2px solid #000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.table-headingAr{
+  padding-right: 1rem !important
+}
+.table-h3{
+  font-family: acumin;
+  margin-top: 1rem;
+}
+.calculator-mobile{
+  display: block;
+}
+.quote-div{
+  position: relative;
+  min-height: 100%;
+}
+.quote {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Ensure it's above everything else */
+  background-color: #fff; /* Adjust as needed */
+  padding: 10px; /* Adjust as needed */
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+}
+}
+
+/* .calculator-mobile{
+  display: none;
+} */
