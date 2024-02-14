@@ -37,6 +37,47 @@ function toggleDropdown(dropdownId, contentClass) {
   toggleDropdown('iharc-dropdown', 'iharc-table');
 
 
+  document.addEventListener('DOMContentLoaded', function () {
+
+    var addRowButton1 = document.getElementById('addRowButton1');
+      var tbody1 = document.getElementById('tbody1');
+ 
+
+
+      var count = 2;
+      function addNewRow() {
+        var existingRow = tbody1.querySelector('tr');
+        var newRow = existingRow.cloneNode(true);
+
+        // Reset input values in the new row
+        newRow.querySelectorAll('input[type="text"]').forEach(function (input) {
+          input.value = '0';
+        });
+
+        // Reset data-price values in the new row
+        newRow.querySelectorAll('.product').forEach(function (product) {
+          product.dataset.price = '0';
+        });
+
+        //append data-name with a rowIndex counter to the product div
+        newRow.querySelectorAll('.product').forEach(function (product) {
+          product.dataset.name = product.dataset.name + count;
+        });
+
+
+        tbody1.appendChild(newRow);
+        count++;
+
+        //select the rug area input
+        let rugArea = newRow.querySelector('.rug-area');
+        //select inputs under rug-area
+        let rugAreaInputs = rugArea.querySelectorAll('input');
+        rugAreaInputs.forEach(input => input.addEventListener('input', updateDataPrice))
+      }
+
+      // Attach event listener to the add row button
+      addRowButton1.addEventListener('click', addNewRow);
+  })
 
 
 
@@ -50,51 +91,3 @@ function toggleDropdown(dropdownId, contentClass) {
 
 
 
-
-
-
-  // JavaScript for adding rows for both desktop and mobile versions
-
-// Function to add a new row
-function addRow() {
-    var newRowHtml = `
-        <tr>
-            <th>
-                <div class="rug-area d-flex flex-row">
-                    <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
-                    <span class="x">x</span>
-                    <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
-                </div>
-            </th>
-            <td class="rug-column">
-                <div class="d-flex flex-row mb-3 product" data-price="0" data-name="inhomearea-rugcleaning-clean">
-                    <button class="btn btn-primary">-</button>
-                    <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
-                    <button class="btn btn-primary">+</button>
-                </div>
-            </td>
-            <td class="rug-column">
-                <div class="d-flex flex-row mb-3 product" data-price="0" data-name="inhomearea-rugcleaning-protect">
-                    <button class="btn btn-primary">-</button>
-                    <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
-                    <button class="btn btn-primary">+</button>
-                </div>
-            </td>
-            <td class="rug-column">
-                <div class="d-flex flex-row mb-3 product" data-price="0" data-name="inhomearea-rugcleaning-deodorize">
-                    <button class="btn btn-primary">-</button>
-                    <input class="w-25 form-control" type="text" min="0" pattern="[0-9]*" value="0">
-                    <button class="btn btn-primary">+</button>
-                </div>
-            </td>
-        </tr>
-    `;
-
-    // Append the new row HTML to the appropriate table body
-    var tbody = document.getElementById("mobileTbody"); // Use a different ID for mobile version
-    tbody.insertAdjacentHTML("beforeend", newRowHtml);
-}
-
-// Add event listener to the "Add Row" button
-var addRowButton = document.getElementById("addRowButton");
-addRowButton.addEventListener("click", addRow);
