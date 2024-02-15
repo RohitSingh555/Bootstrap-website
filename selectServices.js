@@ -77,7 +77,11 @@ function toggleDropdown(dropdownId, contentClass) {
 
       // Attach event listener to the add row button
       addRowButton1.addEventListener('click', addNewRow);
-  })
+
+    })
+
+
+  
 
 
 
