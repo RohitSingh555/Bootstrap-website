@@ -118,10 +118,10 @@ table.fold-table > tbody > tr.fold.open {
     margin-top: 10px;
     border-radius: 5%;
     height: fit-content;
-    position: fixed;
-    right: 0;
-    margin-right: 50px;
+    position: relative;
     width: 20rem;
+    margin-right: 6rem;
+
     
 }
 
@@ -249,8 +249,10 @@ main{
   display: none;
 }
 .quote-div{
-  margin-left: 25%;
-  margin-right: 25%;
+  display: flex;
+width: 100%;
+align-items: center;
+justify-content: center;
 }
 .btn-block{
   display: flex;
