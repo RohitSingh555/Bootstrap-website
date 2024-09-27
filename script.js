@@ -34,6 +34,28 @@ function toggleSearch() {
     });
 });
 
+// Handle navbar links
+// document.querySelectorAll('.navbar-nav a, .last-div a, .child-3 a').forEach(function(navLink) {
+//   navLink.addEventListener('click', function(event) {
+//       var href = navLink.getAttribute('href');
+//       if (href.startsWith("/") && !href.startsWith("//")) {
+//           event.preventDefault(); // Prevent default navigation behavior
+//           window.location.href = href; // Manually navigate to the clicked link
+//       }
+//   });
+// });
+// Handle navbar links
+document.querySelectorAll('.navbar-nav a, .last-div a, .child-3 a, a').forEach(function(navLink) {
+  navLink.addEventListener('click', function(event) {
+      var href = navLink.getAttribute('href');
+      if (!navLink.classList.contains('exclude-navigation') && href.startsWith("/") && !href.startsWith("//")) {
+          event.preventDefault(); // Prevent default navigation behavior
+          window.location.href = href; // Manually navigate to the clicked link
+      }
+  });
+});
+
+
 
 // This is the code to Hide the Last-div in the Header on the click of Navbar-toggler in the mobileview
 document.addEventListener('DOMContentLoaded', function () {

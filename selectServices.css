@@ -1,0 +1,376 @@
+@charset "UTF-8";
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+.pcs:after {
+  content: " pcs";
+}
+
+.cur:before {
+  content: "$";
+}
+
+.per:after {
+  content: "%";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0.2em 2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+table {
+  width: 100%;
+}
+
+table th {
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+
+table th, table td {
+  padding: 1.4em;
+}
+
+table.fold-table {
+  border-collapse: separate;
+  border-spacing:0 20px;
+}
+
+table.fold-table > tbody > tr.view td, table.fold-table > tbody > tr.view th {
+  cursor: pointer;
+  font-size: large;
+  font-weight: 700;
+}
+table.fold-table > tbody > tr.view td.arrow,
+table.fold-table > tbody > tr.view th.arrow {
+  position: relative;
+  padding-left: 0px;
+
+}
+
+table.fold-table > tbody > tr.view td.arrow::before,
+table.fold-table > tbody > tr.view th.arrow::before {
+  position: absolute;
+  top: 40%;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  margin-top: -8px;
+  font: 16px fontawesome;
+  background-color: #ECBC2C;
+  border-radius: 20%;
+  text-align: center;
+  color: white;
+  content: "";
+  transition: all 0.3s ease;
+}
+table.fold-table > tbody > tr.view {
+  background: #eee;
+}
+table.fold-table > tbody > tr.view:hover {
+  background: white;
+}
+table.fold-table > tbody > tr.view.open {
+  background: black;
+  color: white;
+}
+table.fold-table > tbody > tr.view.open td.arrow::before, table.fold-table > tbody > tr.view.open th.arrow::before {
+  transform: rotate(-180deg);
+  color: #333;
+}
+table.fold-table > tbody > tr.fold {
+  display: none;
+}
+table.fold-table > tbody > tr.fold.open {
+  display: table-row;
+}
+
+.fold-content {
+  padding: 0.5em;
+}
+.fold-content h3 {
+  margin-top: 0;
+}
+.fold-content > table {
+  border: 2px solid #ccc;
+}
+.fold-content > table > tbody tr:nth-child(even) {
+  background: #eee;
+}
+
+.form-control {
+    text-align: center;
+}
+
+
+
+.quote {
+   background: #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5%;
+    height: fit-content;
+    position: relative;
+    width: 20rem;
+    margin-right: 6rem;
+
+    
+}
+
+.price h4 {
+  font-weight: 500;
+  font-size: 1.35rem;
+  margin-left: 5px;
+
+}
+
+.price a {
+  color: #ECBC2C;
+}
+
+#priceSummary h5{
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+.quote h5 {
+  font-size: medium;
+}
+
+#total {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.status {
+  /* padding: 1rem; */
+  padding: 0.3rem 0;
+  background: #ECBC2C;
+  color: black;
+  margin: 0.5rem;
+  /* border-radius: 5%; */
+  min-width: 20rem;
+  font-size: 0.5rem;
+  box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  position: relative;
+  ;
+}
+
+
+.status :hover {
+  background: #ECBC2C;
+  color: black;
+  box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.status h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0.5rem;
+
+}
+
+.status span {
+  background-color: black; 
+  color: #ECBC2C;
+  padding: 0.2rem 0.5rem;
+  margin: 0.5rem 1rem;
+  border-radius: 10%;
+  display: inline-block;
+  width: fit-content;
+}
+
+
+.inactive {
+  background: #bfbfbf;
+  color: rgb(134, 131, 131)
+}
+
+.inactive span {
+  background-color: rgb(134, 131, 131); 
+  color: #ccc;
+}
+
+
+
+/* .diagonal {
+  width: 0; 
+  height: 4.3rem; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #bbb;
+  top: 0; right: 0;
+  position: absolute;
+  transform: translateX(100%);
+  z-index: 1;
+} */
+
+#nextButton {
+  background-color: #ECBC2C;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 5%;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+  box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.footer{
+  width: 100vw !important;
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+main{
+  margin-top: 10rem;
+}
+
+.calculatorMobileDiv{
+  display: none;
+}
+.h1w{
+  display: none;
+}
+.quote-div{
+  display: flex;
+width: 100%;
+align-items: center;
+justify-content: center;
+}
+.btn-block{
+  display: flex;
+  text-decoration: none;
+}
+.mobileHr{
+  display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+ .calculator-pc{
+  display: none;
+ }
+table{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+tr{
+  padding: 0 !important
+}
+.room-table, .hallway-table, .staircase-table, .sofa-table , .sectional-table , .loveseat-table, .dining-table , .ottoman-table , .chair-table 
+,.l-sofa-table ,.l-sectional-table ,.l-loveseat-table ,.l-chair-table ,.l-ottoman-table ,.l-dining-table
+{
+  display: none;
+}
+.innerDropDowns{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: acumin;
+  background-color: #c7c6c6;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.innerDropDownSpan{
+  padding-top: 5px;
+
+}
+input{
+  margin-left: 0.5rem !important;
+  margin-right: 0.5rem !important;
+}
+.w-25{
+  width: 3rem !important;
+}
+.inputLXW{
+ 
+}
+.cpdInputs{
+  display: flex;
+  flex-direction: column;
+}
+.last-tr{
+  
+}
+.iharc {
+  padding: 0 !important;
+  margin: 0;
+}
+tbody{
+  margin-top: 5rem !important;
+  padding: 0;
+}
+.iharc-th{
+  padding: 0px !important;
+  margin-right: 5px;
+}
+.rug-column{
+  padding: 5px !important;
+}
+table th{
+  border: none !important
+}
+.rug-area{
+  border-top: 2px solid #000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.table-headingAr{
+  padding-right: 1rem !important
+}
+.table-h3{
+  font-family: acumin;
+  margin-top: 1rem;
+}
+.calculator-mobile{
+  display: block;
+}
+.quote-div{
+  position: relative;
+  min-height: 100%;
+}
+.quote {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* Ensure it's above everything else */
+  background-color: #fff; /* Adjust as needed */
+  padding: 10px; /* Adjust as needed */
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+  max-height: 15rem;
+  overflow-y: scroll;
+}
+table.fold-table > tbody > tr.view td.arrow{
+padding-right: 3rem !important;
+}
+.qoutePC{
+  display: none;
+}
+.calculatorMobileDiv{
+  display: block;
+}
+
+}
+
+/* .calculator-mobile{
+  display: none;
+} */

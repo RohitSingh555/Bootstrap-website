@@ -1,0 +1,10 @@
+
+.submit-btn{
+    background-color: #ecbc2c;
+    color: white;
+    font-family: acumin;
+    border: none;
+}
+.submit-btn :hover{
+    background-color: #000000 !important;
+}

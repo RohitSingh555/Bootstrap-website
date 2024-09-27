@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ'S</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/faq.css" />
+</head>
+
+<body style="background-color: #F3F1F6;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbarID">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">
+            <img src="/images/logo.png" class="logo" alt="logo" />
+            <img src="/images/logo-mobile.png" class="logo-mobile" alt="logo" />
+          </a>
+  
+          <form class="d-flex mobile-search" role="search">
+            <input
+              id="searchInputMobile"
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              style="display: none"
+            />
+            <button
+              class="btn btn-outline-success"
+              type="button"
+              onclick="toggleSearchMobile()"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">HOME</a>
+              </li>
+  
+              <li class="nav-item dropdown mega-menu hover-dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false  "
+                >
+                  OUR SERVICES
+                </a>
+                <div class="dropdown-menu mega-area">
+                  <div class="row">
+                    <div class="col-sm-6 col-lg-3 dropdown-list">
+                      <a class="dropdown-item" href="/carpetCleaning.html">CARPET CLEANING</a>
+                      <a class="dropdown-item" href="/upholsteryCleaning.html">UPHOLSTERY CLEANING</a>
+                      <a class="dropdown-item" href="/tileCleaning.html">TILE & GROUT CLEANING</a>
+                      <a class="dropdown-item" href="/hardwood.html"
+                        >HARDWOOD FLOOR REFINISHING</a
+                      >
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                      <a class="dropdown-item" href="/commercialCleaning.html">COMMERCIAL CLEANING</a>
+                      <a class="dropdown-item" href="arearugCleaning.html">AREA RUG CLEANING</a>
+                      <a class="dropdown-item" href="carCleaning.html"
+                        >CAR BOAT & RV CLEANING</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+  
+              <a class="nav-link active" aria-current="page" href="/aboutUs.html"
+              >ABOUT US
+            </a>
+  
+  
+              <a class="nav-link active" aria-current="page" href="/contactUs.html"
+                >CONTACT US
+              </a>
+  
+              <a class="nav-link active" href="/faq.html"> FAQ'S</a>
+            </ul>
+          </div>
+  
+          <form class="d-flex" role="search">
+            <input
+              id="searchInput"
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              style="display: none"
+            />
+            <button
+              class="btn btn-outline-success"
+              type="button"
+              onclick="toggleSearch()"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+  
+          <div class="last-div">
+            <div class="child-divider">
+              <div class="child-1">
+                <a class="nav-link active" aria-current="page" href="/selectServices.html"
+                  >RESIDENTIAL</a
+                >
+              </div>
+              <div class="child-2">
+                <a class="nav-link active" aria-current="page" href="/commercialForm.html"
+                  >COMMERCIAL</a
+                >
+              </div>
+            </div>
+  
+            <div class="child-3">
+              <a class="nav-link active" aria-current="page" href="/selectServices.html"
+                >QUOTE & SCHEDULE</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <main style="background-color: #F3F1F6;">
+        <div class="divider">
+
+        </div>
+<div class="container col-xxl-8 px-4 py-5 main-div">
+    <div class="row flex-lg-row align-items-center g-5 py-5">
+
+
+      <div class="col-10 col-sm-8 col-lg-3 filters">
+
+     <h2 class="my-3">FILTERS</h2>
+
+     <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="carpetClean" id="carpetClean" style="transform: scale(1.5); margin-top: 6px" onclick="scrollToSection('carpetCleaningSection', 'navbarID')">
+        <label class="form-check-label" for="flexCheckDefault">
+           CARPET CLEANING
+        </label>
+      </div>
+
+      <div class="form-check my-3">
+        <input class="form-check-input" type="checkbox" value="carpetProtect" id="carpetProtect" style="transform: scale(1.5); margin-top: 6px" onclick="scrollToSection('carpetProtectorSection')" >
+        <label class="form-check-label" for="flexCheckDefault">
+           CARPET PROTECTOR
+        </label>
+      </div>
+      <div class="form-check my-3">
+        <input class="form-check-input" type="checkbox" value="tile" id="tile" style="transform: scale(1.5); margin-top: 6px" onclick="scrollToSection('tileCleaningSection')">
+        <label class="form-check-label" for="flexCheckDefault">
+            TILE & GROUT CLEANING
+        </label>
+      </div>
+
+      <div class="form-check my-3">
+        <input class="form-check-input" type="checkbox" value="hard" id="hard" style="transform: scale(1.5); margin-top: 6px" onclick="scrollToSection('hardwoodSection')">
+        <label class="form-check-label" for="flexCheckDefault">
+            HARD WOOD REFINISHING
+        </label>
+      </div>
+
+      <div class="form-check my-3">
+        <input class="form-check-input" type="checkbox" value="upholstery" id="upholstery" style="transform: scale(1.5); margin-top: 6px"
+        onclick="scrollToSection('upholsterySection')">
+        <label class="form-check-label" for="flexCheckDefault">
+            UPHOLSTERY CLEANING
+        </label>
+      </div>
+
+      <div class="form-check my-3">
+        <input class="form-check-input" type="checkbox" value="areaRug" id="areaRug" style="transform: scale(1.5); margin-top: 6px"
+        onclick="scrollToSection('areaRugSection')">
+        <label class="form-check-label" for="flexCheckDefault"
+        >
+            AREA RUG CLEANING
+
+        </label>
+      </div>
+
+      <div class="form-check my-3">
+        <input class="form-check-input" type="checkbox" value="commercial" id="commercial" style="transform: scale(1.5); margin-top: 6px"
+        onclick="scrollToSection('commercialSection')">
+        <label class="form-check-label" for="flexCheckDefault"
+        >
+            COMMERCIAL CLEANING
+        </label>
+      </div>
+
+      <div class="form-check my-3">
+        <input class="form-check-input" type="checkbox" value="car" id="car" style="transform: scale(1.5); margin-top: 6px"
+        onclick="scrollToSection('123')">
+        <label class="form-check-label" for="flexCheckDefault"
+        >
+             CAR, BOAT & RV CLEANING
+        </label>
+      </div>
+
+      </div>
+
+
+      <div class="col-lg-20 faq">
+        <div class="container-fluid p-0" style="background-color: #f3f1f6a6;">
+            <div class="container">
+                <h1 class="text-center md-5"  id="carpetCleaningSection">FREQUENTLY ASKED QUESTIONS</h1>
+<div class="carpetCleaningFaq my-5" id="carpetProtectorSection">
+    <h2 class="mb-3">CARPET CLEANING</h2>
+<div class="accordion accordion-flush" id="accordionFlush1">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                I JUST HAD MY CARPET CLEANED, AND NOW THERE ARE BUBBLES OR RIPPLES IN IT. WHAT MIGHT HAVE CAUSED THIS?
+            </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlush1">
+            <div class="accordion-body">As your carpet dries, you should see any bubbles or ripples begin to flatten out. When
+                it's fully dry, these should be almost invisible. Usually, this means the carpet needed
+                stretching before it was cleaned. If you still notice ripples after the carpet has dried,
+                please call us at (819)-593-7109</div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                CAN YOU GUARANTEE THAT ALL SPOTS OR STAINS WILL BE REMOVED FROM THE CARPET?
+            </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlush1">
+            <div class="accordion-body">We can't promise to remove every spot or stain from the carpet. Some substances can
+                permanently change the color of the carpet fibers. Also, the carpet's age and the type of
+                f
+                ibers it's made of can affect stain removal. Our technician will try to figure out if
+                permanent staining is likely before starting the cleaning, but sometimes this can only be
+                determined during the spot removal process.</div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                aria-controls="flush-collapseThree">
+                HOW LONG DOES CARPET CLEANING TAKE?
+            </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush1">
+            <div class="accordion-body"> Typically, cleaning a room's carpet takes about 20 minutes on average. However, this
+                time can change quite a bit based on several factors like the amount of furniture that
+                needs moving, the level of dirtiness of the carpet, and if there are any spots that need
+                special treatment.</div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                aria-controls="flush-collapseFour">
+                DOES CLEANING MY CARPET CAUSE IT TO BE COME DIRTY QUICKER?
+            </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+            data-bs-parent="#accordionFlush1">
+            <div class="accordion-body">The idea that carpets get dirty faster after cleaning usually comes from the issue of
+                residue left in the carpet, which can attract more dirt. Often, this happens when soap
+                used in the cleaning process isn't fully rinsed out. However, with our cleaning method,
+                which involves a specially formulated solution and hot water extraction, we ensure
+                minimal to no residue is left behind, reducing the likelihood of rapid resoiling.</div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                aria-controls="flush-collapseFour">
+                DO YOU MOVE FURNITURE PRIOR TO CLEANING?
+            </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+            data-bs-parent="#accordionFlush1">
+            <div class="accordion-body">At our company, we have a specific policy regarding furniture moving during carpet
+                cleaning. We understand that moving furniture can seem like a natural part of the
+                cleaning process; however, for various reasons, including liability, safety, and efficiency,
+                wedonot movefurniture as part of our service. This approach helps us focus solely on
+                providing the most effective and thorough carpet cleaning. It also minimizes the risk of
+                potential damage to your furniture or property and ensures the safety of our technicians.
+                Werecommendthat any furniture you want moved be relocated prior to our arrival,
+                allowing us to access and clean your carpets without any impediments, and ensuring a
+                more efficient cleaning process.</div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                aria-controls="flush-collapseFour">
+                SHOULD I VACUUM BEFORE THE CARPET CLEANING?
+            </button>
+        </h2>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+            data-bs-parent="#accordionFlush1">
+            <div class="accordion-body"> It's a good idea to do light vacuuming in the high-traffic areas before we arrive for carpet
+                cleaning, but it's not mandatory. If you haven't had the chance to vacuum, don't worry
+               our crew can pre-vacuum the area that needs to be cleaned. Additionally, our cleaning
+                equipment continuously vacuums while we clean, ensuring thorough removal of dirt and
+                debris from your carpet.</div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                aria-controls="flush-collapseFour">
+                WHATIS YOUR CARPET CLEANING METHOD?
+            </button>
+        </h2>
+        <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
+            data-bs-parent="#accordionFlush1">
+            <div class="accordion-body">Weusethe truck mount hot water extraction method for carpet cleaning, also known as
+                steam cleaning. This method is highly effective and gentle, making it safe for your
+                carpets. It involves injecting hot, soft water mixed with a specially formulated cleaning
+                solution deep into the carpet fibers. Then, using powerful suction, we remove
+                deep-down dirt, allergens, the cleaning solution, and about 95% of the moisture. This
+                method is not only thorough in cleaning but also in ensuring quick drying. It's the
+                preferred cleaning technique recommended by most carpet manufacturers due to its
+                effectiveness and care for the carpet fibers.</div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-heading8">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapse8" aria-expanded="false"
+                aria-controls="flush-collapseFour">
+                HOW WE ENSURE CUSTOMER SATISFACTION IN CARPET CLEANING?
+            </button>
+        </h2>
+        <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-heading8"
+            data-bs-parent="#accordionFlush1">
+            <div class="accordion-body">Our commitment to customer satisfaction is paramount in our carpet cleaning service.
+                If any issues arise, we are ready to work closely with you to resolve them. This may
+                involve spot cleaning particular areas that you're concerned about or, if necessary,
+                re-cleaning the entire area. Our goal is to ensure that you are completely satisfied with
+                the outcome. We encourage you to reach out to us at (819)-593-7109 with any concerns
+                or if you're not satisfied with the cleaning results. Your satisfaction is our top priority,
+                and we're dedicated to addressing and resolving any issues to meet your expectations.</div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-heading9">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapse9" aria-expanded="false"
+                aria-controls="flush-collapseFour">
+                WHY DO YOUR PRICES VARY FROM OTHER CARPET CLEANERS?
+            </button>
+        </h2>
+        <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-heading9"
+            data-bs-parent="#accordionFlush1">
+            <div class="accordion-body">Our pricing may differ from other carpet cleaning services, and it's important to consider
+                several key factors when making comparisons. Firstly, our price is all-inclusive. This
+                means it covers spot treatment, guarantees a quick 1-3 hour drying time, and is backed
+               by our 100% satisfaction policy. We assure you there are no hidden fees or surprise
+                additional charges. <br>
+                Furthermore, unlike some services, we do not use subcontractors. All of our technicians
+                are direct employees of The Carpet Cavalry. They have been thoroughly
+                background checked, drug tested, and are properly trained, ensuring high-quality and
+                reliable service. This comprehensive approach and our commitment to our employees
+                allow us to fully stand behind our work and offer a service that we believe is worth the
+                investment.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapse10" aria-expanded="false"
+                aria-controls="flush-collapse10">
+                HOW LONG WILL IT TAKE FOR MY CARPET TO DRY?
+            </button>
+        </h2>
+        <div id="flush-collapse10" class="accordion-collapse collapse" aria-labelledby="flush-heading10"
+            data-bs-parent="#accordionFlush1">
+            <div class="accordion-body"> The drying time for your carpet after cleaning depends on several factors, including
+                humidity, temperature, and airflow in the cleaned area. Typically, it can take between 1 to
+                3 hours for your carpet to dry completely. However, this can vary based on the
+                conditions mentioned.  <br>
+                To speed up the drying process, you can use fans in the cleaned rooms and adjust your
+                air conditioning or heating system, depending on the season. It's important to keep the
+                protective blocks under furniture legs and any paper under upholstered items until the
+                carpet is fully dry. This prevents any color transfer <br>
+                While you can walk on your carpet right after cleaning, it's best to avoid wearing street
+                shoes to prevent re-soiling. Clean rubber-soled shoes are a good alternative. Also, be
+                cautious when moving from damp carpeted areas to non-carpeted ones, as there's a risk
+                of slipping.
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="carpetProtector my-5" id="tileCleaningSection" >
+    <h2 class="mb-3">CARPET PROTECTOR</h2>
+    <div class="accordion accordion-flush" id="faqAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionOneHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerOneCollapse" aria-expanded="false" aria-controls="answerOneCollapse">
+                    WHAT ARE THE BENEFITS OF APPLYING A PROTECTOR TO MY CLEANED CARPETS?
+                </button>
+            </h2>
+            <div id="answerOneCollapse" class="accordion-collapse collapse" aria-labelledby="questionOneHeader"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">After your carpet and/or upholstery is thoroughly cleaned, applying a specially
+                    formulated protector is a wise choice. This protector acts as a barrier, making your
+                    carpet and upholstery more resistant to soiling from both dry dirt and spills, whether
+                    they're water- or oil-based. It works by coating each fiber with a protective layer. This not
+                    only prolongs the time you have to clean up any spills before they penetrate the fibers
+                    but also helps maintain the appearance of your carpet and upholstery between
+                    professional cleanings. Additionally, this coating simplifies the process of vacuuming
+                    and spot cleaning."</div>
+            </div>
+        </div>
+        <!-- Repeat the above structure for each question and answer -->
+    
+        <!-- Example question and answer -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionTwoHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerTwoCollapse" aria-expanded="false" aria-controls="answerTwoCollapse">
+                    HOW EFFECTIVE IS YOUR DEODORIZER IN ELIMINATING ODORS?</button>
+            </h2>
+            <div id="answerTwoCollapse" class="accordion-collapse collapse" aria-labelledby="questionTwoHeader"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Our deodorizer is specifically designed to target and eliminate organic odors, such as
+                    those from vomit, feces, urine, milk, and blood. It works by breaking down the organic
+                    matter causing the odor. Alongside this, it includes a neutralizer that provides
+                    immediate odor relief while the enzyme does its job. For the deodorizer to be fully
+                    effective, it's crucial that it reaches all areas affected by the odor. However, if the source
+                    of the odor has penetrated deep into the carpet backing or the padding, we may not be
+                    able to guarantee the complete removal of the odor</div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionThreeHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerThreeCollapse" aria-expanded="false" aria-controls="answerThreeCollapse">
+                    IS CARPET MANUFACTURED WITH A PROTECTOR?
+                </button>
+            </h2>
+            <div id="answerThreeCollapse" class="accordion-collapse collapse" aria-labelledby="questionThreeHeader"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Most carpets come from the manufacturer with a dry soil protector already applied. This
+                    protector is subject to wear and tends to diminish over time due to regular foot traffic.
+                    Carpet manufacturers typically advise having this protector reapplied annually, or
+                    possibly more frequently in areas of heavy traffic.</div>
+            </div>
+        </div>
+        <!-- End of example question and answer -->
+    </div>
+</div>
+<div class="tileCleaning my-5" id="hardwoodSection">
+    <h2 class="mb-3">TILE & GROUT CLEANING</h2>
+    <div class="accordion accordion-flush" id="anotherFaqAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="anotherQuestionOneHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#anotherAnswerOneCollapse" aria-expanded="false" aria-controls="anotherAnswerOneCollapse">
+                    HOW DO YOU CLEAN MY TILE AND GROUT?
+                </button>
+            </h2>
+            <div id="anotherAnswerOneCollapse" class="accordion-collapse collapse" aria-labelledby="anotherQuestionOneHeader"
+                data-bs-parent="#anotherFaqAccordion">
+                <div class="accordion-body">Tocleanyourtileandgrout, we specifically
+                    scrub each grout line and tile with cleaners designed for these surfaces. We utilize high
+                    pressure, connected to a truck-mounted unit, to effectively remove dirt and grime
+                    embedded in your grout lines.</div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="anotherQuestionTwoHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#anotherAnswerTwoCollapse" aria-expanded="false" aria-controls="anotherAnswerTwoCollapse">
+                    DO I HAVE TO USE SPECIAL FLOOR CLEANER IF I HAVE THE SEALANT APPLIED?
+                </button>
+            </h2>
+            <div id="anotherAnswerTwoCollapse" class="accordion-collapse collapse" aria-labelledby="anotherQuestionTwoHeader"
+                data-bs-parent="#anotherFaqAccordion">
+                <div class="accordion-body">?After
+                    applying a sealant, it's recommended to use a neutral cleaner on your tile and grout.
+                    This helps maintain the sealant's effectiveness. Avoiding bleach and other harsh
+                    chemical cleaners is also advised, as they can degrade the sealant</div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="anotherQuestionThreeHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#anotherAnswerThreeCollapse" aria-expanded="false" aria-controls="anotherAnswerThreeCollapse">
+                    WHY SHOULD I HAVE MY GROUT LINES SEALED?
+                </button>
+            </h2>
+            <div id="anotherAnswerThreeCollapse" class="accordion-collapse collapse" aria-labelledby="anotherQuestionThreeHeader"
+                data-bs-parent="#anotherFaqAccordion">
+                <div class="accordion-body">Sealing grout lines is important because, like carpet, grout is porous and absorbs spills
+                    and soil. A sealant forms a protective barrier, allowing more time for cleanup and
+                    preventing spills from soaking into the grout. The type of sealant you choose will affect
+                    its stain resistance</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="anotherQuestionFourHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#anotherAnswerFourCollapse" aria-expanded="false" aria-controls="anotherAnswerFourCollapse">
+                    HOW LONG DO I HAVE TO STAY OFF THE FLOOR AFTER SEALANT HAS BEEN APPLIED?
+                </button>
+            </h2>
+            <div id="anotherAnswerFourCollapse" class="accordion-collapse collapse" aria-labelledby="anotherQuestionFourHeader"
+                data-bs-parent="#anotherFaqAccordion">
+                <div class="accordion-body">Weadvise waiting 30 minutes before walking on the floor after sealant application, to let
+                    it dry. The sealant takes about 24 hours to cure completely, so it's best to avoid any
+                    liquid contact during this period</div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="anotherQuestionFiveHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#anotherAnswerFiveCollapse" aria-expanded="false" aria-controls="anotherAnswerFiveCollapse">
+                    HOW OFTEN SHOULD I HAVE MY TILE FLOOR CLEANED?
+                </button>
+            </h2>
+            <div id="anotherAnswerFiveCollapse" class="accordion-collapse collapse" aria-labelledby="anotherQuestionFiveHeader"
+                data-bs-parent="#anotherFaqAccordion">
+                <div class="accordion-body"> The frequency of cleaning your tile and grout depends on factors such as foot traffic,
+                    the presence of children and pets, and your usual floor maintenance routine</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="anotherQuestionSixHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#anotherAnswerSixCollapse" aria-expanded="false" aria-controls="anotherAnswerSixCollapse">
+                    WHY SHOULD I HAVE MY TILE AND GROUT CLEANED?
+                </button>
+            </h2>
+            <div id="anotherAnswerSixCollapse" class="accordion-collapse collapse" aria-labelledby="anotherQuestionSixHeader"
+                data-bs-parent="#anotherFaqAccordion">
+                <div class="accordion-body"> Over time, dirt accumulates on tile and grout, leading to a dull appearance and
+                    discoloration. Professional cleaning is the most effective way to remove this deeply
+                    embedded dirt.</div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div class="hardwood my-5" id="upholsterySection">
+    <h2 class="mb-3">HARDWOOD REFINISHING</h2>
+    <div class="accordion accordion-flush" id="yetAnotherFaqAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="yetAnotherQuestionOneHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#yetAnotherAnswerOneCollapse" aria-expanded="false" aria-controls="yetAnotherAnswerOneCollapse">
+                  WHAT IS THE PURPOSE OF A SCREEN AND RECOAT?
+                </button>
+            </h2>
+            <div id="yetAnotherAnswerOneCollapse" class="accordion-collapse collapse" aria-labelledby="yetAnotherQuestionOneHeader"
+                data-bs-parent="#yetAnotherFaqAccordion">
+                <div class="accordion-body"> Screen and reboots are utilized to rejuvenate hardwood floors by eliminating light
+                    scratches and blemishes. We gently abrade the floor using a buffer, which prepares the
+                    surface for a fresh coat of polyurethane. This not only restores the shine to dull floors
+                    but also provides additional protection against scratches</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="yetAnotherQuestionTwoHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#yetAnotherAnswerTwoCollapse" aria-expanded="false" aria-controls="yetAnotherAnswerTwoCollapse">
+                    WHAT ARE THE BENEFITS OF A SCREEN AND RECOAT?
+                </button>
+            </h2>
+            <div id="yetAnotherAnswerTwoCollapse" class="accordion-collapse collapse" aria-labelledby="yetAnotherQuestionTwoHeader"
+                data-bs-parent="#yetAnotherFaqAccordion">
+                <div class="accordion-body"> Screen and reboots offer significant advantages, including prolonging the use of
+                    hardwood floors without the need for complete sanding and refinishing. This not only
+                    saves money but also preserves the wood, as each refinishing process removes a layer
+                    of wood. This technique allows for changes in the floor's sheen, from glossy to matte,
+                    for example, revitalizing the appearance of the floor. It's a one-day process, far less
+                    costly and disruptive than a full sanding and refinishing</div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="yetAnotherQuestionThreeHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#yetAnotherAnswerThreeCollapse" aria-expanded="false" aria-controls="yetAnotherAnswerThreeCollapse">
+                    WHAT ARE THE LIMITATIONS OF A SCREEN AND RECOAT?
+                </button>
+            </h2>
+            <div id="yetAnotherAnswerThreeCollapse" class="accordion-collapse collapse" aria-labelledby="yetAnotherQuestionThreeHeader"
+                data-bs-parent="#yetAnotherFaqAccordion">
+                <div class="accordion-body"> The screen and recoat process only targets the top finish layer, meaning it won't fix deep
+                    gouges or change the wood's color. For floors requiring extensive repair or a color
+                    change, sanding and finishing are the most effective methods. Note that this process is
+                    not suitable for floors finished with hard wax oil, only working on polyurethane-finished
+                    f
+                    loors</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="yetAnotherQuestionfourHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#yetAnotherAnswerfourCollapse" aria-expanded="false" aria-controls="yetAnotherAnswerfourCollapse">
+                    CAN SCREEN AND RECOATS BE APPLIED ON PREFINISHED HARDWOOD FLOORS?
+                </button>
+            </h2>
+            <div id="yetAnotherAnswerfourCollapse" class="accordion-collapse collapse" aria-labelledby="yetAnotherQuestionfourHeader"
+                data-bs-parent="#yetAnotherFaqAccordion">
+                <div class="accordion-body"> Previously, prefinished hardwood floors couldn't undergo screening and recoating.
+                    However, recent technological advancements now allow for the screening and recoating
+                    of these types of floors</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="yetAnotherQuestionfiveHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#yetAnotherAnswerfiveCollapse" aria-expanded="false" aria-controls="yetAnotherAnswerfiveCollapse">
+                    HOW FREQUENTLY SHOULD A SCREEN AND RECOAT BE DONE ON POLYURETHANE FINISHED FLOORS?
+                </button>
+            </h2>
+            <div id="yetAnotherAnswerfiveCollapse" class="accordion-collapse collapse" aria-labelledby="yetAnotherQuestionfiveHeader"
+                data-bs-parent="#yetAnotherFaqAccordion">
+                <div class="accordion-body">For maintaining the finish and appearance of polyurethane-finished hardwood floors, we
+                    recommend a screen and recoat every 3 to 5 years. This frequency helps in preserving
+                    the floors' look without allowing excessive wear.</div>
+            </div>
+        </div>
+        <!-- Repeat the above structure for each additional question and answer -->
+
+    </div>
+</div>
+<div class="upholstery my-5"  id="areaRugSection">
+    <h2 class="mb-3"> UPHOLSTERY CLEANING</h2>
+    <div class="accordion accordion-flush" id="faqAccordionSet5">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet5OneHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet5OneCollapse" aria-expanded="false" aria-controls="answerSet5OneCollapse">
+                    HOW DOES PROFESSIONAL UPHOLSTERY CLEANING AFFECT THE PROTECTIVE COATING ON MY FURNITURE?
+                </button>
+            </h2>
+            <div id="answerSet5OneCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet5OneHeader"
+                data-bs-parent="#faqAccordionSet5">
+                <div class="accordion-body">Does professional upholstery cleaning impact the protective coating I have on my
+                    upholstered furniture? While the cleaning process can affect the coating, it's important
+                    to note that the accumulation of dry soils and everyday use typically leads to the
+                    deterioration of this protective layer. To ensure your valuable upholstered furniture
+                    remains shielded from the damage caused by dry soil, we offer the service of
+                    re-applying this protective coating after the cleaning</div>
+            </div>
+        </div>
+     
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet5TwoHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet5TwoCollapse" aria-expanded="false" aria-controls="answerSet5TwoCollapse">
+                    WHAT IS THE EXPECTED DRYING TIME FOR MY FURNITURE POST-CLEANING?
+                </button>
+            </h2>
+            <div id="answerSet5TwoCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet5TwoHeader"
+                data-bs-parent="#faqAccordionSet5">
+                <div class="accordion-body"> Howlong will it take for my furniture to dry after it's been professionally cleaned? The
+                    drying time largely depends on the specific upholstery fabric and the cleaning method
+                    used. Typically, drying time ranges from 1 to 2 hours, which may vary if a protective
+                    coating is applied during the cleaning process</div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet5ThreeHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet5ThreeCollapse" aria-expanded="false" aria-controls="answerSet5ThreeCollapse">
+                    WHAT IS YOUR PROCESS FOR CLEANING UPHOLSTERY?
+                </button>
+            </h2>
+            <div id="answerSet5ThreeCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet5ThreeHeader"
+                data-bs-parent="#faqAccordionSet5">
+                <div class="accordion-body">We primarily utilize the hot water extraction cleaning method, as it offers the deepest
+                    clean among various techniques. However, certain fabrics might need a gentler
+                    approach. In such cases, we will discuss with you the most suitable cleaning method for
+                    your specific upholstery needs.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet5fourHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet5fourCollapse" aria-expanded="false" aria-controls="answerSet5fourCollapse">
+                    HOW OFTEN SHOULD UPHOLSTERY BE PROFESSIONALLY CLEANED, ACCORDING TO MANUFACTURERS?
+                </button>
+            </h2>
+            <div id="answerSet5fourCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet5fourHeader"
+                data-bs-parent="#faqAccordionSet5">
+                <div class="accordion-body">Manufacturers generally recommend professional upholstery cleaning every 12 to 24
+                    months, but this can depend on how frequently the furniture is used.</div>
+            </div>
+        </div>
+
+        <!-- Repeat the above structure for each additional question and answer -->
+
+    </div>
+</div>
+
+<div class="areaRug my-5" id="commercialSection" >
+    <h2 class="mb-3"> AREA RUG CLEANING</h2>
+    <div class="accordion accordion-flush" id="faqAccordionSet6">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet6OneHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet6OneCollapse" aria-expanded="false" aria-controls="answerSet6OneCollapse">
+                    WHO CLEANS AREA RUGS?
+                </button>
+            </h2>
+            <div id="answerSet6OneCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet6OneHeader"
+                data-bs-parent="#faqAccordionSet6">
+                <div class="accordion-body"> Whois responsible for cleaning area rugs at The Carpet Cavalry? We are proud to
+                    offer top-notch area rug cleaning services. We use our trusted proprietary hot-water
+                    extraction method, which has been effective in carpet cleaning for years, to deeply clean
+                    area rugs. This method efficiently extracts dirt and allergens from the rug fibers,
+                    ensuring a cleaner home environment.</div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet6TwoHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet6TwoCollapse" aria-expanded="false" aria-controls="answerSet6TwoCollapse">
+                    HOW MUCH IS ORIENTAL RUG CLEANING?
+                </button>
+            </h2>
+            <div id="answerSet6TwoCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet6TwoHeader"
+                data-bs-parent="#faqAccordionSet6">
+                <div class="accordion-body"> What is the cost of cleaning an oriental rug? The price for cleaning an oriental rug varies
+                    based on the rug's size. For a specific quote on oriental rug cleaning, please call us at
+                    (819)-593-7109</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet6ThreeHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet6ThreeCollapse" aria-expanded="false" aria-controls="answerSet6ThreeCollapse">
+                    WHAT METHOD DO YOU USE TO CLEAN AREA RUGS?
+                </button>
+            </h2>
+            <div id="answerSet6ThreeCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet6ThreeHeader"
+                data-bs-parent="#faqAccordionSet6">
+                <div class="accordion-body">Howdoyouapproach cleaning area rugs? We clean area rugs using steam cleaning,
+                    specifically the hot-water extraction method, similar to our carpet cleaning process. This
+                    technique thoroughly extracts dirt and allergens from deep within your rug's fibers,
+                    effectively removing them from your home.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet6fourHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet6fourCollapse" aria-expanded="false" aria-controls="answerSet6fourCollapse">
+                    WHAT IS THE COST OF CLEANING AN AREA RUG?
+                </button>
+            </h2>
+            <div id="answerSet6fourCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet6fourHeader"
+                data-bs-parent="#faqAccordionSet6">
+                <div class="accordion-body"> Howis the cost for area rug cleaning determined? The price for cleaning an area rug
+                    depends on the rug's size and material. For an accurate quote, you can visit our website
+                    or call us at (819)-593-7109 for more information.</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="commercial my-5" id="carSection" >
+    <h2 class="mb-3">COMMERCIAL CLEANING</h2>
+    <div class="accordion accordion-flush" id="faqAccordionSet7">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet7OneHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet7OneCollapse" aria-expanded="false" aria-controls="answerSet7OneCollapse">
+                    IS A CARPET PROTECTOR USEFUL?
+                </button>
+            </h2>
+            <div id="answerSet7OneCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet7OneHeader"
+                data-bs-parent="#faqAccordionSet7">
+                <div class="accordion-body"> Does applying a carpet protector offer benefits? Yes, carpet and upholstery protectors
+                    guard against spill and wear damage, sparing the carpet fibers. Especially in high traffic
+                    areas of a business, using a carpet protector is advantageous as it bears the brunt of
+                    wear, thereby prolonging your carpet's lifespan</div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet7TwoHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet7TwoCollapse" aria-expanded="false" aria-controls="answerSet7TwoCollapse">
+                    HOW FREQUENTLY SHOULD CARPETS BE CLEANED?
+                </button>
+            </h2>
+            <div id="answerSet7TwoCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet7TwoHeader"
+                data-bs-parent="#faqAccordionSet7">
+                <div class="accordion-body"> Howoften is carpet cleaning needed for businesses? Cleaning frequency varies by
+                    business type and is influenced by state laws and specific business needs, such as
+                    allergen build-up and foot traffic. For an exact cleaning frequency, please contact us at
+                    (819)-593-7109</div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet7ThreeHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet7ThreeCollapse" aria-expanded="false" aria-controls="answerSet7ThreeCollapse">
+                    DOES THE CLEANING PROCESS LEAVE ANY RESIDUE??
+                </button>
+            </h2>
+            <div id="answerSet7ThreeCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet7ThreeHeader"
+                data-bs-parent="#faqAccordionSet7">
+                <div class="accordion-body"> Does your cleaning method result in any residue left on carpets? No, our hot water
+                    extraction process effectively removes dirt and odors without leaving residue.</div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet7fourHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet7fourCollapse" aria-expanded="false" aria-controls="answerSet7fourCollapse">
+                    CAN THE CLEANING BE CONDUCTED WHILE PEOPLE ARE PRESENT?
+                </button>
+            </h2>
+            <div id="answerSet7fourCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet7fourHeader"
+                data-bs-parent="#faqAccordionSet7">
+                <div class="accordion-body">  Is it possible for people to be in the area during the cleaning process? Yes, while our
+                    trucks generate some noise outside, it shouldn't significantly disrupt indoor activities.
+                    Wealso allow for foot traffic in the areas being cleaned, with proper cautionary signs in
+                    place.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet7fiveHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet7fiveCollapse" aria-expanded="false" aria-controls="answerSet7fiveCollapse">
+                    CAN CLEANING BE DONE OVER THE WEEKEND?
+                </button>
+            </h2>
+            <div id="answerSet7fiveCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet7fiveHeader"
+                data-bs-parent="#faqAccordionSet7">
+                <div class="accordion-body"> Is weekend cleaning available for businesses? Yes, for weekend commercial cleaning
+                    requests, please call (819)-593-7109</div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet7sixHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet7sixCollapse" aria-expanded="false" aria-controls="answerSet7sixCollapse">
+                    HOW QUICKLY CAN THE CARPET BE USED POST-CLEANING??
+                </button>
+            </h2>
+            <div id="answerSet7sixCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet7sixHeader"
+                data-bs-parent="#faqAccordionSet7">
+                <div class="accordion-body">When is it safe to walk on carpets after cleaning? The carpets can be used for light
+                    traffic immediately after cleaning.</div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet7sevenHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet7sevenCollapse" aria-expanded="false" aria-controls="answerSet7sevenCollapse">
+                    IS AFTER-HOURS CLEANING AVAILABLE?
+                </button>
+            </h2>
+            <div id="answerSet7sevenCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet7sevenHeader"
+                data-bs-parent="#faqAccordionSet7">
+                <div class="accordion-body"> Can cleaning be scheduled outside of business hours? Yes, after-hours cleaning is
+                    available with a 3-5 day notice. For special requests, contact us at (819)-593-7109.</div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet8eightHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet8eightCollapse" aria-expanded="false" aria-controls="answerSet8eightCollapse">
+                    WHAT PAYMENT METHODS ARE ACCEPTED??
+                </button>
+            </h2>
+            <div id="answerSet8eightCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet8eightHeader"
+                data-bs-parent="#faqAccordionSet8">
+                <div class="accordion-body"> Howcanpayment bemadefor commercial cleaning services? We accept cash, check,
+                    or credit for first-time commercial clients, and offer invoicing for established customers.</div>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet9nineHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet9nineCollapse" aria-expanded="false" aria-controls="answerSet9nineCollapse">
+                    WHAT OTHER CLEANING SERVICES ARE OFFERED??
+                </button>
+            </h2>
+            <div id="answerSet9nineCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet9nineHeader"
+                data-bs-parent="#faqAccordionSet9">
+                <div class="accordion-body"> Besides carpet cleaning, what additional services do you provide? We offer a range of
+                    commercial cleaning services including tile and grout cleaning, upholstery cleaning,
+                    hardwood floor cleaning, VCT stripping and waxing, area rug cleaning, and LVT cleaning</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet10tenHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet10tenCollapse" aria-expanded="false" aria-controls="answerSet10tenCollapse">
+                    CAN A REGULAR CLEANING SCHEDULE BE ARRANGED?
+                </button>
+            </h2>
+            <div id="answerSet10tenCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet10tenHeader"
+                data-bs-parent="#faqAccordionSet10">
+                <div class="accordion-body">  Is it possible to set up a routine cleaning schedule for our company? Absolutely! Our
+                    maintenance program offers regular cleaning and disinfecting services tailored to your
+                    schedule, including weekly, monthly, or quarterly services to address areas most
+                    affected by wear and tear</div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet11elevenHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet11elevenCollapse" aria-expanded="false" aria-controls="answerSet11elevenCollapse">
+                    ARE ANY HARMFUL CHEMICALS USED IN CLEANING??
+                </button>
+            </h2>
+            <div id="answerSet11elevenCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet11elevenHeader"
+                data-bs-parent="#faqAccordionSet11">
+                <div class="accordion-body"> Do your cleaning services involve harmful chemicals? No, our cleaning methods are
+                    eco-friendly and safe for employees, pets, children, and the environment.</div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet12twelveHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet12twelveCollapse" aria-expanded="false" aria-controls="answerSet12twelveCollapse">
+                    HOW SOON CAN A CLEANING ESTIMATE BE SCHEDULED?
+                </button>
+            </h2>
+            <div id="answerSet12twelveCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet12twelveHeader"
+                data-bs-parent="#faqAccordionSet12">
+                <div class="accordion-body"> WhencanI schedule a cleaning estimate for my business? You can arrange an estimate
+                    at your convenience by calling (819)-593-7109</div>
+            </div>
+        </div>
+
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="questionSet13thirteenHeader">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#answerSet13thirteenCollapse" aria-expanded="false" aria-controls="answerSet13thirteenCollapse">
+            WHAT IS THE DURATION OF THE CLEANING PROCESS?
+        </button>
+    </h2>
+    <div id="answerSet13thirteenCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet13thirteenHeader"
+        data-bs-parent="#faqAccordionSet13">
+        <div class="accordion-body"> Howlong does it take to clean a business space? On average, we clean about 1,100 sq.
+            ft. per hour, but the total time varies depending on the specific cleaning tasks. This is
+            assessed during our on-site estimate</div>
+    </div>
+</div>
+
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="questionSet14fourteenHeader">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#answerSet14fourteenCollapse" aria-expanded="false" aria-controls="answerSet14fourteenCollapse">
+            IS THERE A MINIMUM CHARGE FOR COMMERCIAL CLEANING?
+        </button>
+    </h2>
+    <div id="answerSet14fourteenCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet14fourteenHeader"
+        data-bs-parent="#faqAccordionSet14">
+        <div class="accordion-body">  Is there a minimum fee for commercial cleaning services? Yes, the minimum trip charge
+            is based on the proximity of your location.</div>
+    </div>
+</div>
+
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="questionSet15fifteenHeader">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#answerSet15fifteenCollapse" aria-expanded="false" aria-controls="answerSet15fifteenCollapse">
+            DO YOU MOVE FURNITURE PRIOR TO CLEANING?
+        </button>
+    </h2>
+    <div id="answerSet15fifteenCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet15fifteenHeader"
+        data-bs-parent="#faqAccordionSet15">
+        <div class="accordion-body"> At our company, we have a specific policy regarding furniture moving during carpet
+            cleaning. We understand that moving furniture can seem like a natural part of the
+            cleaning process; however, for various reasons, including liability, safety, and efficiency,
+            wedonot movefurniture as part of our service. This approach helps us focus solely on
+            providing the most effective and thorough carpet cleaning. It also minimizes the risk of
+            potential damage to your furniture or property and ensures the safety of our technicians.
+            Werecommendthat any furniture you want moved be relocated prior to our arrival,
+            allowing us to access and clean your carpets without any impediments, and ensuring a
+            more efficient cleaning process.</div>
+    </div>
+</div>
+        
+        
+        
+        
+     
+
+    </div>
+</div>
+<div class="last-div-car" id="123" >
+
+</div>
+<div class="car my-5"  >
+    <h2 class="mb-3">CAR, BOAT & RV CLEANING</h2>
+    <div class="accordion accordion-flush" id="faqAccordionSet8">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet8OneHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet8OneCollapse" aria-expanded="false" aria-controls="answerSet8OneCollapse">
+                    WHAT IS VEHICLE CLEANING?
+                </button>
+            </h2>
+            <div id="answerSet8OneCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet8OneHeader"
+                data-bs-parent="#faqAccordionSet8">
+                <div class="accordion-body"> Vehicle cleaning is a specialized process aimed at maintaining your car's appearance to
+                    a near-showroom condition. Our goal is to restore your car's appearance to its original
+                    state when you first drove it off the lot</div>
+            </div>
+        </div>
+    
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="questionSet8TwoHeader">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#answerSet8TwoCollapse" aria-expanded="false" aria-controls="answerSet8TwoCollapse">
+                    HOW FREQUENTLY SHOULD I CLEAN MY CAR?
+                </button>
+            </h2>
+            <div id="answerSet8TwoCollapse" class="accordion-collapse collapse" aria-labelledby="questionSet8TwoHeader"
+                data-bs-parent="#faqAccordionSet8">
+                <div class="accordion-body">Consider cleaning your car whenever you have an oil change or at least twice a year to
+                    promote optimal car health. The frequency of cleaning depends on your car's wear and
+                   tear and your desired level of appearance. Vehicle cleaning enhances your car's resale
+                    value, appearance, and extends its overall lifespan.</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </main>
+
+
+     <!-- FOOTER -->
+     <div class="footer">
+        <div class="container">
+          <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top ">
+      
+        
+            <div class="col mb-3 info-ul">
+              <h3 class="mb-3">INFO</h3>
+              <ul class="nav flex-column ">
+                <li class="nav-item mb-2"><a href="/index.html" class="nav-link p-0 text-body-secondary">HOME</a></li>
+                <li class="nav-item mb-2"><a href="/aboutUs.html" class="nav-link p-0 text-body-secondary">ABOUT</a></li>
+                <li class="nav-item mb-2"><a href="/index.html" class="nav-link p-0 text-body-secondary">SERVICES</a></li>
+                <li class="nav-item mb-2"><a href="/contactUs.html" class="nav-link p-0 text-body-secondary">CONTACT</a></li>
+              </ul>
+            </div>
+        
+            <div class="col mb-3">
+            </div>
+        
+            <div class="col mb-3">
+              <h3>Location</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">The Carpet Cavalry
+                  7091 SHADOW RIDGE DRIVE
+                  OTTAWA, ON K4P1B8 <br>
+                  <a href="tel:+16138072900" style="color: white;">+16138072900</a></a></li>
+              </ul>
+            </div>
+        
+            <div class="col mb-3">
+              <h3>Hours</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">Monday 8:AM - 8:00PM</li>
+                <li class="nav-item mb-2">Tuesday 8:AM - 8:00PM</li>
+                <li class="nav-item mb-2">Wednesday 8:AM - 8:00PM</li>
+                <li class="nav-item mb-2">Thrusday 8:AM - 8:00PM</li>
+                <li class="nav-item mb-2">Friday 8:AM - 8:00PM</li>
+                <li class="nav-item mb-2">Saturday 8:AM - 8:00PM</li>
+                <li class="nav-item mb-2">Sunday 8:AM - 6:00PM</li>
+              </ul>
+            </div>
+            <div class="col mb-1 ">
+              <h5>Socials</h5>
+              <ul class="nav flex-lg-row socials">
+                <li class=""><a class="text-body-secondary" href="https://www.instagram.com/capitalcarpetsolutions_?fbclid=IwAR2lepo8R4AjNJCFXMGNGE5vjSVpesmgmuhLIDb9E4q4JGqvEGkFi6UII5U"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com/@capitalcarpetsolutions/"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.tiktok.com/@capitalcarpetsolutions"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                </svg></a></li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+        <div class="copyright-div">
+          <p>COPYRIGHT @2023 The Carpet Cavalry, ALL RIGHTS RESERVED <br>
+            <a href="">Terms & conditions</a> <br>
+             <a href="">Privacy Policy</a> <br></p>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+
+        document.querySelectorAll('.nav-link').forEach(function (tab) {
+            tab.addEventListener('click', function (event) {
+                event.preventDefault();
+                var targetTabId = this.getAttribute('data-bs-target');
+                document.querySelectorAll('.tab-pane').forEach(function (tabPane) {
+                    tabPane.classList.remove('show', 'active');
+                });
+                document.querySelector(targetTabId).classList.add('show', 'active');
+                document.querySelectorAll('.nav-link').forEach(function (tabLink) {
+                    tabLink.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+
+
+        function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+
+    </script>
+</body>
+
+</html>

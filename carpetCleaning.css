@@ -1,51 +1,74 @@
-
 .nav-item button {
-    color: black !important;
-    font-size: 18px; /* Adjust the size as needed */
-    font-weight: bold;
-    
+  color: black !important;
+  font-size: 18px; /* Adjust the size as needed */
+  font-weight: bold;
 }
 
 .nav-link.active {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 .banner {
-    position: relative;
-    background-image: url('images/Untitled design (30)0.png');
-    background-size: cover;
-    color: #ffffff;
-    text-align: center;
-    padding: 5rem ;
+  position: relative;
+  background-image: url("images/Untitled design (30)0.png");
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  padding: 5rem;
 }
 
 .banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the desired transparency */
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the alpha value for the desired transparency */
+  z-index: -1;
 }
-.accordion-item h2 button,.accordion-collapse{
- background-color: #f3f1f6a6 !important;
+.accordion-item h2 button,
+.accordion-collapse {
+  background-color: #f3f1f6a6 !important;
 }
-.accordion{
-    border: 3px solid #caa7ffa6;
-    border-radius: 3px;
+.accordion {
+  border: 3px solid #caa7ffa6;
+  border-radius: 3px;
 }
 
 .hero-1 {
-    width: 100% !important;
+  width: 100% !important;
+  margin-top: 0 !important;
 }
 
-.floatingcard{
-    color: white;
-    width: 300px;
-    background-color: #8cd5e7;
+.floatingcard {
+  color: rgb(255, 255, 255);
+  width: 300px;
+  background-color: #ecbc2c;
+  width: 300px;
+  text-align: center;
+  display: block !important;
 }
-img{
-    border-radius: 4px;
+.card-container{
+display: flex;
+align-items: flex-end;
+justify-content: flex-end;
+margin-right: 5rem;
+margin-top: -5rem;
+}
+img {
+  border-radius: 4px;
+}
+.form-control {
+  width: 20rem;
+}
+@media screen and (max-width: 567px) {
+  .card-container{
+ display: none;
+    }
 }

@@ -1,0 +1,33 @@
+@font-face {
+  font-family: acuminExtra;
+  src: url(/fonts/acumin-pro-extra-condensed-bold.otf);
+}
+.main-div .filters h2{
+  font-family: mBold;
+}
+.faq h1{
+    font-family: mBold;
+  }
+.navbar{
+  margin-bottom: 10rem !important;
+}
+.carpetCleaningFaq{
+  padding-top: 4rem !important
+}
+.last-div-car{
+  padding-top: 4rem;
+}
+@media screen and (max-width: 567px) {
+
+  main{
+    margin-top: 5rem;
+  }
+
+}
+h1, h2, h3, h4 {
+  font-family: renegade !important
+}
+.accordion h2, button {
+  font-family: acuminExtra !important;
+  font-size: 22px !important;
+}

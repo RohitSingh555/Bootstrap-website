@@ -1,0 +1,30 @@
+.discount-div{
+    margin-top: 5rem;
+}
+.discount-div-email button{
+    padding: 10px;
+    color: white;
+    text-shadow: 1rem;
+    border: 1px solid white;
+}
+.main-div{
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.form-div{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; 
+    padding: 0 15px; 
+}
+
+@media screen and (max-width: 567px) {
+
+    main{
+      margin-top: 5rem;
+    }
+}  

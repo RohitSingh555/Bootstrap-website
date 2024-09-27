@@ -1,0 +1,88 @@
+
+.status {
+/* padding: 1rem; */
+padding: 0.3rem 0;
+background: #ECBC2C;
+color: black;
+margin: 0.5rem;
+/* border-radius: 5%; */
+min-width: 20rem;
+font-size: 0.5rem;
+box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
+cursor: pointer;
+position: relative;
+;
+}
+
+
+.status :hover {
+background: #ECBC2C;
+color: black;
+box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
+transition: all 0.3s ease;
+}
+
+.status h4 {
+font-size: 1.1rem;
+font-weight: 700;
+margin: 0.5rem;
+
+}
+
+.status span {
+background-color: black; 
+color: #ECBC2C;
+padding: 0.2rem 0.5rem;
+margin: 0.5rem 1rem;
+border-radius: 10%;
+display: inline-block;
+width: fit-content;
+}
+
+
+.inactive {
+background: #bfbfbf;
+color: rgb(134, 131, 131)
+}
+
+.inactive span {
+background-color: rgb(134, 131, 131); 
+color: #ccc;
+}
+
+label {
+font-weight: 700;
+font-size: large;
+}
+
+#formSection h4 {
+font-weight: 700;
+font-size: x-large;
+}
+
+#nextButton {
+background-color: #ECBC2C;
+color: black;
+padding: 0.5rem 1rem;
+border-radius: 5%;
+border: none;
+font-size: 1rem;
+font-weight: 700;
+
+cursor: pointer;
+box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+main{
+    margin-top: 10rem;
+  }
+  .quote a{
+    display: none;
+  }
+
+  span {
+    font-family: renegade;
+  }
+.dynamicDiv{
+  display: none;
+}
